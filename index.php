@@ -52,8 +52,8 @@
 
 	$ip = (empty($_SERVER['HTTP_CLIENT_IP'])?(empty($_SERVER['HTTP_X_FORWARDED_FOR'])?$_SERVER['REMOTE_ADDR']:$_SERVER['HTTP_X_FORWARDED_FOR']):$_SERVER['HTTP_CLIENT_IP']);
 	$logfile = 'ip.log';
-	if(filesize($logfile) > 250000){
-		rename($logfile,'ip_'.date('Ymd').'.log');
+	if(file_exists($logfile)){
+		if(filesize($logfile) > 250000) rename($logfile,'ip_'.date('Ymd').'.log');
 	}
 
 	$iplog = fopen($logfile, 'a');
