@@ -8,11 +8,11 @@
 	    '::1'
 	);
 
-	// if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+	if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
 	    $base = "http://seratus.hu";
-	// } else {
-		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-	// }
+	} else {
+		$base = "http://local.seratus.hu";
+	}
 
 	// $valid_lang = array('hu', 'en', 'de');
 	$valid_lang = array('hu', 'en');

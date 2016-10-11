@@ -44,8 +44,8 @@
 		<span class="contact">Extension: 145<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
-		<img src="images/munkatarsak/deli_maja_kicsi.jpg" alt="Maja Deli" />
-		<img class="thumb" src="images/munkatarsak/thumb/deli_maja_kicsi.jpg" alt="Maja Deli" />
+		<img src="images/munkatarsak/no_pic.jpg" alt="Maja Deli" />
+		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Maja Deli" />
 		<span class="name">Maja Deli</span>
 		<span class="title">Head of Administration</span>
 		<p><strong>Qualifications:</strong><br/>
