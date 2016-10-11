@@ -31,6 +31,11 @@
 					<span>E-mail cím:</span>
 					<input type="text" name="email"/>
 				</label>
+				<label class="faq_form_element captcha">
+					<span>Ellenőrzőkód:</span>
+					<span class="vericode"><img src="./bin/captcha.php?size=100&index=faq" /></span>
+					<input type="text" name="captcha" class="required_" maxlength="4" />
+				</label>
 				<label class="faq_form_element send">
 					<!-- <input class="form_send button w_arrow" type="submit" value="Elküld" /> -->
 					<div class="button w_arrow"><span>Elküld</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>

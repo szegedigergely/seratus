@@ -1506,6 +1506,25 @@ label.send {
 	resize: none;
 }
 
+#faq_form .faq_form_element.captcha .vericode {
+	display: inline-block;
+	margin-right: 10px;
+	width: 100px;
+	height: 50px;
+	line-height: 40px;
+}
+
+#faq_form .faq_form_element.captcha input {
+	display: inline-block;
+    margin-left: 0;
+	width: 100px;
+	height: 40px;
+	font-size: 32px;
+	line-height: 40px;
+	vertical-align: top;
+    text-transform: uppercase;
+}
+
 .contact_box {
 	display: block;
 	margin: 4px auto;

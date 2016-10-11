@@ -102,7 +102,7 @@
         'financing_bank' => "Finanszírozó bank"
     );
 
-    if(strtolower($_POST['captcha']) === strtolower($_SESSION['code'][0])){
+    if(strtolower($_POST['captcha']) === strtolower($_SESSION['code']['online'])){
     	if($form_ok){
             $email_valid = validEmail($_POST['email']);
             if($email_valid){

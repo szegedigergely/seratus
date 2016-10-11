@@ -56,8 +56,8 @@
 		<span class="contact">mellék: 145<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
-		<img src="images/munkatarsak/no_pic.jpg" alt="Deli Maja" />
-		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Deli Maja" />
+		<img src="images/munkatarsak/deli_maja_kicsi.jpg" alt="Deli Maja" />
+		<img class="thumb" src="images/munkatarsak/thumb/deli_maja_kicsi.jpg" alt="Deli Maja" />
 		<span class="name">Deli Maja</span>
 		<span class="title">irodavezető</span>
 		<p><strong>Végzettségek:</strong><br/>

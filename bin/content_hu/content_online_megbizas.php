@@ -625,7 +625,7 @@
 
 	<fieldset class="fs_ertekbecsles fs_muszaki_szakertes fs_igazsagugyi_szakertes fs_energetikai_vizsgalat fs_ingatlan_ertekesites fs_ingatlannyilvantartasi_ugyintezes fs_projektellenorzes">
 		<label class="captcha">
-			<span><img class="vericode" src="./bin/captcha.php?size=160" /></span>
+			<span><img class="vericode" src="./bin/captcha.php?size=160&index=online" /></span>
 			<input type="text" name="captcha" class="required_" maxlength="4" />
 		</label>
 		<label class="message"></label>
