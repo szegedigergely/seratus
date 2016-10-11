@@ -9,7 +9,7 @@
 	);
 
 	// if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
-	    $base = "http://seratus.hu";
+	    $base = "http://local.seratus.hu";
 	    // $base = "http://localhost/seratus";
 	// } else {
 		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

@@ -23,7 +23,7 @@
 
 	<div class="partner partner-neve psor-2 poszl-1">
 		<img src="images/partner_raiffeisen.jpg" alt="Raiffeisen Bank" />
-		<p>2010 óta állunk szerződésben. Ez idő alatt több mint XXX szakvéleményt készítetünk számukra.</p>
+		<p>2010 óta állunk szerződésben.</p>
 	</div>
 	<div class="partner partner-neve psor-2 poszl-2">
 		<img src="images/partner_magnet.jpg" alt="Magnet Bank" />

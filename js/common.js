@@ -46,7 +46,11 @@ function loadContent(id){
 						$('.send .button').bind('click', sendMsg);
 						$('.button[data-faq]').bind('click', prepareFAQ);
 
+						// munkatársak popup-ja
 						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
+
+						// ingatlanok popup-ja
+						$('.ingatlan_info').bind('click', popupRealest);
 
 						if($('select[name=szolgaltatas]').length){
 							setupForm($('select[name=szolgaltatas]').val());
@@ -145,6 +149,39 @@ function popupEmployee(){
 		TweenMax.to(employee.children('img.thumb'), .25, {delay: .5, autoAlpha: 0});
 		TweenMax.to(employee.children('span'), .25, {delay: .5, paddingLeft: '260px', onComplete: function(){
 			TweenMax.to(employee.children('p'), .25, {delay: .5, height: '240px'});
+			$('#overlay_close').addClass('visible');
+		}});
+	}});
+}
+
+function popupRealest(){
+	TweenMax.set($('#overlay'), {autoAlpha: 0});
+
+	var $this = $(this);
+	var pos = $this.offset();
+	var realest = $this.clone();
+
+	realest.css('left', (pos.left-$(window).scrollLeft())+'px');
+	realest.css('top', (pos.top-$(window).scrollTop())+'px');
+
+	// console.log($this);
+	$('#overlay').append(realest);
+
+	$('#overlay *').bind('click', function(e){
+		e.stopPropagation();
+	});
+
+	var target = {
+		width: 448,
+		height: 377
+	}
+
+	TweenMax.to($('#overlay'), .25, {display: 'block', autoAlpha: 1, onComplete: function(){
+		TweenMax.to(realest, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: Math.round(($(window).innerWidth()-target.width)/2)+'px', top: Math.round(($(window).innerHeight()-target.height)/2)+'px'});
+		TweenMax.to(realest.children('img'), .25, {delay: .5, width: '252px', height: '375px'});
+		TweenMax.to(realest.children('img.thumb'), .25, {delay: .5, autoAlpha: 0});
+		TweenMax.to(realest.children('span'), .25, {delay: .5, paddingLeft: '260px', onComplete: function(){
+			TweenMax.to(realest.children('p'), .25, {delay: .5, height: '240px'});
 			$('#overlay_close').addClass('visible');
 		}});
 	}});

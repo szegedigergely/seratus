@@ -136,6 +136,27 @@ p {
 	position: relative;
 }
 
+ul.list {
+    margin: 14px 20px;
+    color: rgb(73,73,73);
+    font-size: 14px;
+    position: relative;
+    list-style: none;
+}
+
+ul.list li {
+    position: relative;
+}
+
+ul.list li:before {
+	display: block;
+	content: '\2022';
+	color: rgb(17,118,162);
+	position: absolute;
+	left: -2em;
+	top: 0;
+}
+
 sup {
     vertical-align: baseline;
     position: relative;
@@ -366,6 +387,7 @@ nav .marker {
 	margin: 0;
 	padding: 0;
 	width: 640px;
+	width: auto;
 	height: 76px;
 	position: absolute;
 	right: 0;
@@ -376,7 +398,7 @@ nav .marker {
 
 #nav_wrapper > ul > li {
 	display: inline-block;
-	margin: 0 0 0 32px;
+	margin: 0 0 0 6px;
 	padding: 0;
 	height: 76px;
 	position: relative;
@@ -486,7 +508,7 @@ nav ul li.language a:hover {
 	padding-bottom: 0;
 	width: 680px;
 	height: 0px;
-	background: transparent url(../images/submenu.png) no-repeat right bottom;
+	background: transparent url(../images/submenu_.png) no-repeat right bottom;
 	position: absolute;
 	left: -256px;
 	top: 76px;
@@ -501,7 +523,7 @@ nav ul li.language a:hover {
 #nav_wrapper .item:hover .submenu { padding-bottom: 20px }
 
 #nav_wrapper .bemutatkozunk:hover .submenu { height: 132px; }
-#nav_wrapper .szolgaltatasaink:hover .submenu { height: 340px; }
+#nav_wrapper .szolgaltatasaink:hover .submenu { height: 382px; }
 
 /*.submenu > ul {
 	display: block;
@@ -685,7 +707,7 @@ nav ul li.language a:hover {
 
 
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions { height: 330px; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions { height: 372px; }
 
 #nav_wrapper .szolgaltatasaink .submenu ul.descriptions.ertekbecsles li,
 #nav_wrapper .szolgaltatasaink .submenu ul.descriptions.appraisals li { left: 0%; }
@@ -696,20 +718,23 @@ nav ul li.language a:hover {
 #nav_wrapper .szolgaltatasaink .submenu ul.descriptions.igazsagugyi_szakertes li,
 #nav_wrapper .szolgaltatasaink .submenu ul.descriptions.forensic_expertise li { left: -200%; }
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.energetikai_vizsgalat li,
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.energy_certification li { left: -300%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.ingatlankozvetites li { left: -300%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.real_estate li { left: -300%; }
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.hokameras_vizsgalat li,
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.thermal_cam li { left: -400%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.energetikai_vizsgalat li { left: -400%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.energy_certification li { left: -400%; }
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.foldmeres li,
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.surveying li { left: -500%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.hokameras_vizsgalat li { left: -500%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.thermal_cam li { left: -500%; }
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.vevokepviselet li,
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.buyers_representation li { left: -600%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.foldmeres li { left: -600%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.surveying li { left: -600%; }
 
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.projektellenorzes li,
-#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.project_control li { left: -700%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.vevokepviselet li { left: -700%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.buyers_representation li { left: -700%; }
+
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.projektellenorzes li { left: -800%; }
+#nav_wrapper .szolgaltatasaink .submenu ul.descriptions.project_control li { left: -800%; }
 
 
 
@@ -904,7 +929,8 @@ h3.sideline:after {
 }
 
 .munkatarsak .v_card,
-.staff .v_card {
+.staff .v_card,
+.ingatlan_info {
 	cursor: pointer;
 }
 
@@ -920,6 +946,10 @@ h3.sideline:after {
 	left: -16px;
 }
 
+.v_card.ingatlan_info {
+	height: 256px;
+}
+
 #overlay .v_card.half_width {
 	margin: 0;
 	display: block;
@@ -929,7 +959,9 @@ h3.sideline:after {
 	position: absolute;
 }
 
-.munkatarsak .v_card.half_width:hover {
+.munkatarsak .v_card.half_width:hover,
+.staff .v_card.half_width:hover,
+.ingatlan_info:hover {
 	background-color: rgba(255,255,255,.5);
 }
 
@@ -943,11 +975,24 @@ h3.sideline:after {
 	top: 0;
 }
 
+.v_card.ingatlan_info > img {
+	width: 280px;
+	/*position: relative;*/
+}
+
+.v_card.ingatlan_info > img.fullres {
+	display: none;
+}
+
 .v_card > span {
 	display: block;
 	padding-left: 92px;
 	color: rgb(73,73,73);
 	font-size: 14px;
+}
+
+.v_card.ingatlan_info > span {
+	padding-left: 8px;
 }
 
 .v_card > p {
@@ -964,6 +1009,10 @@ h3.sideline:after {
 	padding-top: 5px;
 	color: rgb(8,156,203);
 	font-weight: 600;
+}
+
+.v_card.ingatlan_info > span.name {
+	padding-top: 212px;
 }
 
 .v_card > span.contact {
@@ -1632,12 +1681,12 @@ label.send {
 	padding-right: 0;
 }
 
-.footer_menu.referenciak {
+/*.footer_menu.referenciak {
 	padding-left: 0;
 }
-
+*/
 .footer_menu h3 {
-	margin-top: 48px;
+	margin: 20px 0 16px 0;
 	color: rgb(8,156,203);
 	font-family: 'ProxiGreen', sans-serif;
 	font-size: 18px;
@@ -1646,8 +1695,16 @@ label.send {
 	text-align: left;
 }
 
+.footer_menu h3 a {
+	text-decoration: none;
+}
+
+.footer_menu h3 a:hover {
+	color: rgb(64,192,224);
+}
+
 .footer_menu ul {
-	margin: 24px 0;
+	margin: 16px 0;
 	padding: 0;
 	font-size: 16px;
 	list-style: none;

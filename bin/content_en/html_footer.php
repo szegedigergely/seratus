@@ -16,6 +16,7 @@
 					<li><a href="#appraisals">Appraisals</a></li>
 					<li><a href="#technical_expertise">Technical expertise</a></li>
 					<li><a href="#forensic_expertise">Forensic expertise</a></li>
+					<li><a href="#real_estate">Real estate</a></li>
 					<li><a href="#energy_certification">Energy certification</a></li>
 					<li><a href="#thermal_cam">Thermal camera investigations</a></li>
 					<li><a href="#surveying">Surveying</a></li>
@@ -24,10 +25,8 @@
 				</ul>
 			</div>
 			<div class="footer_menu referenciak">
-				<h3>References</h3>
-				<ul>
-					<li><a href="#references">References</a></li>
-				</ul>
+				<h3><a href="#references">References</a></h3>
+				<h3><a href="#real_estates">Real Estates</a></h3>
 			</div>
 			<div class="footer_menu segitunk">
 				<h3>Need help?</h3>
