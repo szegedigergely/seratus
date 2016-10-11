@@ -6,7 +6,7 @@
 				<h3>About us</h3>
 				<ul>
 					<li><a href="#about_us">About us</a></li>
-					<li><a href="#colleagues">Colleagues</a></li>
+					<li><a href="#staff">Staff</a></li>
 					<li><a href="#career">Career</a></li>
 				</ul>
 			</div>

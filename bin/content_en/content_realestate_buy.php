@@ -1,21 +1,21 @@
-<h1>Ingatlant vennék</h1>
-<p>Egy ingatlan megvásárlása általában jelentős anyagi befektetést igényel. Egy átlagos vásárló, aki saját célra lakást vagy nyaralót vesz, meglévő vagyonának jelentős részét használja fel, gyakran hitelfelvétellel kiegészítve azt. Fontos, hogy ez a jelentős összeg megfelelő helyre kerüljön! Gépkocsi-vásárláshoz hasonlóan itt is fontos, hogy egy hozzáértő szakértő megvizsgálja, mit is veszünk. Egy átlagos vevő pontosan meg tudja ítélni, hogy a kiválasztott lakás helye, kialakítása, mérete megfelelő-e számára, de átfogó piacismeret nélkül nem biztos, hogy a megfelelő árat fizeti érte. Szakértőink segíthetnek a kinézett ingatlan reális vételárának meghatározásában, hogy Ön inkább a lakás szépítésére vagy egyéb hasznos dologra fordíthassa a megmaradt pénzét.</p>
-<p>Sajnos az ingatlan – bár ezzel sokan nincsenek tisztában – nem pusztán egy bejárható fizikai tér, hanem egy jogilag meghatározott egység. Nagyon fontos a vásárláskor tisztázni, hogy a kiválasztott lakás ténylegesen, a hiteles nyilvántartások alapján is megegyezik-e azzal, amit a helyszínen láttunk. Előfordulhat, hogy a használt kertrész, tároló, parkhely jogilag nem is az ingatlanhoz tartozik, így ezeket nem is vásároljuk meg; nem beszélve arról, ha a lakás lakóterülete sem pontos a nyilvántartásokban, esetleg nem is azt vesszük meg, amit kinéztünk. Szakértőink segíthetnek elkerülni egy komoly műszaki hibával rendelkező lakás vásárlását is, amely javítása sok milliós tétel is lehet. A legtöbb hiba természetesen javítható, csak a vásárlónak tisztában kell lennie ezen költségekkel is, hogy figyelembe vehesse őket az ár megállapításakor.</p>
-<p>Érdemes szakértői segítséget igénybe venni, hogy azt, úgy és annyiért vásároljuk meg, ahogyan szeretnénk!</p>
+<h1>I would like to buy a real estate property</h1>
+<p>Buying a real estate property generally requires a significant financial investment. An average buyer who buys an apartment or a holiday home for his own purposes uses a significant proportion of his existing assets and often supplements it by taking a loan. It is important for this significant sum to go to the right place! Similarly to buying a car, here it is also important for a knowledgeable expert to examine what we are buying. An average buyer is precisely capable of assessing whether or not the location, configuration or size of the chosen apartment meets his requirements, but without a comprehensive knowledge of the market he may not be sure of paying the right price for it. Our experts could help you in identifying the realistic purchase price of the chosen property so that, You can rather spend your remaining money on adorning the apartment, or on some other useful thing.</p>
+<p>Unfortunately - even though many are not clear about this - a real estate property is not merely a physical space that can be inspected, but a legally defined unit. It is very important to clarify at the time of purchase whether or not the selected apartment is indeed identical, pursuant to the authentic records, to what you have seen on site. There may be cases where the portion of the garden, or the storage area, or the parking space that is being used, are not legally part of the property, and thus you are not buying them; not mentioning the cases when even the residential area of the apartment is inaccurate in the records, or cases when you are buying something else than what you have chosen. Our experts can help you avoid buying an apartment with a serious technical defect that may represent a line item of several millions to repair. Most defects can be repaired of course, but the buyer has to be aware of their costs also, to be able to consider them when setting the price.</p>
+<p>It is worthwhile to use expert help to buy what, how, and for as much as you would like!</p>
 <div class="v_card half_width">
-	<img src="images/contact_zoli.jpg" alt="Máté Zoltán" />
-	<span class="name">Máté Zoltán</span>
+	<img src="images/contact_zoli.jpg" alt="Zoltán Máté" />
+	<span class="name">Zoltán Máté</span>
 	<span class="contact">+3630-231-5022<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	<div class="button w_arrow" data-faq="zoli-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+	<div class="button w_arrow" data-faq="zoli-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <div class="v_card half_width">
-	<img src="images/munkatarsak/thumb/_DSC5313_kicsi.jpg" alt="Godó Katalin" />
-	<span class="name">Godó Katalin</span>
-	<span class="contact">mellék: 143<br/>godoka<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	<div class="button w_arrow" data-faq="godoka-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+	<img src="images/munkatarsak/thumb/_DSC5313_kicsi.jpg" alt="Katalin Godó" />
+	<span class="name">Katalin Godó</span>
+	<span class="contact">+3630-951-2620<br/>godoka<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<div class="button w_arrow" data-faq="godoka-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <?php
 
-	recommend(array('vevokepviselet'));
+	recommend(array('buyers_representation'));
 
 ?>

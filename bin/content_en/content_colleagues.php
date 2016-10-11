@@ -224,9 +224,9 @@
 		<span class="contact">mellék: 142<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5036_kicsi.jpg" alt="Mészáros Magdolna" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5036_kicsi.jpg" alt="Mészáros Magdolna" />
-		<span class="name">Mészáros Magdolna</span>
+		<img src="images/munkatarsak/_DSC5036_kicsi.jpg" alt="Dudás Magdolna" />
+		<img class="thumb" src="images/munkatarsak/thumb/_DSC5036_kicsi.jpg" alt="Dudás Magdolna" />
+		<span class="name">Dudás Magdolna</span>
 		<span class="title">ingatlan- és vagyonértékelő</span>
 		<p><strong>Végzettségek:</strong><br/>
 			építőmérnök, ingatlanvagyon-értékelő és közvetítő

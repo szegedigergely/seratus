@@ -8,13 +8,13 @@
 						<div class="submenu">
 							<ul class="links">
 								<li><a href="#about_us">About us</a></li>
-								<li><a href="#colleagues">Colleagues</a></li>
+								<li><a href="#staff">Staff</a></li>
 								<li><a href="#career">Career</a></li>
 							</ul>
 							<ul class="descriptions">
 								<li><p>Learn about the History of Seratus Ltd, its philosophy that has remained unchanged for 22 years, and its ever-expanding range of services.</p><img src="images/submenu_bemutatkozunk.jpg" alt="" /></li>
-								<li><p>Irodánkban közel 40 szakképzett munkatárs várja megkeresését, hogy segítsenek ingatlannal kapcsolatos ügyeikben! Forduljon hozzánk bizalommal!</p><img src="images/submenu_munkatarsak.jpg" alt="" /></li>
-								<li><p>Csapatunk folyamatosan bővül. Amennyiben releváns munkatapasztalattal rendelkezik és munkát keres, jelentkezzen hozzánk!</p><img src="images/submenu_karrier.jpg" alt="" /></li>
+								<li><p>We have nearly 40 qualified staff members in our office awaiting your contact to assist you with your real-estate-related affairs! Contact us with complete confidence!</p><img src="images/submenu_munkatarsak.jpg" alt="" /></li>
+								<li><p>Our team is continually expanding. If you have relevant work experience and you are looking for a job you should apply!</p><img src="images/submenu_karrier.jpg" alt="" /></li>
 							</ul>
 						</div>
 					</li>
@@ -31,14 +31,14 @@
 								<li><a href="#project_control">Project control</a></li>
 							</ul>
 							<ul class="descriptions">
-								<li><p>Minden típusú ingatlan, tárgyi eszköz és immateriális vagyontárgy vagyonértékelésével foglakozunk. Közel 25.000 értékbecslés tapasztalatával állunk rendelkezésére.</p><img src="images/segit_ertekbecsles.jpg" alt="" /></li>
-								<li><p>Minden típusú ingatlan, tárgyi eszköz és immateriális vagyontárgy vagyonértékelése.</p><img src="images/submenu_muszaki.jpg" alt="" /></li>
-								<li><p>Minden típusú ingatlan, tárgyi eszköz és immateriális vagyontárgy vagyonértékelése.</p><img src="images/segit_igazsagugy.jpg" alt="" /></li>
-								<li><p>Képzett szakértőink vállalják a kötelező hőtechnikai tanúsítványok elkészítését minden ingatlantípusra. Továbbá segítünk építési problémák (vizesedés, penész, hőhidasság) felderítésében, megoldásában.</p><img src="images/segit_energetika.jpg" alt="" /></li>
-								<li><p>Cégünk ingatlanok hőkamerás vizsgálatát is vállalja.</p><img src="images/segit_hokamera.jpg" alt="" /></li>
-								<li><p>Ingatlanforgalmazással és értékbecsléssel kapcsolatos geodéziai feladatok teljes körű ügyintézése.</p><img src="images/segit_foldmeres.jpg" alt="" /></li>
-								<li><p>Képzett szakértőink vállalják, hogy sok éves tapasztalatukat és kapcsolataikat felhasználva segítenek önnek az optimális ingatlan megtalálásában.</p><img src="images/submenu_bemutatkozunk.jpg" alt="" /></li>
-								<li><p>Képzett szakértőink vállalják a finanszírozott beruházásosokhoz kapcsolódó teljesítményigazolások elkészítését, ezáltal lehetővé téve a részszámlák, végszámlák lehívását.</p><img src="images/submenu_muszaki.jpg" alt="" /></li>
+								<li><p>We perform appraisals for all types of real estate properties, tangible assets and intangible assets. We are at your service with the experience of nearly 25,000 appraisals.</p><img src="images/segit_ertekbecsles.jpg" alt="" /></li>
+								<li><p>Appraisals for all types of real estate properties, tangible assets and intangible assets.</p><img src="images/submenu_muszaki.jpg" alt="" /></li>
+								<li><p>Appraisals for all types of real estate properties, tangible assets and intangible assets.</p><img src="images/segit_igazsagugy.jpg" alt="" /></li>
+								<li><p>We perform appraisals for all types of real estate properties, tangible assets and intangible assets. We are at your service with the experience of nearly 25,000 appraisals.</p><img src="images/segit_energetika.jpg" alt="" /></li>
+								<li><p>Our firm also undertakes assignments to investigate properties using thermal cameras.</p><img src="images/segit_hokamera.jpg" alt="" /></li>
+								<li><p>We offer comprehensive management of geodetics assignments in relation to real estate transactions and appraisals.</p><img src="images/segit_foldmeres.jpg" alt="" /></li>
+								<li><p>Relying on their many years of experience and connections our trained experts offer to help you find your optimal property.</p><img src="images/submenu_bemutatkozunk.jpg" alt="" /></li>
+								<li><p>Our trained experts offer to prepare performance certificates related to funded projects, thereby enabling the draw-down of partial and final invoices.</p><img src="images/submenu_muszaki.jpg" alt="" /></li>
 							</ul>
 						</div>
 					</li>

@@ -3,11 +3,20 @@
 	ini_set('display_errors', '1');
 	date_default_timezone_set('Europe/Budapest');
 
-	$base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+	$whitelist = array(
+	    '127.0.0.1',
+	    '::1'
+	);
+
+	// if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+	    $base = "http://seratus.hu";
+	// } else {
+		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+	// }
 
 	// $valid_lang = array('hu', 'en', 'de');
-	// $valid_lang = array('hu', 'en');
-	$valid_lang = array('hu');
+	$valid_lang = array('hu', 'en');
+	// $valid_lang = array('hu');
 	$cookie_name = 'seratus_hu_lang';
 
 	if(isset($_GET['lang'])){
@@ -27,7 +36,7 @@
 		    $lang_code = $_COOKIE[$cookie_name];
 		}
 
-		header('Location: '.$base.$lang_code);
+		header('Location: '.$base.'/'.$lang_code);
 	}
 
 	// session_start();
@@ -42,7 +51,7 @@
 
 	$ip = (empty($_SERVER['HTTP_CLIENT_IP'])?(empty($_SERVER['HTTP_X_FORWARDED_FOR'])?$_SERVER['REMOTE_ADDR']:$_SERVER['HTTP_X_FORWARDED_FOR']):$_SERVER['HTTP_CLIENT_IP']);
 	$logfile = 'ip.log';
-	if(filesize($logfile) > 50000){
+	if(filesize($logfile) > 250000){
 		rename($logfile,'ip_'.date('Ymd').'.log');
 	}
 
@@ -72,7 +81,7 @@
 			var lang_code = '<?=$lang_code?>';
 		</script>
 	</head>
-
+	<!-- <?php echo $base ?> -->
 <body class="lang_<?=$lang_code?>">
 	<div id="preloader">
 		<div id="status">
@@ -88,9 +97,10 @@
 	<?php
 		$i = 0;
 		foreach ($valid_lang as $lng) {
-			$base_new_lang = explode('/', $base);
-			$base_new_lang[count($base_new_lang)-1] = $lng;
-			$base_new_lang = implode('/', $base_new_lang);
+			// $base_new_lang = explode('/', $base);
+			// $base_new_lang[count($base_new_lang)-1] = $lng;
+			// $base_new_lang = implode('/', $base_new_lang);
+			$base_new_lang = $base.'/'.$lng;
 
 			echo '<a '.($lng==$lang_code?'class="active" ':'').'href="'.($lng==$lang_code?'#':$base_new_lang).'">'.$lng.'</a>
 ';

@@ -1,9 +1,9 @@
 <h1>Appraisal</h1>
-<p>Seratus Ltd performs appraisals for all types <strong>of real estate properties, tangible assets and intangible assets.</strong></p>
-<p><strong>Our retail business unit</strong> experts perform appraisals of residential real estate properties in every region of the country.</p>
+<p>Seratus Ltd performs appraisals for all types of <strong>real estate properties, tangible assets and intangible assets</strong>.</p>
+<p>Our <strong>retail business unit</strong> experts perform appraisals of residential real estate properties in every region of the country.</p>
 <p>Our colleagues in our <strong>corporate business unit</strong> perform appraisals of income producing units, such as industrial production and storage properties, shops, office buildings and other diverse facilities in Hungary and in the neighbouring countries. Our experienced machine appraisal experts calculate the values of tangible assets and entire machine lines. Our references include appraisals for entire groups of companies, including the calculation of values of intangible assets owned, such as sports gaming rights, know-how and trademarks.</p>
 <p>Our colleagues working with <strong>agricultural acreage</strong> calculate fair purchase prices for every type of farmland in all regions of the country, they determine values for arable land, forests and orchards on the basis of yield, including also the value of the production assets if required.</p>
-<p>Our expert opinions are <strong>accepted by a</strong> dominant <strong>majority of the banks and specialized financial institutions operating in Hungary, also for purposes of collateral.</strong> Our permanent preferential partners include <strong>the National Land Fund, the Hungarian State</strong>, via its organisations responsible for areas expropriated for infrastructure development purposes.</p>
+<p>Our expert opinions are <strong>accepted by</strong> a dominant <strong>majority of the banks and specialized financial institutions operating in Hungary, also for purposes of collateral.</strong> Our permanent preferential partners include <strong>the National Land Fund, the Hungarian State</strong>, via its organisations responsible for areas expropriated for infrastructure development purposes.</p>
 <p>Our company also prepares a significant number of expert opinions for <strong>domestic small and medium enterprises</strong>, as well as for <strong>private individuals</strong>.</p>
 <div class="info">
 	<img src="images/question.png" alt="" />

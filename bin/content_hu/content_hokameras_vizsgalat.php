@@ -15,7 +15,7 @@
 <div class="v_card half_width">
 	<img src="images/munkatarsak/thumb/_DSC5048_kicsi.jpg" alt="" />
 	<span class="name">Horváth Vanda</span>
-	<span class="contact">hvanda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<span class="contact">+3630-210-7665<br/>hvanda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="hvanda-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <?php

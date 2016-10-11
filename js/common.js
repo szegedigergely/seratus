@@ -46,7 +46,7 @@ function loadContent(id){
 						$('.send .button').bind('click', sendMsg);
 						$('.button[data-faq]').bind('click', prepareFAQ);
 
-						$('.munkatarsak .v_card.half_width, .colleagues .v_card.half_width').bind('click', popupEmployee);
+						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
 
 						if($('select[name=szolgaltatas]').length){
 							setupForm($('select[name=szolgaltatas]').val());
@@ -75,8 +75,18 @@ function loadContent(id){
 
 				                newRealty.wrap('<form>').closest('form').get(0).reset();
 				                newRealty.unwrap();
-				                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
+
+				                // var newRealtyTitle = realtyNum + newRealty.find('.realty_num span').html().slice(1);
+
+				                // newRealty.find('.realty_num span').html(newRealtyTitle);
 				                // newRealty.find('input[type=hidden]').html(realtyNum+'. ingatlan');
+
+								if(lang_code == 'en'){
+						                newRealty.find('.realty_num span').html('Property No. '+realtyNum);
+				                } else { // "hu"
+						                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
+				                }
+
 
 				                // var inputs = newRealty.find('input[type=text]');
 				                var inputs = newRealty.find('input');

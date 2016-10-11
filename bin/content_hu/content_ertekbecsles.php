@@ -14,7 +14,7 @@
 	<img src="images/munkatarsak/thumb/_DSC5150_kicsi.jpg" alt="" />
 	<span class="name">Simon Erzsébet</span>
 	<span class="contact">+3630-989-6028<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	<div class="button w_arrow" data-faq="simon.erszebet-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+	<div class="button w_arrow" data-faq="simon.erzsebet-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <div class="v_card half_width">
 	<img src="images/munkatarsak/thumb/_DSC5585_kicsi.jpg" alt="" />

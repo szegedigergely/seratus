@@ -15,13 +15,13 @@
 	<p>Vegye fel velünk a kapcsolatot, készséggel válaszolunk kérdéseire!</p>
 </div>
 <div class="v_card half_width">
-	<img src="images/munkatarsak/thumb/_DSC5006_kicsi.jpg" alt="" />
+	<img src="images/munkatarsak/thumb/_DSC5006_kicsi.jpg" alt="Máté Miklós" />
 	<span class="name">Máté Miklós</span>
-	<span class="contact">mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<span class="contact">+3630-950-9767<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="mate-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <div class="v_card half_width">
-	<img src="images/munkatarsak/thumb/_DSC5585_kicsi.jpg" alt="" />
+	<img src="images/munkatarsak/thumb/_DSC5585_kicsi.jpg" alt="Mészáros István" />
 	<span class="name">Mészáros István</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>

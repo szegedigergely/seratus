@@ -228,10 +228,6 @@
 				<span>Felépítmények száma:</span>
 				<input type="text" name="realty_num_1" />
 			</label>
-			<label>
-				<span>Felépítmények száma:</span>
-				<input type="text" name="realty_num_1" />
-			</label>
 			<br/>
 			<label>
 				<span>Van meglévő értékbecslés:</span>

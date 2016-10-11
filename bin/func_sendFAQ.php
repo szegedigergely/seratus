@@ -23,6 +23,37 @@
 		if($email_valid){
             $post['message'] = str_replace("\n", "<br>", $post['message']);
 
+			// - - - - -
+
+			// Basic informations
+
+			$sender_email = $post['email'];
+			$sender_name = $post['name'];
+			// $subject = 'Kérdés érkezett "'.$_POST['subject'].'" témában';
+			$subject = 'Kérdés érkezett';
+			$address_name = $post['recipient_name'];
+
+            if(!$debug_mode){
+				$address = $post['recipient'];
+            } else {
+                $address = 'szegedi.gergely@gmail.com';
+            }
+
+
+
+            if(!$bcc_mode){
+	            $bcc_recipients = array();
+                // $bcc_recipients = array(
+                //     $sender_email => $sender_name
+                // );
+            } else {
+                $bcc_recipients = array(
+                    // $sender_email => $sender_name,
+                    'szegedy.gergely@gmail.com' => 'Szegedi Gergely'
+                );
+            }
+
+
 			// Data - ContentTable
 			$data_table = "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border:0 none;border-spacing:0;font-family:Helvetica,Arial,sans-serif;color:#000000;font-size:14px;width:600px\" width=\"600\" align=\"center\"><tbody>";
 
@@ -74,7 +105,7 @@
 
 					$mail_content_thankyou = "<table cellpadding=\"0\" cellspacing=\"0\" style=\"border:0 none;border-spacing:0;font-family:Helvetica,Arial,sans-serif;color:#000000;font-size:14px;width:600px\" width=\"600\" align=\"center\"><tbody><tr><td style=\"padding:15px 0 10px 0;line-height:18px;text-align:justify\" align=\"justify\">";
 
-					$mail_content_thankyou .= "Tisztelt Érdeklődő!<br/><br/>Megtisztelő megkeresését rendszerünkben rögzítettük, a részletek egyeztetése miatt munkatársunk hamarosan kapcsolatba lép Önnel a megadott elérhetőségeken.<br/><br/>Üdvözlettel:<br/>SERATUS Ingatlan Kft.";
+					$mail_content_thankyou .= "Tisztelt Érdeklődő!<br/><br/>Megtisztelő megkeresését kollégánk, ".$address_name." felé rendszerünkben rögzítettük, a részletek egyeztetése miatt munkatársunk hamarosan kapcsolatba lép Önnel a megadott elérhetőségeken.<br/><br/>Üdvözlettel:<br/>SERATUS Ingatlan Kft.";
 
 					$mail_content_thankyou .= "</td></tr></tbody></table>";
 
@@ -93,35 +124,6 @@
 			$mail_footer .= "</td></tr></tbody></table>";
 			// E-mail - / Background
 
-			// - - - - -
-
-			// Basic informations
-
-			$sender_email = $post['email'];
-			$sender_name = $post['name'];
-			// $subject = 'Kérdés érkezett "'.$_POST['subject'].'" témában';
-			$subject = 'Kérdés érkezett';
-			$address_name = $post['recipient_name'];
-
-            if(!$debug_mode){
-				$address = $post['recipient'];
-            } else {
-                $address = 'szegedi.gergely@gmail.com';
-            }
-
-
-
-            if(!$bcc_mode){
-	            $bcc_recipients = array();
-                // $bcc_recipients = array(
-                //     $sender_email => $sender_name
-                // );
-            } else {
-                $bcc_recipients = array(
-                    // $sender_email => $sender_name,
-                    'szegedy.gergely@gmail.com' => 'Szegedi Gergely'
-                );
-            }
 
 
 			// $address = "info@seratus.hu";

@@ -1,4 +1,4 @@
-<h1>Segítünk (EN)</h1>
+<h1>Segítünk</h1>
 <h2>Spóroljon velünk időt, pénzt és energiát</h2>
 <p>Miben segíthetünk?</p>
 <div class="segitunk">

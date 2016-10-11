@@ -1,3 +1,3 @@
 <h1>Career</h1>
-<p>Cégünk folyamatosan keres felsőfokú végzettséggel rendelkező ingatlan vagyonértékelőket és gépértékelőket.</p>
-<p>Kérjük, küldje el nekünk e-mailben önéletrajzát az ajanlat<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu címre!</p>
+<p>Our firm is continually looking for real estate assets appraisers and machine appraisers with academic qualifications.</p>
+<p>Please E-mail us your CV to ajanlat<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu!</p>

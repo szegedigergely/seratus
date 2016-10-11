@@ -4,7 +4,7 @@
 		<meta property="og:title"       content="Seratus" /> 
 		<meta property="og:type"        content="website" /> 
 		<meta property="og:url"         content="<?=$base?>" /> 
-		<meta property="og:image"       content="<?=$base?>images/fb_logo.png" /> 
+		<meta property="og:image"       content="<?=$base?>/images/fb_logo.png" /> 
 		<meta property="og:description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." /> 	
 
 		<title>Seratus - Minden, ami ingatlan</title>

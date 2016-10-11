@@ -678,7 +678,7 @@ nav ul li.language a:hover {
 #nav_wrapper .bemutatkozunk .submenu ul.descriptions.about_us li { left: 0%; }
 
 #nav_wrapper .bemutatkozunk .submenu ul.descriptions.munkatarsak li,
-#nav_wrapper .bemutatkozunk .submenu ul.descriptions.colleagues li { left: -100%; }
+#nav_wrapper .bemutatkozunk .submenu ul.descriptions.staff li { left: -100%; }
 
 #nav_wrapper .bemutatkozunk .submenu ul.descriptions.karrier li,
 #nav_wrapper .bemutatkozunk .submenu ul.descriptions.career li { left: -200%; }
@@ -904,7 +904,7 @@ h3.sideline:after {
 }
 
 .munkatarsak .v_card,
-.colleagues .v_card {
+.staff .v_card {
 	cursor: pointer;
 }
 
@@ -968,10 +968,11 @@ h3.sideline:after {
 
 .v_card > span.contact {
 	margin-top: 10px;
+	white-space: nowrap;
 }
 
 body.munkatarsak .v_card > span.contact,
-body.colleagues .v_card > span.contact {
+body.staff .v_card > span.contact {
 	margin-top: 0px;
 	margin-bottom: 5px;
 	position: absolute;
@@ -1974,6 +1975,7 @@ body.we_help .segitunk .col {
 	font-family: 'Verdana', sans-serif;
 	font-size: 14px;
 	text-align: right;
+	white-space: nowrap;
 }
 
 #online_form label.field_title > span {

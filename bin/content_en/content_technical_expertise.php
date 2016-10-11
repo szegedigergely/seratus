@@ -17,7 +17,7 @@
 <div class="v_card half_width">
 	<img src="images/munkatarsak/thumb/_DSC5006_kicsi.jpg" alt="" />
 	<span class="name">Miklós Máté</span>
-	<span class="contact">mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<span class="contact">+3630-950-9767<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="mate-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <div class="v_card half_width">

@@ -11,16 +11,16 @@
 	<p>Please contact us, we would be pleased to answer your questions!</p>
 </div>
 <div class="v_card half_width">
-	<img src="images/munkatarsak/thumb/_DSC5150_kicsi.jpg" alt="" />
-	<span class="name">Erzsébet Simon</span>
-	<span class="contact">+3630-989-6028<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	<div class="button w_arrow" data-faq="simon.erzsebet-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<div class="v_card half_width">
 	<img src="images/munkatarsak/thumb/_DSC5585_kicsi.jpg" alt="" />
 	<span class="name">István Mészáros</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+</div>
+<div class="v_card half_width">
+	<img src="images/munkatarsak/thumb/_DSC5150_kicsi.jpg" alt="" />
+	<span class="name">Erzsébet Simon</span>
+	<span class="contact">+3630-989-6028<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<div class="button w_arrow" data-faq="simon.erzsebet-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <?php
 

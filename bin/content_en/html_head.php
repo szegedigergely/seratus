@@ -4,14 +4,14 @@
 		<meta property="og:title"       content="Seratus" /> 
 		<meta property="og:type"        content="website" /> 
 		<meta property="og:url"         content="<?=$base?>" /> 
-		<meta property="og:image"       content="<?=$base?>images/fb_logo.png" /> 
-		<meta property="og:description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." /> 	
+		<meta property="og:image"       content="<?=$base?>/images/fb_logo.png" /> 
+		<meta property="og:description" content="Seratus - All about real estates" /> 	
 
 		<title>Seratus - All about real estates</title>
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="author" content="Kolorart.hu - 2016 - Minden jog fenntartva" />
-		<meta name="description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." />
+		<meta name="author" content="Kolorart.hu - 2016 - All rights reserved" />
+		<meta name="description" content="Seratus - All about real estates" />
 
 		<meta name="viewport" content="user-scalable=no">
 

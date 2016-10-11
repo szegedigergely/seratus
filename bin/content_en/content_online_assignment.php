@@ -9,9 +9,9 @@
 				<option value="fs_ertekbecsles">appraisals</option>
 				<option value="fs_muszaki_szakertes">technical expertise</option>
 				<option value="fs_igazsagugyi_szakertes">forensic expertise</option>
-				<option value="fs_energetikai_vizsgalat">energy certificate</option>
-				<option value="fs_ingatlan_ertekesites">ingatlan értékesítés</option>
-				<option value="fs_ingatlannyilvantartasi_ugyintezes">ingatlannyilvántartási ügyintézés</option>
+				<option value="fs_energetikai_vizsgalat">energy audit</option>
+				<option value="fs_ingatlan_ertekesites">sale of real estate</option>
+				<option value="fs_ingatlannyilvantartasi_ugyintezes">cadastre administration</option>
 				<option value="fs_projektellenorzes">project control</option>
 			</select>
 		</label>
@@ -24,30 +24,30 @@
 	<fieldset class="fs_ertekbecsles fs_muszaki_szakertes fs_igazsagugyi_szakertes fs_energetikai_vizsgalat fs_ingatlan_ertekesites fs_ingatlannyilvantartasi_ugyintezes fs_projektellenorzes">
 		<input type="hidden" name="fieldset_1" value="Ajánlatkérő adatai" />
 		<label class="field_title">
-			<span><strong>Ajánlatkérő adatai</strong></span>
+			<span><strong>Details of person requesting the quote</strong></span>
 		</label>
 		<label>
-			<span>Név:</span>
+			<span>Name:</span>
 			<input type="text" name="name" />
 		</label>
 		<label>
-			<span>Képviselő (vállalkozás esetén):</span>
+			<span>Representative (in case of a business):</span>
 			<input type="text" name="delegate" />
 		</label>
 		<label>
-			<span>Adószám (vállalkozás esetén):</span>
+			<span>Tax number (in case of a business):</span>
 			<input type="text" name="tax_num" />
 		</label>
 		<label>
-			<span>Számlázási cím:</span>
+			<span>Invoicing address:</span>
 			<input type="text" name="invoice_address" />
 		</label>
 		<label>
-			<span>Levelezési cím:</span>
+			<span>Correspondence Address:</span>
 			<input type="text" name="address" />
 		</label>
 		<label>
-			<span>Telefon:</span>
+			<span>Telephone:</span>
 			<input type="text" name="phone" />
 		</label>
 		<label>
@@ -55,7 +55,7 @@
 			<input type="text" name="fax" />
 		</label>
 		<label>
-			<span>E-mail:</span>
+			<span>Email:</span>
 			<input type="text" name="email" />
 		</label>
 	</fieldset>
@@ -69,60 +69,60 @@
 	<fieldset class="fs_ertekbecsles">
 		<input type="hidden" name="fieldset_2" value="Értékelendő ingatlan(ok) adatai (helyrajzi számonként)" />
 		<label class="field_title">
-			<span>Értékelendő ingatlan(ok) adatai (helyrajzi számonként)</span>
+			<span>Details of property(ies) to be appraised (by topographical lot number)</span>
 		</label>
 		<div class="ingatlan_adatok">
 			<input type="hidden" name="realty_title_1" value="" />
 			<label class="realty_num">
-				<span>1. ingatlan</span>
+				<span>Property No. 1</span>
 			</label>
 			<label>
-				<span>Jellege:</span>
+				<span>Nature:</span>
 				<input type="text" name="realty_type_1" />
 			</label>
 			<label>
-				<span>Címe:</span>
+				<span>Address:</span>
 				<input type="text" name="realty_address_1" />
 			</label>
 			<label>
-				<span>Értékelendő tulajdoni hányad:</span>
+				<span>Ownership share to be appraised:</span>
 				<input type="text" name="realty_share_1" />
 			</label>
 			<label>
-				<span>Helyrajzi szám:</span>
+				<span>Topographical lot number:</span>
 				<input type="text" name="realty_hrsz_1" />
 			</label>
 			<label>
-				<span>Telek területe (m<sup>2</sup>):</span>
+				<span>Lot area (m<sup>2</sup>):</span>
 				<input type="text" name="realty_area_1" />
 			</label>
 			<label>
-				<span>Felépítmények bruttó alapterület:</span>
+				<span>Gross floor area of superstructures:</span>
 				<input type="text" name="realty_gross_1" />
 			</label>
 			<label>
-				<span>Felépítmények száma:</span>
+				<span>Number of superstructures:</span>
 				<input type="text" name="realty_num_1" />
 			</label>
 			<br/>
 			<label>
-				<span>Van meglévő értékbecslés:</span>
+				<span>Existing appraisal available:</span>
 				<input type="checkbox" name="realty_prev_b_1" class="checkbox" />
 			</label>
 			<label>
-				<span>Készítő társaság:</span>
+				<span>Prepared by:</span>
 				<input type="text" name="realty_maker_1" />
 			</label>
 			<label>
-				<span>Értékbecslés dátuma:</span>
+				<span>Appraisal date:</span>
 				<input type="text" name="realty_date_1" />
 			</label>
 			<label>
-				<span>Mely pénzintézet részére készült:</span>
+				<span>The financial institution it was prepared for:</span>
 				<input type="text" name="realty_bank_1" />
 			</label>
 		</div>
-		<div class="button add_realty" data-realty_num="1"><span>További ingatlan</span></div>
+		<div class="button add_realty" data-realty_num="1"><span>Additional property</span></div>
 	</fieldset>
 
 
@@ -133,53 +133,53 @@
 	<fieldset class="fs_ertekbecsles">
 		<input type="hidden" name="fieldset_3" value="Értékbecslés célja" />
 		<label>
-			<span>Értékbecslés célja:</span>
+			<span>Purpose of appraisal:</span>
 			<select name="est_goal">
-				<option value="Hitelfedezet">Hitelfedezet</option>
-				<option value="Értékesítés">Értékesítés</option>
-				<option value="Igazságügyi">Igazságügyi</option>
-				<option value="Egyéb">Egyéb</option>
+				<option value="Hitelfedezet">Loan collateral</option>
+				<option value="Értékesítés">Sale</option>
+				<option value="Igazságügyi">Forensic</option>
+				<option value="Egyéb">Other</option>
 			</select>
 		</label>
 		<br/>
 		<label>
-			<span>Egyéb cél részletezése:</span>
+			<span>If other, please provide details:</span>
 			<textarea name="est_goal_other"></textarea>
 		</label>
 		<br/>
 		<label>
-			<span>Hitelfedezet esetén bank megjelölése:</span>
+			<span>In case of loan collateral please indicate bank:</span>
 			<select name="est_bank">
-				<option value="">Válasszon bankot!</option>
-				<option value="AXA Bank (korábban ELLA Bank)">AXA Bank (korábban ELLA Bank)</option>
-				<option value="Budapest Bank Zrt.">Budapest Bank Zrt.</option>
-				<option value="CIB Bank Zrt.">CIB Bank Zrt.</option>
-				<option value="CIB Lízing Csoport">CIB Lízing Csoport</option>
-				<option value="Commerzbank Zrt.">Commerzbank Zrt.</option>
-				<option value="Debt-Invest Zrt.">Debt-Invest Zrt.</option>
-				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Zrt.</option>
-				<option value="Gránit Bank Zrt.">Gránit Bank Zrt.</option>
-				<option value="Hitelpont Zrt.">Hitelpont Zrt.</option>
-				<option value="KDB Bank Magyarország Zrt.">KDB Bank Magyarország Zrt.</option>
-				<option value="Lombard Lízing Zrt. ">Lombard Lízing Zrt. </option>
-				<option value="Magnet Magyar Közösségi Bank ">Magnet Magyar Közösségi Bank </option>
-				<option value="Magyar Export-Import Bank Zrt.">Magyar Export-Import Bank Zrt.</option>
-				<option value="MFB Zrt.">MFB Zrt.</option>
-				<option value="MOL Nyrt.">MOL Nyrt.</option>
+				<option value="">Please select a bank</option>
+				<option value="AXA Bank (korábban ELLA Bank)">AXA Bank (former ELLA Bank)</option>
+				<option value="Budapest Bank Zrt.">Budapest Bank Ltd</option>
+				<option value="CIB Bank Zrt.">CIB Bank Ltd</option>
+				<option value="CIB Lízing Csoport">CIB Leasing Group</option>
+				<option value="Commerzbank Zrt.">Commerzbank Ltd</option>
+				<option value="Debt-Invest Zrt.">Debt-Invest Ltd</option>
+				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Ltd</option>
+				<option value="Gránit Bank Zrt.">Gránit Bank Ltd</option>
+				<option value="Hitelpont Zrt.">Hitelpont Ltd</option>
+				<option value="KDB Bank Magyarország Zrt.">KDB Bank Hungary Ltd</option>
+				<option value="Lombard Lízing Zrt. ">Lombard Leasing Ltd</option>
+				<option value="Magnet Magyar Közösségi Bank ">Magnet Hungarian Community Bank</option>
+				<option value="Magyar Export-Import Bank Zrt.">Hungarian Export-Import Bank Ltd</option>
+				<option value="MFB Zrt.">MFB Ltd</option>
+				<option value="MOL Nyrt.">MOL Plc</option>
 				<option value="Oberbank AG">Oberbank AG</option>
-				<option value="Raiffeisen Bank Zrt.">Raiffeisen Bank Zrt.</option>
-				<option value="Sberbank Magyarország Zrt. ">Sberbank Magyarország Zrt. </option>
-				<option value="Turai Takarékszövetkezet">Turai Takarékszövetkezet</option>
-				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Zrt.</option>
-				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Lízing Hungary Zrt.</option>
+				<option value="Raiffeisen Bank Zrt.">Raiffeisen Bank Ltd</option>
+				<option value="Sberbank Magyarország Zrt. ">Sberbank Hungary Ltd</option>
+				<option value="Turai Takarékszövetkezet">Savings Cooperative of Tura</option>
+				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Ltd</option>
+				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Leasing Hungary Ltd</option>
 			</select>
 		</label>
 		<label>
-			<span>Banki ügyfélmenedzser neve:</span>
+			<span>Bank client manager name:</span>
 			<input type="text" name="bank_manager_name" />
 		</label>
 		<label>
-			<span>Banki ügyfélmenedzser telefonszáma:</span>
+			<span>Bank client manager telephone number:</span>
 			<input type="text" name="bank_manager_phone" />
 		</label>
 	</fieldset>
@@ -193,64 +193,60 @@
 	<fieldset class="fs_muszaki_szakertes">
 		<input type="hidden" name="fieldset_4" value="Értékelendő ingatlan(ok) adatai (helyrajzi számonként)" />
 		<label class="field_title">
-			<span>Értékelendő ingatlan(ok) adatai (helyrajzi számonként)</span>
+			<span>Details of property(ies) to be appraised (by topographical lot number)</span>
 		</label>
 		<div class="ingatlan_adatok">
 			<input type="hidden" name="realty_title_1" value="" />
 			<label class="realty_num">
-				<span>1. ingatlan</span>
+				<span>Property No. 1</span>
 			</label>
 			<label>
-				<span>Jellege:</span>
+				<span>Nature:</span>
 				<input type="text" name="realty_type_1" />
 			</label>
 			<label>
-				<span>Címe:</span>
+				<span>Address:</span>
 				<input type="text" name="realty_address_1" />
 			</label>
 			<label>
-				<span>Értékelendő tulajdoni hányad:</span>
+				<span>Ownership share to be appraised:</span>
 				<input type="text" name="realty_share_1" />
 			</label>
 			<label>
-				<span>Helyrajzi szám:</span>
+				<span>Topographical lot number:</span>
 				<input type="text" name="realty_hrsz_1" />
 			</label>
 			<label>
-				<span>Telek területe (m<sup>2</sup>):</span>
+				<span>Lot area (m<sup>2</sup>):</span>
 				<input type="text" name="realty_area_1" />
 			</label>
 			<label>
-				<span>Felépítmények bruttó alapterület:</span>
+				<span>Gross floor area of superstructures:</span>
 				<input type="text" name="realty_gross_1" />
 			</label>
 			<label>
-				<span>Felépítmények száma:</span>
-				<input type="text" name="realty_num_1" />
-			</label>
-			<label>
-				<span>Felépítmények száma:</span>
+				<span>Number of superstructures:</span>
 				<input type="text" name="realty_num_1" />
 			</label>
 			<br/>
 			<label>
-				<span>Van meglévő értékbecslés:</span>
+				<span>Existing appraisal available:</span>
 				<input type="checkbox" name="realty_prev_b_1" class="checkbox" />
 			</label>
 			<label>
-				<span>Készítő társaság:</span>
+				<span>Prepared by:</span>
 				<input type="text" name="realty_maker_1" />
 			</label>
 			<label>
-				<span>Értékbecslés dátuma:</span>
+				<span>Appraisal date:</span>
 				<input type="text" name="realty_date_1" />
 			</label>
 			<label>
-				<span>Milyen célra készült:</span>
+				<span>Purpose of appraisal:</span>
 				<input type="text" name="realty_bank_1" />
 			</label>
 		</div>
-		<div class="button add_realty" data-realty_num="1"><span>További ingatlan</span></div>
+		<div class="button add_realty" data-realty_num="1"><span>Additional property</span></div>
 	</fieldset>
 
 
@@ -263,7 +259,7 @@
 	<fieldset class="fs_muszaki_szakertes">
 		<input type="hidden" name="fieldset_5" value="A szakvélemény célja" />
 		<label>
-			<span>A szakvélemény célja:</span>
+			<span>Purpose of expertise:</span>
 			<textarea name="exp_goal"></textarea>
 		</label>
 	</fieldset>
@@ -279,60 +275,60 @@
 	<fieldset class="fs_igazsagugyi_szakertes">
 		<input type="hidden" name="fieldset_6" value="Értékelendő ingatlan(ok) adatai (helyrajzi számonként)" />
 		<label class="field_title">
-			<span>Értékelendő ingatlan(ok) adatai (helyrajzi számonként)</span>
+			<span>Details of property(ies) to be appraised (by topographical lot number)</span>
 		</label>
 		<div class="ingatlan_adatok">
 			<input type="hidden" name="realty_title_1" value="" />
 			<label class="realty_num">
-				<span>1. ingatlan</span>
+				<span>Property No. 1</span>
 			</label>
 			<label>
-				<span>Jellege:</span>
+				<span>Nature:</span>
 				<input type="text" name="realty_type_1" />
 			</label>
 			<label>
-				<span>Címe:</span>
+				<span>Address:</span>
 				<input type="text" name="realty_address_1" />
 			</label>
 			<label>
-				<span>Értékelendő tulajdoni hányad:</span>
+				<span>Ownership share to be appraised:</span>
 				<input type="text" name="realty_share_1" />
 			</label>
 			<label>
-				<span>Helyrajzi szám:</span>
+				<span>Topographical lot number:</span>
 				<input type="text" name="realty_hrsz_1" />
 			</label>
 			<label>
-				<span>Telek területe (m<sup>2</sup>):</span>
+				<span>Lot area (m<sup>2</sup>):</span>
 				<input type="text" name="realty_area_1" />
 			</label>
 			<label>
-				<span>Felépítmények bruttó alapterület:</span>
+				<span>Gross floor area of superstructures:</span>
 				<input type="text" name="realty_gross_1" />
 			</label>
 			<label>
-				<span>Felépítmények száma:</span>
+				<span>Number of superstructures:</span>
 				<input type="text" name="realty_num_1" />
 			</label>
 			<label>
-				<span>Egyéb érintett vagyontárgy:</span>
+				<span>Other asset involved:</span>
 				<input type="text" name="realty_others_1" />
 			</label>
 			<br/>
 			<label>
-				<span>Van előzmény szakvélemény:</span>
+				<span>Prior expertise available:</span>
 				<input type="checkbox" name="realty_prev_b_1" class="checkbox" />
 			</label>
 			<label>
-				<span>Készítő társaság:</span>
+				<span>Prepared by:</span>
 				<input type="text" name="realty_maker_1" />
 			</label>
 			<label>
-				<span>Szakvélemény dátuma:</span>
+				<span>Expertise date:</span>
 				<input type="text" name="realty_date_1" />
 			</label>
 		</div>
-		<div class="button add_realty" data-realty_num="1"><span>További ingatlan</span></div>
+		<div class="button add_realty" data-realty_num="1"><span>Additional property</span></div>
 	</fieldset>
 
 
@@ -344,14 +340,14 @@
 	<fieldset class="fs_igazsagugyi_szakertes">
 		<input type="hidden" name="fieldset_7" value="Előzmény szakvélemény jogi kéviselőjének adatai" />
 		<label class="field_title">
-			<span>Előzmény szakvélemény jogi kéviselőjének adatai</span>
+			<span>Details of the legal representative of the prior expertise</span>
 		</label>
 		<label>
-			<span>Jogi képviselő neve:</span>
+			<span>Name of legal representative:</span>
 			<input type="text" name="advocate_name" />
 		</label>
 		<label>
-			<span>Jogi képviselő telefonszáma:</span>
+			<span>Phone number of legal representative:</span>
 			<input type="text" name="advocate_phone" />
 		</label>
 	</fieldset>
@@ -364,19 +360,19 @@
 	<fieldset class="fs_igazsagugyi_szakertes">
 		<input type="hidden" name="fieldset_8" value="A szakvélemény célja" />
 		<label>
-			<span>A szakvélemény célja:</span>
+			<span>Purpose of expertise:</span>
 			<select name="exp_goal">
-				<option value="piaci érték meghatározása">piaci érték meghatározása</option>
-				<option value="értékcsökkenés meghatározása">értékcsökkenés meghatározása</option>
-				<option value="kártalanítási érték meghatározása">kártalanítási érték meghatározása</option>
-				<option value="előzetes szakértői bizonyítás-állagrögzítés">előzetes szakértői bizonyítás-állagrögzítés</option>
-				<option value="bérleti díj/használati díj megállapítása">bérleti díj/használati díj megállapítása</option>
-				<option value="elszámolási vita rendezése">elszámolási vita rendezése</option>
-				<option value="egyéb">egyéb cél</option>
+				<option value="piaci érték meghatározása">Establish market value </option>
+				<option value="értékcsökkenés meghatározása">Establish depreciation </option>
+				<option value="kártalanítási érték meghatározása">Establish indemnification value </option>
+				<option value="előzetes szakértői bizonyítás-állagrögzítés">Preliminary expert evidence, record condition </option>
+				<option value="bérleti díj/használati díj megállapítása">Establish rent/usage charge </option>
+				<option value="elszámolási vita rendezése">Settle a settlement dispute </option>
+				<option value="egyéb">Other purpose</option>
 			</select>
 		</label>
 		<label>
-			<span>Egyéb cél részletezése:</span>
+			<span>If other, please provide details:</span>
 			<textarea name="exp_goal_other"></textarea>
 		</label>
 	</fieldset>
@@ -392,43 +388,43 @@
 	<fieldset class="fs_energetikai_vizsgalat fs_ingatlan_ertekesites fs_ingatlannyilvantartasi_ugyintezes fs_projektellenorzes">
 		<input type="hidden" name="fieldset_9" value="Értékelendő ingatlan(ok) adatai (helyrajzi számonként)" />
 		<label class="field_title">
-			<span>Értékelendő ingatlan(ok) adatai (helyrajzi számonként)</span>
+			<span>Details of property(ies) to be appraised (by topographical lot number)</span>
 		</label>
 		<div class="ingatlan_adatok">
 			<input type="hidden" name="realty_title_1" value="" />
 			<label class="realty_num">
-				<span>1. ingatlan</span>
+				<span>Property No. 1</span>
 			</label>
 			<label>
-				<span>Jellege:</span>
+				<span>Nature:</span>
 				<input type="text" name="realty_type_1" />
 			</label>
 			<label>
-				<span>Címe:</span>
+				<span>Address:</span>
 				<input type="text" name="realty_address_1" />
 			</label>
 			<label>
-				<span>Értékelendő tulajdoni hányad:</span>
+				<span>Ownership share to be appraised:</span>
 				<input type="text" name="realty_share_1" />
 			</label>
 			<label>
-				<span>Helyrajzi szám:</span>
+				<span>Topographical lot number:</span>
 				<input type="text" name="realty_hrsz_1" />
 			</label>
 			<label>
-				<span>Telek területe (m<sup>2</sup>):</span>
+				<span>Lot area (m<sup>2</sup>):</span>
 				<input type="text" name="realty_area_1" />
 			</label>
 			<label>
-				<span>Felépítmények bruttó alapterület:</span>
+				<span>Gross floor area of superstructures:</span>
 				<input type="text" name="realty_gross_1" />
 			</label>
 			<label>
-				<span>Felépítmények száma:</span>
+				<span>Number of superstructures:</span>
 				<input type="text" name="realty_num_1" />
 			</label>
 		</div>
-		<div class="button add_realty" data-realty_num="1"><span>További ingatlan</span></div>
+		<div class="button add_realty" data-realty_num="1"><span>Additional property</span></div>
 	</fieldset>
 
 
@@ -440,17 +436,17 @@
 	<fieldset class="fs_energetikai_vizsgalat">
 		<input type="hidden" name="fieldset_10" value="Értékelés célja" />
 		<label>
-			<span>Értékelés célja:</span>
+			<span>Purpose of appraisal:</span>
 			<select name="rating_goal">
-				<option value="Hitelfedezet">Hitelfedezet</option>
-				<option value="Értékesítés">Értékesítés</option>
-				<option value="Igazságügyi">Igazságügyi</option>
-				<option value="Egyéb">Egyéb</option>
+				<option value="Hitelfedezet">Loan collateral</option>
+				<option value="Értékesítés">Sale</option>
+				<option value="Igazságügyi">Forensic</option>
+				<option value="Egyéb">Other</option>
 			</select>
 		</label>
 		<br/>
 		<label>
-			<span>Egyéb cél részletezése:</span>
+			<span>If other, please provide details:</span>
 			<textarea name="rating_goal_other"></textarea>
 		</label>
 	</fieldset>
@@ -465,17 +461,17 @@
 	<fieldset class="fs_ingatlannyilvantartasi_ugyintezes">
 		<input type="hidden" name="fieldset_11" value="Az ügyintézés célja" />
 		<label>
-			<span>Az ügyintézés célja:</span>
+			<span>Administrative purpose:</span>
 			<select name="admin_goal">
-				<option value="Közös tulajdon megszüntetése">Közös tulajdon megszüntetése</option>
-				<option value="Társasház alapítás">Társasház alapítás</option>
-				<option value="Jogi rendezés">Jogi rendezés</option>
-				<option value="Egyéb">Egyéb</option>
+				<option value="Közös tulajdon megszüntetése">Termination of common ownership</option>
+				<option value="Társasház alapítás">Condominium foundation</option>
+				<option value="Jogi rendezés">Legal settlement</option>
+				<option value="Egyéb">Other</option>
 			</select>
 		</label>
 		<br/>
 		<label>
-			<span>Egyéb cél részletezése:</span>
+			<span>If other, please provide details:</span>
 			<textarea name="admin_goal_other"></textarea>
 		</label>
 	</fieldset>
@@ -489,39 +485,39 @@
 	<fieldset class="fs_projektellenorzes">
 		<input type="hidden" name="fieldset_12" value="Finanszírozó bank" />
 		<label>
-			<span>Finanszírozás esetén bank megjelölése:</span>
+			<span>In case of financing, please indicate bank:</span>
 			<select name="financing_bank">
-				<option value="-">Válasszon bankot!</option>
-				<option value="AXA Bank (korábban ELLA Bank)">AXA Bank (korábban ELLA Bank)</option>
-				<option value="Budapest Bank Zrt.">Budapest Bank Zrt.</option>
-				<option value="CIB Bank Zrt.">CIB Bank Zrt.</option>
-				<option value="CIB Lízing Csoport">CIB Lízing Csoport</option>
-				<option value="Commerzbank Zrt.">Commerzbank Zrt.</option>
-				<option value="Debt-Invest Zrt.">Debt-Invest Zrt.</option>
-				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Zrt.</option>
-				<option value="Gránit Bank Zrt.">Gránit Bank Zrt.</option>
-				<option value="Hitelpont Zrt.">Hitelpont Zrt.</option>
-				<option value="KDB Bank Magyarország Zrt.">KDB Bank Magyarország Zrt.</option>
-				<option value="Lombard Lízing Zrt. ">Lombard Lízing Zrt. </option>
-				<option value="Magnet Magyar Közösségi Bank ">Magnet Magyar Közösségi Bank </option>
-				<option value="Magyar Export-Import Bank Zrt.">Magyar Export-Import Bank Zrt.</option>
-				<option value="MFB Zrt.">MFB Zrt.</option>
-				<option value="MOL Nyrt.">MOL Nyrt.</option>
+				<option value="-">Please select a bank</option>
+				<option value="AXA Bank (korábban ELLA Bank)">AXA Bank (former ELLA Bank)</option>
+				<option value="Budapest Bank Zrt.">Budapest Bank Ltd</option>
+				<option value="CIB Bank Zrt.">CIB Bank Ltd</option>
+				<option value="CIB Lízing Csoport">CIB Leasing Group</option>
+				<option value="Commerzbank Zrt.">Commerzbank Ltd</option>
+				<option value="Debt-Invest Zrt.">Debt-Invest Ltd</option>
+				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Ltd</option>
+				<option value="Gránit Bank Zrt.">Gránit Bank Ltd</option>
+				<option value="Hitelpont Zrt.">Hitelpont Ltd</option>
+				<option value="KDB Bank Magyarország Zrt.">KDB Bank Hungary Ltd</option>
+				<option value="Lombard Lízing Zrt. ">Lombard Leasing Ltd</option>
+				<option value="Magnet Magyar Közösségi Bank ">Magnet Hungarian Community Bank</option>
+				<option value="Magyar Export-Import Bank Zrt.">Hungarian Export-Import Bank Ltd</option>
+				<option value="MFB Zrt.">MFB Ltd</option>
+				<option value="MOL Nyrt.">MOL Plc</option>
 				<option value="Oberbank AG">Oberbank AG</option>
-				<option value="Raiffeisen Bank Zrt.">Raiffeisen Bank Zrt.</option>
-				<option value="Sberbank Magyarország Zrt. ">Sberbank Magyarország Zrt. </option>
-				<option value="Takarékbank Zrt.">Takarékbank Zrt.</option>
-				<option value="Turai Takarékszövetkezet">Turai Takarékszövetkezet</option>
-				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Zrt.</option>
-				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Lízing Hungary Zrt.</option>
+				<option value="Raiffeisen Bank Zrt.">Raiffeisen Bank Ltd</option>
+				<option value="Sberbank Magyarország Zrt. ">Sberbank Hungary Ltd</option>
+				<option value="Takarékbank Zrt.">Takarékbank Ltd</option>
+				<option value="Turai Takarékszövetkezet">Savings Cooperative of Tura</option>
+				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Ltd</option>
+				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Leasing Hungary Ltd</option>
 			</select>
 		</label>
 		<label>
-			<span>Banki ügyfélmenedzser neve:</span>
+			<span>Bank client manager name:</span>
 			<input type="text" name="bank_manager_name" />
 		</label>
 		<label>
-			<span>Banki ügyfélmenedzser telefonszáma:</span>
+			<span>Bank client manager telephone number:</span>
 			<input type="text" name="bank_manager_phone" />
 		</label>
 	</fieldset>
@@ -560,7 +556,7 @@
 			<input type="text" name="hazszam"/>
 		</label>
 		<label>
-			<span>Helyrajzi szám:</span>
+			<span>Topographical lot number:</span>
 			<input type="text" name="helyrajziszam"/>
 		</label>
 		<label>
@@ -635,7 +631,7 @@
 		<label class="message"></label>
 		<label class="send">
 			<!-- <input class="form_send button w_arrow" type="submit" value="Elküld" /> -->
-			<div class="button w_arrow"><span>Elküld</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+			<div class="button w_arrow"><span>Submit</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 		</label>
 	</fieldset>
 </form>
