@@ -9,15 +9,6 @@
 	// - - - - -
 
 	$form_ok = true;
-	// $post = [];
-
-	/*foreach ($_POST as $key => $value) {
-		if(trim($value) != ''){
-            $post[$key] = strip_tags(trim($value));
-		} else {
-			$form_ok = false;
-		}
-	}*/
 
     $subjects = array(
         'fs_ertekbecsles' => 'Értékbecslés',
@@ -89,6 +80,7 @@
         'est_goal' => "Értékbecslés célja", 
         'est_goal_other' => "Egyéb cél részletezése", 
         'est_bank' => "Hitelfedezet esetén bank megjelölése", 
+        'bank_other_name' => "Egyéb bank megnevezése", 
         'bank_manager_name' => "Banki ügyfélmenedzser neve", 
         'bank_manager_phone' => "Banki ügyfélmenedzser telefonszáma", 
         'exp_goal' => "Szakvélemény célja", 
@@ -122,67 +114,11 @@
                         }
                         $data_table .= msg_create_row( $msg_header_1, $value, "&nbsp;" );
                     } else {
-/*                        $key_name = "";
-                        switch ($key) {
-                            case 'name': $key_name = "Név"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'tax_num': $key_name = "Adószám (vállalkozás esetén)"; break;
-                            case 'invoice_address': $key_name = "Számlázási cím"; break;
-                            case 'address': $key_name = "Levelezési cím"; break;
-                            case 'phone': $key_name = "Telefon"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-                            case 'delegate': $key_name = "Képviselő (vállalkozás esetén)"; break;
-
-                            default: $key_name = "no_val"; break;
-                        }*/
-
                         if(array_key_exists($key, $keyNames)){
                             $data_table .= msg_create_row( $msg_row_1, $keyNames[$key], $value );
                         }
-                            
-/*                        if($key_name != "no_val"){
-                            $data_table .= msg_create_row( $msg_row_1, $key_name, $value ); break;
-                        }*/
-
                     }
-
                 }
-
-/*              $data_table .= msg_create_row( $msg_header_1, "Személyes adatok", "&nbsp;" );
-                $data_table .= msg_create_row( $msg_row_1, "Név", $___post['name'] );
-                $data_table .= msg_create_row( $msg_row_1, "E-mail", $___post['email'] );
-                $data_table .= msg_create_row( $msg_row_1, "Telefon", $___post['phone'] );
-                $data_table .= msg_create_row( $msg_row_1, "Ingatlan rövid jellemzése", $___post['jellemzes'] );
-                $data_table .= msg_create_row( $msg_row_2, "&nbsp;", "&nbsp;" );
-
-        		// Ingatlan címe
-        		$data_table .= msg_create_row( $msg_header_1, "Az ingatlan címe", "&nbsp;" );
-        		$data_table .= msg_create_row( $msg_row_1, "Ország", $___post['orszag'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Megye", $___post['megye'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Település", $___post['telepules'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Utca", $___post['utca'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Házszám", $___post['hazszam'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Helyrajzi szám", $___post['helyrajziszam'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Külterület/belterület", ($___post['kulter_belter']?'belterület':'külterület') );
-        		$data_table .= msg_create_row( $msg_row_2, "&nbsp;", "&nbsp;" );
-
-        		// Kért szolgáltatás
-        		$data_table .= msg_create_row( $msg_header_1, "Kívánt szolgáltatás", $___post['szolgaltatas'] );
-        		$data_table .= msg_create_row( $msg_row_2, "&nbsp;", "&nbsp;" );
-
-        		// Ingatlan típusa
-        		$data_table .= msg_create_row( $msg_header_1, "Az ingatlan típusa", $___post['tipus'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Szintek száma", $___post['szintek'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Mérete (m<sup>2</sup>)", $___post['meret'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Telek mérete (m<sup>2</sup>)", $___post['telekmeret'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Építés éve", $___post['epites_eve'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Építés módja", $___post['epites_modja'] );
-        		$data_table .= msg_create_row( $msg_row_1, "Osztatlan közös tulajdon?", ($___post['osztatlan']?'igen':'nem') );
-        		$data_table .= msg_create_row( $msg_row_1, "Ingatlan állapota", $___post['ingatlan_allapota'] );*/
 
         		$data_table .= "</tbody></table>";
         		// Data - ContentTable

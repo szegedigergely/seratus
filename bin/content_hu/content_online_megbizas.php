@@ -157,6 +157,7 @@
 				<option value="CIB Lízing Csoport">CIB Lízing Csoport</option>
 				<option value="Commerzbank Zrt.">Commerzbank Zrt.</option>
 				<option value="Debt-Invest Zrt.">Debt-Invest Zrt.</option>
+				<option value="Duna Takarék Bank Zrt.">Duna Takarék Bank Zrt.</option>
 				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Zrt.</option>
 				<option value="Gránit Bank Zrt.">Gránit Bank Zrt.</option>
 				<option value="Hitelpont Zrt.">Hitelpont Zrt.</option>
@@ -172,7 +173,12 @@
 				<option value="Turai Takarékszövetkezet">Turai Takarékszövetkezet</option>
 				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Zrt.</option>
 				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Lízing Hungary Zrt.</option>
+				<option value="Egyéb">Egyéb</option>
 			</select>
+		</label>
+		<label>
+			<span>Egyéb bank megnevezése:</span>
+			<input type="text" name="bank_other_name" />
 		</label>
 		<label>
 			<span>Banki ügyfélmenedzser neve:</span>
@@ -494,6 +500,7 @@
 				<option value="CIB Lízing Csoport">CIB Lízing Csoport</option>
 				<option value="Commerzbank Zrt.">Commerzbank Zrt.</option>
 				<option value="Debt-Invest Zrt.">Debt-Invest Zrt.</option>
+				<option value="Duna Takarék Bank Zrt.">Duna Takarék Bank Zrt.</option>
 				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Zrt.</option>
 				<option value="Gránit Bank Zrt.">Gránit Bank Zrt.</option>
 				<option value="Hitelpont Zrt.">Hitelpont Zrt.</option>
@@ -510,7 +517,12 @@
 				<option value="Turai Takarékszövetkezet">Turai Takarékszövetkezet</option>
 				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Zrt.</option>
 				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Lízing Hungary Zrt.</option>
+				<option value="Egyéb">Egyéb</option>
 			</select>
+		</label>
+		<label>
+			<span>Egyéb bank megnevezése:</span>
+			<input type="text" name="bank_other_name" />
 		</label>
 		<label>
 			<span>Banki ügyfélmenedzser neve:</span>

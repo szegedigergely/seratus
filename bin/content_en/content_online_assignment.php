@@ -157,6 +157,7 @@
 				<option value="CIB Lízing Csoport">CIB Leasing Group</option>
 				<option value="Commerzbank Zrt.">Commerzbank Ltd</option>
 				<option value="Debt-Invest Zrt.">Debt-Invest Ltd</option>
+				<option value="Duna Takarék Bank Zrt.">Duna Savings Bank Ltd</option>
 				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Ltd</option>
 				<option value="Gránit Bank Zrt.">Gránit Bank Ltd</option>
 				<option value="Hitelpont Zrt.">Hitelpont Ltd</option>
@@ -172,7 +173,12 @@
 				<option value="Turai Takarékszövetkezet">Savings Cooperative of Tura</option>
 				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Ltd</option>
 				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Leasing Hungary Ltd</option>
+				<option value="Egyéb">Other</option>
 			</select>
+		</label>
+		<label>
+			<span>Other bank's name:</span>
+			<input type="text" name="bank_other_name" />
 		</label>
 		<label>
 			<span>Bank client manager name:</span>
@@ -494,6 +500,7 @@
 				<option value="CIB Lízing Csoport">CIB Leasing Group</option>
 				<option value="Commerzbank Zrt.">Commerzbank Ltd</option>
 				<option value="Debt-Invest Zrt.">Debt-Invest Ltd</option>
+				<option value="Duna Takarék Bank Zrt.">Duna Savings Bank Ltd</option>
 				<option value="Erste Bank Hungary Zrt.">Erste Bank Hungary Ltd</option>
 				<option value="Gránit Bank Zrt.">Gránit Bank Ltd</option>
 				<option value="Hitelpont Zrt.">Hitelpont Ltd</option>
@@ -510,7 +517,12 @@
 				<option value="Turai Takarékszövetkezet">Savings Cooperative of Tura</option>
 				<option value="UniCredit Bank Hungary Zrt.">UniCredit Bank Hungary Ltd</option>
 				<option value="UniCredit Lízing Hungary Zrt.">UniCredit Leasing Hungary Ltd</option>
+				<option value="Egyéb">Other</option>
 			</select>
+		</label>
+		<label>
+			<span>Other bank's name:</span>
+			<input type="text" name="bank_other_name" />
 		</label>
 		<label>
 			<span>Bank client manager name:</span>
