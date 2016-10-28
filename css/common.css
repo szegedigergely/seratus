@@ -947,7 +947,10 @@ h3.sideline:after {
 }
 
 .v_card.ingatlan_info {
-	height: 256px;
+	min-height: 256px;
+	height: auto;
+	max-height: 256px;
+	overflow: hidden;
 }
 
 #overlay .v_card.half_width {
@@ -975,14 +978,20 @@ h3.sideline:after {
 	top: 0;
 }
 
-.v_card.ingatlan_info > img {
+.v_card.ingatlan_info img.thumb {
 	width: 280px;
-	/*position: relative;*/
+	height: 210px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
 }
 
-.v_card.ingatlan_info > img.fullres {
+/*.v_card.ingatlan_info > img.fullres,
+.v_card.ingatlan_info > ul.realest-swiper {
 	display: none;
-}
+}*/
 
 .v_card > span {
 	display: block;
@@ -1005,15 +1014,188 @@ h3.sideline:after {
 	overflow: hidden;
 }
 
+.v_card.ingatlan_info > p {
+	padding-left: 20px;
+	height: auto;
+}
+
+.v_card.ingatlan_info > p:last-child {
+	padding-bottom: 48px;
+}
+
 .v_card > span.name {
 	padding-top: 5px;
 	color: rgb(8,156,203);
 	font-weight: 600;
 }
 
-.v_card.ingatlan_info > span.name {
-	padding-top: 212px;
+.v_card > span.price {
+	padding-bottom: 15px;
 }
+
+.v_card.ingatlan_info hr {
+	display: block;
+	margin: 0 20px;
+	height: 1px;
+	background: rgba(0,0,0,.15);
+	border: none;
+}
+
+.v_card.ingatlan_info .realest-swiper {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 280px;
+	height: 210px;
+	font-size: 0;
+	/*list-style: none;*/
+	white-space: nowrap;
+	visibility: hidden;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.v_card.ingatlan_info .realest-swiper .swiper-wrapper,
+.v_card.ingatlan_info .realest-swiper .swiper-wrapper div {
+	display: inline-block;
+	width: 100% !important;
+	height: 100% !important;
+	font-size: 0;
+	white-space: nowrap;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.v_card.ingatlan_info .realest-swiper .swiper-wrapper div img {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.main_carousel_pagination {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+	white-space: nowrap;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	z-index: 2;
+}
+
+.swiper-pagination-bullet {
+	margin: 0 6px !important;
+	width: 12px;
+	height: 12px;
+	outline: none;
+	border-radius: 50%;
+	background: rgb(224,224,224);
+	opacity: 1 !important;
+	text-indent: -9999px;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	-webkit-transition: transform 0.3s ease-out, background 0.3s ease-out;
+	   -moz-transition: transform 0.3s ease-out, background 0.3s ease-out;
+		-ms-transition: transform 0.3s ease-out, background 0.3s ease-out;
+		 -o-transition: transform 0.3s ease-out, background 0.3s ease-out;
+			transition: transform 0.3s ease-out, background 0.3s ease-out;
+}
+
+.swiper-pagination-bullet:hover {
+	background: rgb(255,255,255);
+	-webkit-transform: scale(1.2);
+	   -moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+			transform: scale(1.2);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: rgb(8,156,203);
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		 -o-transform: scale(1.5);
+			transform: scale(1.5);
+}
+
+.pager_button {
+	display: block;
+	margin-top: -16px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	cursor: pointer;
+	-webkit-transition: all .35s ease-in;
+	   -moz-transition: all .35s ease-in;
+		-ms-transition: all .35s ease-in;
+		 -o-transition: all .35s ease-in;
+			transition: all .35s ease-in;
+}
+
+.pager_button:hover {
+	-webkit-transition: all .2s ease-out;
+	   -moz-transition: all .2s ease-out;
+		-ms-transition: all .2s ease-out;
+		 -o-transition: all .2s ease-out;
+			transition: all .2s ease-out;
+}
+
+.pager_button.pager_left {
+	border-width: 16px 16px 16px 0;
+	border-color: transparent rgb(224,224,224) transparent transparent;
+	left: 24px;
+}
+
+.pager_button.pager_left:hover {
+	border-color: transparent rgb(255,255,255) transparent transparent;
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		 -o-transform: scale(1.5);
+			transform: scale(1.5);
+}
+
+.pager_button.pager_right {
+	border-width: 16px 0 16px 16px;
+	border-color: transparent transparent transparent rgb(224,224,224);
+	right: 24px;
+}
+
+.pager_button.pager_right:hover {
+	border-color: transparent transparent transparent rgb(255,255,255);
+	-webkit-transform: scale(1.5);
+	   -moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		 -o-transform: scale(1.5);
+			transform: scale(1.5);
+}
+
+
+
 
 .v_card > span.contact {
 	margin-top: 10px;
@@ -2404,12 +2586,13 @@ body.we_help .segitunk .col {
 	left: 0;
 	top: 0;
 	z-index: 99;
+	overflow: auto;
 }
 
 #overlay_close {
 	display: block;
-	margin-left: 214px;
-	margin-bottom: 0;
+/*	margin-left: 214px;*/
+	margin-top: -40px;
 	width: 40px;
 	height: 40px;
 	color: rgb(200,200,200);
@@ -2419,7 +2602,7 @@ body.we_help .segitunk .col {
 	text-align: center; 
 	position: fixed;
 	left: 50%;
-	bottom: 100%;
+	top: 0;
 	z-index: 100;
 	cursor: pointer;
 	transition: all .1s ease-out;
@@ -2430,8 +2613,8 @@ body.we_help .segitunk .col {
 }
 
 #overlay_close.visible {
-	margin-bottom: 179px;
-	bottom: 50%;
+/*	margin-bottom: 179px;
+	bottom: 50%;*/
 }
 
 #feedback {

@@ -13,4 +13,6 @@
 		<!--script type="text/javascript" src="js/jquery.media.min.js"></script-->
 		<!--script type="text/javascript" src="js/jquery.media.timeline.min.js"></script-->
 		<!--script type="text/javascript" src="js/styled_map.js"></script-->
+		<script src="js/swiper.jquery.min.js"></script>
+
 		<script type="text/javascript" src="js/common.js?v=<?php echo microtime() ?>"></script>
