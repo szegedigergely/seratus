@@ -16,6 +16,7 @@
 					<li><a href="#ertekbecsles">Értékbecslés</a></li>
 					<li><a href="#muszaki_szakertes">Műszaki szakértés</a></li>
 					<li><a href="#igazsagugyi_szakertes">Igazságügyi szakértés</a></li>
+					<li><a href="#ingatlankozvetites">Ingatlanközvetítés</a></li>
 					<li><a href="#energetikai_tanusitas">Energetikai tanúsítás</a></li>
 					<li><a href="#hokameras_vizsgalat">Hőkamerás vizsgálat</a></li>
 					<li><a href="#foldmeres">Földmérés</a></li>
@@ -24,10 +25,10 @@
 				</ul>
 			</div>
 			<div class="footer_menu referenciak">
-				<h3>Referenciák</h3>
-				<ul>
-					<li><a href="#referenciak">Referenciák</a></li>
-				</ul>
+				<h3><a href="#referenciak">Referenciák</a></h3>
+			</div>
+			<div class="footer_menu ingatlanok">
+				<h3><a href="#ingatlanok">Igatlanok</a></h3>
 			</div>
 			<div class="footer_menu segitunk">
 				<h3>Segítünk</h3>

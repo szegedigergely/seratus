@@ -24,6 +24,7 @@
 								<li><a href="#appraisals">Appraisals</a></li>
 								<li><a href="#technical_expertise">Technical expertise</a></li>
 								<li><a href="#forensic_expertise">Forensic expertise</a></li>
+								<li><a href="#real_estate">Real estate</a></li>
 								<li><a href="#energy_certification">Energy certification</a></li>
 								<li><a href="#thermal_cam">Thermal camera investigations</a></li>
 								<li><a href="#surveying">Surveying</a></li>
@@ -34,6 +35,7 @@
 								<li><p>We perform appraisals for all types of real estate properties, tangible assets and intangible assets. We are at your service with the experience of nearly 25,000 appraisals.</p><img src="images/segit_ertekbecsles.jpg" alt="" /></li>
 								<li><p>Appraisals for all types of real estate properties, tangible assets and intangible assets.</p><img src="images/submenu_muszaki.jpg" alt="" /></li>
 								<li><p>Appraisals for all types of real estate properties, tangible assets and intangible assets.</p><img src="images/segit_igazsagugy.jpg" alt="" /></li>
+								<li><p></p><img src="images/submenu_contract.jpg" alt="" /></li>
 								<li><p>We perform appraisals for all types of real estate properties, tangible assets and intangible assets. We are at your service with the experience of nearly 25,000 appraisals.</p><img src="images/segit_energetika.jpg" alt="" /></li>
 								<li><p>Our firm also undertakes assignments to investigate properties using thermal cameras.</p><img src="images/segit_hokamera.jpg" alt="" /></li>
 								<li><p>We offer comprehensive management of geodetics assignments in relation to real estate transactions and appraisals.</p><img src="images/segit_foldmeres.jpg" alt="" /></li>
@@ -43,6 +45,7 @@
 						</div>
 					</li>
 					<li class="item referenciak"><a href="#references">References</a></li>
+					<li class="item ingatlanok"><a href="#real_estates">Real Estates</a></li>
 					<li class="item segitunk"><a href="#we_help">Need help?</a></li>
 				</ul>
 			</div>

@@ -23,7 +23,7 @@
 
 	<div class="partner partner-neve psor-2 poszl-1">
 		<img src="images/partner_raiffeisen.jpg" alt="Raiffeisen Bank" />
-		<p>We have been under contract since 2010. During this time we have prepared more than XXX expert opinions for them.</p>
+		<p>We have been under contract since 2010.</p>
 	</div>
 	<div class="partner partner-neve psor-2 poszl-2">
 		<img src="images/partner_magnet.jpg" alt="Magnet Bank" />

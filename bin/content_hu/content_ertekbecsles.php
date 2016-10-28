@@ -23,10 +23,10 @@
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <div class="v_card half_width">
-	<img src="images/munkatarsak/thumb/_DSC5181_kicsi.jpg" alt="" />
-	<span class="name">Boda Gabriella</span>
-	<span class="contact">+3620-311-2845<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	<div class="button w_arrow" data-faq="boda-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
+	<img src="images/munkatarsak/thumb/_DSC2003_kicsi.jpg" alt="" />
+	<span class="name">Homoki Beatrix</span>
+	<span class="contact">mellék: 146<br/>homoki<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	<div class="button w_arrow" data-faq="homoki-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 </div>
 <?php
 

@@ -34,14 +34,14 @@
 <h1>Group leaders</h1>
 <div>
 	<div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5181_kicsi.jpg" alt="Gabriella Boda" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5181_kicsi.jpg" alt="Gabriella Boda" />
-		<span class="name">Gabriella Boda</span>
+		<img src="images/munkatarsak/_DSC2003_kicsi.jpg" alt="Beatrix Homoki" />
+		<img class="thumb" src="images/munkatarsak/thumb/_DSC2003_kicsi.jpg" alt="Beatrix Homoki" />
+		<span class="name">Beatrix Homoki</span>
 		<span class="title">Non-retail business line manager</span>
 		<p><strong>Qualifications:</strong><br/>
-			Architect; real estate management expert; technical manager; real estate assets appraiser and broker; arable land appraiser; cost expert; appraiser of machines, tools and equipment
+			Chartered architect, construction expert, forensic expert, advanced real estate assets appraiser, arable land appraiser, building energy certifier
 		</p>
-		<span class="contact">Extension: 145<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 146<br/>homoki<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/deli_maja_kicsi.jpg" alt="Maja Deli" />
@@ -224,7 +224,7 @@
 		<p><strong>Qualifications:</strong><br/>
 			Real estate assets appraiser and broker 
 		</p>
-		<span class="contact">raba<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 145<br/>raba<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5077_kicsi.jpg" alt="Csaba Szigetvári" />

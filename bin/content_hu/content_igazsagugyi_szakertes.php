@@ -1,10 +1,23 @@
 <h1>Igazságügyi szakértés</h1>
-<p>A Seratus KFT minden típusú <strong>ingatlan, tárgyi eszköz és immateriális vagyontárgy</strong> vagyonértékelésével foglakozik.</p>
-<p><strong>Lakossági üzletágunk</strong> szakértői lakóingatlanok értékének becslésével foglalkoznak az ország minden régiójában.</p>
-<p><strong>Vállalati részlegünk</strong> kollégái, jövedelemtermelő egységek, úgy, mint ipari-termelő, raktár ingatlanok, üzletek, irodaházak es egyéb változatos létesítmények értékének meghatározását végzik Magyarországon és a környező országokban. Cégünk gyakorlott gépértékelő szakértői végzik a tárgyi eszközök és komplett gépsorok értékének számítását. Referenciáink között szerepel teljes cégek-cégcsoportok értékének becslése, amely tartalmazza a tulajdonolt immateriális javak, pl.: sportolói-játékjogok, know-how, védjegyek értékének számítását.</p>
-<p><strong>Mezőgazdasági területekkel</strong> foglalkozó kollégáink a termőföldek minden típusának reális vételárát számítják ki az ország összes régiójában, a termőföld, erdő, gyümölcsös értékét hozam alapon is meghatározzák, igény esetén a termelő eszközök értékét is beleszámolva.</p>
-<p>Szakvéleményinket a Magyarországon működő <strong>bankok és szakosított pénzintézetek</strong> túlnyomó <strong>többsége elfogadja hitelfedezeti célra</strong> is. Állandó kiemelt partnereink között szerepel, <strong>a Nemzeti Földalap, a Magyar Állam</strong>, az infrastruktúrafejlesztés céljára kisajátított területért felelős szervei által.</p>
-<p>Cégünk jelentős számban készít szakvéleményeket <strong>hazai kis és középvállalkozások</strong>, illetve <strong>magánszemélyek</strong> számára is.</p>
+<p>Építőipari igazságügyi műszaki szakértő kollegáink vállalják beruházások garanciális, szavatossági kérdések és kivitelezési hibák véleményezését.</p>
+<p>Ingatlanforgalmi igazságügyi szakértő kollegáink közreműködnek vagyonjogi viták előzetes, peren kívüli eldöntésében.</p>
+<p>Szakterületeink:</p>
+<ul class="list">
+	<li>beruházás</li>
+	<li>beruházás lebonyolítása</li>
+	<li>építésgazdaság</li>
+	<li>építésszervezés</li>
+	<li>építéstechnológia</li>
+	<li>ingatlan-értékbecslés</li>
+</ul>
+<p>Peres és nem peres eljárásokban:</p>
+<ul class="list">
+	<li>vállaljuk az ingatlanok értékének megállapítását, műszaki állapotuk felmérését;</li>
+	<li>beruházásokhoz kötődő elszámolási vitáknál a kivitelezés minőségének, készültségi fokának, reális díjának meghatározását;</li>
+	<li>ingatlanhoz fűződő értéknövelő beruházások meghatározását;</li>
+	<li>kisajátításhoz, bánya vagy vezetékjoghoz kapcsolódó kártalanítás meghatározását.</li>
+</ul>
+<p>Társaságunk <strong>008482</strong> számon bejegyzett igazságügyi szakértői cég. Bíróságok, Rendőrség és Adó és Pénzügyi Ellenőrzési Hivatalok részére is folyamatosan végzünk szakértői tevékenységeket.</p>
 <div class="info">
 	<img src="images/question.png" alt="" />
 	<h3>Igazságügyi szolgáltatásunk felkeltette érdeklődését?</h3>

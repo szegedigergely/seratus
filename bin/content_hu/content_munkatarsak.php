@@ -46,14 +46,14 @@
 		<span class="contact">mellék: 127<br/>varga<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div-->
 	<div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5181_kicsi.jpg" alt="Boda Gabriella" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5181_kicsi.jpg" alt="Boda Gabriella" />
-		<span class="name">Boda Gabriella</span>
-		<span class="title">nem lakossági üzletág vezető</span>
+		<img src="images/munkatarsak/_DSC2003_kicsi.jpg" alt="Homoki Beatrix" />
+		<img class="thumb" src="images/munkatarsak/thumb/_DSC2003_kicsi.jpg" alt="Homoki Beatrix" />
+		<span class="name">Homoki Beatrix</span>
+		<span class="title">vállalati üzletág vezető</span>
 		<p><strong>Végzettségek:</strong><br/>
-			építészmérnök; ingatlangazdálkodási szakértő; műszaki menedzser; ingatlanvagyon-értékelő és közvetítő; termőföld értékbecslő; költségszakértő; gépek, eszközök, berendezések értékbecslő
+			okl. építészmérnök, építési szakértő, igazságügyi szakértő, felsőfokú ingatlanvagyon-értékelő, termőföld értékbecslő, épületenergetikai tanúsító
 		</p>
-		<span class="contact">mellék: 145<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 146<br/>homoki<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/deli_maja_kicsi.jpg" alt="Deli Maja" />
@@ -261,7 +261,7 @@
 		<p><strong>Végzettségek:</strong><br/>
 			ingatlanvagyon-értékelő és közvetítő
 		</p>
-		<span class="contact">raba<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 145<br/>raba<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5077_kicsi.jpg" alt="Szigetvári Csaba" />

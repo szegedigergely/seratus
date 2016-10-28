@@ -16,6 +16,7 @@
 		<meta name="viewport" content="user-scalable=no">
 
 		<link href="favicon.png" rel="shortcut icon" type="image/png" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v=<?php echo microtime(); ?>" />
 		<link rel="stylesheet" type="text/css" href="css/common.css?v=<?php echo microtime() ?>" />
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

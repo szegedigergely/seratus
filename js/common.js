@@ -46,7 +46,11 @@ function loadContent(id){
 						$('.send .button').bind('click', sendMsg);
 						$('.button[data-faq]').bind('click', prepareFAQ);
 
+						// munkatársak popup-ja
 						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
+
+						// ingatlanok popup-ja
+						$('.ingatlan_info').bind('click', popupRealest);
 
 						if($('select[name=szolgaltatas]').length){
 							setupForm($('select[name=szolgaltatas]').val());
@@ -136,16 +140,97 @@ function popupEmployee(){
 
 	var target = {
 		width: 448,
-		height: 377
+		height: 377,
+		top: '50%'
 	}
 
+	$('#overlay_close').css('margin-left',target.width/2+'px');
+
 	TweenMax.to($('#overlay'), .25, {display: 'block', autoAlpha: 1, onComplete: function(){
-		TweenMax.to(employee, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: Math.round(($(window).innerWidth()-target.width)/2)+'px', top: Math.round(($(window).innerHeight()-target.height)/2)+'px'});
+		// TweenMax.to(employee, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: Math.round(($(window).innerWidth()-target.width)/2)+'px', top: Math.round(($(window).innerHeight()-target.height)/2)+'px'});
+		TweenMax.to(employee, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: '50%', top: '50%', marginLeft: '-'+target.width/2+'px', marginTop: '-'+target.height/2+'px'});
 		TweenMax.to(employee.children('img'), .25, {delay: .5, width: '252px', height: '375px'});
 		TweenMax.to(employee.children('img.thumb'), .25, {delay: .5, autoAlpha: 0});
 		TweenMax.to(employee.children('span'), .25, {delay: .5, paddingLeft: '260px', onComplete: function(){
 			TweenMax.to(employee.children('p'), .25, {delay: .5, height: '240px'});
-			$('#overlay_close').addClass('visible');
+			$('#overlay_close')
+			// .css('margin-left',target.width/2+'px')
+			.css('margin-top','-'+(target.height/2+40)+'px')
+			.css('top',target.top)
+			.addClass('visible');
+		}});
+	}});
+}
+
+function popupRealest(){
+	TweenMax.set($('#overlay'), {autoAlpha: 0});
+
+	var $this = $(this);
+	var pos = $this.offset();
+	var realest = $this.clone();
+	// var fullres = realest.children('img.fullres');
+	var carousel = realest.children('.realest-swiper');
+	var carouselImgs = carousel.find('img');
+
+	realest
+	.css('left', (pos.left-$(window).scrollLeft())+'px')
+	.css('top', (pos.top-$(window).scrollTop())+'px');
+
+	carousel.append('<div class="pager_button pager_left"></div>');
+	carousel.append('<div class="pager_button pager_right"></div>');
+	carousel.append('<div class="main_carousel_pagination"></div>');
+
+	// console.log($this);
+	$('#overlay').append(realest);
+
+	$('#overlay *').bind('click', function(e){
+		e.stopPropagation();
+	});
+
+	var target = {
+		width: 640,
+		height: 640,
+		top: 64
+	}
+
+	$('#overlay_close').css('margin-left',target.width/2+'px');
+	// carouselImgs[0].attr('src', carouselImgs[0].attr('data-src')).css;
+	carouselImgs.each(function(){
+		$(this).attr('src', $(this).attr('data-src')).css;
+	});
+	carousel.css('visibility', 'visible');
+
+	var realestSwiper = new Swiper (carousel, {
+		direction: 'horizontal',
+		speed: 1000,
+		loop: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: true,
+		grabCursor: true,
+		pagination: '.main_carousel_pagination',
+		paginationClickable: true,
+		nextButton: '.pager_button.pager_right',
+		prevButton: '.pager_button.pager_left'
+	});
+
+	console.log(realestSwiper);
+
+	TweenMax.to($('#overlay'), .25, {display: 'block', autoAlpha: 1, onComplete: function(){
+		$('body').addClass('noscroll');
+		// TweenMax.to(realest, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: Math.round(($(window).innerWidth()-target.width)/2)+'px', top: Math.round(($(window).innerHeight()-target.height)/2)+'px'});
+		TweenMax.to(realest, .25, {delay: .5, width: target.width+'px', maxHeight: '9999px', left: '50%', top: target.top+'px', marginLeft: '-'+target.width/2+'px', marginBottom: '80px'});
+		TweenMax.to(realest.children('img.thumb'), .25, {delay: .5, width: '640px', height: '480px'});
+		TweenMax.to(realest.children('.realest-swiper'), .25, {delay: .5, width: '640px', height: '480px', onComplete: function(){
+			realestSwiper.update(true);
+			TweenMax.to(realest.children('img.thumb'), .25, {autoAlpha: 0});
+		}});
+		TweenMax.to(realest.children('span.name'), .25, {delay: .5, paddingLeft: '20px', paddingTop: '12px', fontSize: '18px'});
+		TweenMax.to(realest.children('span.price'), .25, {delay: .5, paddingLeft: '20px', fontSize: '16px', onComplete: function(){
+			$('#overlay_close')
+			// .css('margin-left',target.width/2+'px')
+			.css('margin-top','-40px')
+			.css('top',target.top+'px')
+			.addClass('visible');
 		}});
 	}});
 }
@@ -569,9 +654,13 @@ $(document).ready(function(){
 		var $this = $(this);
 		var overlay = $('#overlay');
 
-		$this.removeClass('visible');
+		$this
+		.css('margin-top', '-40px')
+		.css('top', '0')
+		.removeClass('visible');
 		TweenMax.to(overlay, .2, {autoAlpha: 0, onComplete: function(){
 			overlay.html('');
+			$('body').removeClass('noscroll');
 		}});
 	});
 
