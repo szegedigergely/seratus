@@ -176,8 +176,10 @@ function popupRealest(){
 	.css('left', (pos.left-$(window).scrollLeft())+'px')
 	.css('top', (pos.top-$(window).scrollTop())+'px');
 
-	carousel.append('<div class="pager_button pager_left"></div>');
-	carousel.append('<div class="pager_button pager_right"></div>');
+	// carousel.append('<div class="pager_button pager_left"></div>');
+	// carousel.append('<div class="pager_button pager_right"></div>');
+	carousel.append('<div class="pager_arrow left"><div class="arrow_upper"><img src="images/pager_arrow.png" alt="" /></div><div class="arrow_lower"><img src="images/pager_arrow.png" alt="" /></div></div>');
+	carousel.append('<div class="pager_arrow right"><div class="arrow_upper"><img src="images/pager_arrow.png" alt="" /></div><div class="arrow_lower"><img src="images/pager_arrow.png" alt="" /></div></div>');
 	carousel.append('<div class="main_carousel_pagination"></div>');
 
 	// console.log($this);
@@ -209,8 +211,8 @@ function popupRealest(){
 		grabCursor: true,
 		pagination: '.main_carousel_pagination',
 		paginationClickable: true,
-		nextButton: '.pager_button.pager_right',
-		prevButton: '.pager_button.pager_left'
+		nextButton: '.pager_arrow.right',
+		prevButton: '.pager_arrow.left'
 	});
 
 	console.log(realestSwiper);

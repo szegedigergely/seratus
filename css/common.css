@@ -508,7 +508,7 @@ nav ul li.language a:hover {
 	padding-bottom: 0;
 	width: 680px;
 	height: 0px;
-	background: transparent url(../images/submenu_.png) no-repeat right bottom;
+	background: transparent url(../images/submenu.png) no-repeat right bottom;
 	position: absolute;
 	left: -256px;
 	top: 76px;
@@ -1103,6 +1103,7 @@ h3.sideline:after {
 }
 
 .swiper-pagination-bullet {
+	/*
 	margin: 0 6px !important;
 	width: 12px;
 	height: 12px;
@@ -1119,24 +1120,47 @@ h3.sideline:after {
 		-ms-transition: transform 0.3s ease-out, background 0.3s ease-out;
 		 -o-transition: transform 0.3s ease-out, background 0.3s ease-out;
 			transition: transform 0.3s ease-out, background 0.3s ease-out;
+*/
+	display: inline-block;
+	margin: 0 4px;
+	padding: 0;
+	width: 4px;
+	height: 4px;
+	background-color: rgb(90,97,96);
+	border: 2px solid rgb(1,149,195);
+	border-radius: 100%;
+	position: relative;
+	left: 0;
+	overflow: hidden;
+	cursor: pointer;
+	opacity: 1 !important;
+	transition: all .25s ease-in-out;
 }
 
 .swiper-pagination-bullet:hover {
-	background: rgb(255,255,255);
+/*	background: rgb(255,255,255);
 	-webkit-transform: scale(1.2);
 	   -moz-transform: scale(1.2);
 		-ms-transform: scale(1.2);
 		 -o-transform: scale(1.2);
-			transform: scale(1.2);
-}
+			transform: scale(1.2);*/
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background: rgb(8,156,203);
+	background-color: rgb(1,149,195);
+}			
+
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active,
+.swiper-pagination-bullet.swiper-pagination-bullet-active:hover {
+/*	background: rgb(8,156,203);
 	-webkit-transform: scale(1.5);
 	   -moz-transform: scale(1.5);
 		-ms-transform: scale(1.5);
 		 -o-transform: scale(1.5);
-			transform: scale(1.5);
+			transform: scale(1.5);*/
+
+	background-color: rgb(255,255,255);
+	border: 2px solid rgb(255,255,255);
+
 }
 
 .pager_button {
@@ -1192,6 +1216,24 @@ h3.sideline:after {
 		-ms-transform: scale(1.5);
 		 -o-transform: scale(1.5);
 			transform: scale(1.5);
+}
+
+
+
+.realest-swiper div.pager_arrow.left {
+	left: 12px;
+}
+
+.realest-swiper div.pager_arrow.left:hover {
+	left: 6px;
+}
+
+.realest-swiper div.pager_arrow.right {
+	right: 12px;
+}
+
+.realest-swiper div.pager_arrow.right:hover {
+	right: 6px;
 }
 
 
