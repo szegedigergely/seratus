@@ -2,14 +2,14 @@
 	if(!$ping) die;
 ?>
 			<div id="nav_wrapper">
-				<a id="logo" href="#_"><img src="images/logo.png" alt="Seratus" /></a>
+				<a id="logo" href="/"><img src="images/logo.png" alt="Seratus" /></a>
 				<ul>
-					<li class="item bemutatkozunk"><a href="#bemutatkozunk">Rólunk</a>
+					<li class="item bemutatkozunk"><a href="bemutatkozunk">Rólunk</a>
 						<div class="submenu">
 							<ul class="links">
-								<li><a href="#bemutatkozunk">Bemutatkozunk</a></li>
-								<li><a href="#munkatarsak">Munkatársak</a></li>
-								<li><a href="#karrier">Karrier</a></li>
+								<li><a href="bemutatkozunk">Bemutatkozunk</a></li>
+								<li><a href="munkatarsak">Munkatársak</a></li>
+								<li><a href="karrier">Karrier</a></li>
 							</ul>
 							<ul class="descriptions">
 								<li><p>Ismerje meg a Seratus Kft. történetét, 22 éve változatlan filozófiáját és folyamatosan bővülő szolgáltatási körét!</p><img src="images/submenu_bemutatkozunk.jpg" alt="" /></li>
@@ -18,18 +18,18 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item szolgaltatasaink"><a href="#_">Szolgáltatásaink</a>
+					<li class="item szolgaltatasaink"><a href="/">Szolgáltatásaink</a>
 						<div class="submenu">
 							<ul class="links">
-								<li><a href="#ertekbecsles">Értékbecslés</a></li>
-								<li><a href="#muszaki_szakertes">Műszaki szakértés</a></li>
-								<li><a href="#igazsagugyi_szakertes">Igazságügyi szakértés</a></li>
-								<li><a href="#ingatlankozvetites">Ingatlanközvetítés</a></li>
-								<li><a href="#energetikai_tanusitas">Energetikai tanúsítás</a></li>
-								<li><a href="#hokameras_vizsgalat">Hőkamerás vizsgálat</a></li>
-								<li><a href="#foldmeres">Földmérés</a></li>
-								<li><a href="#vevokepviselet">Vevőképviselet</a></li>
-								<li><a href="#projektellenorzes">Projektellenőrzés</a></li>
+								<li><a href="ertekbecsles">Értékbecslés</a></li>
+								<li><a href="muszaki_szakertes">Műszaki szakértés</a></li>
+								<li><a href="igazsagugyi_szakertes">Igazságügyi szakértés</a></li>
+								<li><a href="ingatlankozvetites">Ingatlanközvetítés</a></li>
+								<li><a href="energetikai_tanusitas">Energetikai tanúsítás</a></li>
+								<li><a href="hokameras_vizsgalat">Hőkamerás vizsgálat</a></li>
+								<li><a href="foldmeres">Földmérés</a></li>
+								<li><a href="vevokepviselet">Vevőképviselet</a></li>
+								<li><a href="projektellenorzes">Projektellenőrzés</a></li>
 							</ul>
 							<ul class="descriptions">
 								<li><p>Minden típusú ingatlan, tárgyi eszköz és immateriális vagyontárgy vagyonértékelésével foglakozunk. Közel 25.000 értékbecslés tapasztalatával állunk rendelkezésére.</p><img src="images/segit_ertekbecsles.jpg" alt="" /></li>
@@ -44,8 +44,8 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item referenciak"><a href="#referenciak">Referenciák</a></li>
-					<li class="item ingatlanok"><a href="#ingatlanok">Ingatlanok</a></li>
-					<li class="item segitunk"><a href="#segitunk">Segítünk</a></li>
+					<li class="item referenciak"><a href="referenciak">Referenciák</a></li>
+					<li class="item ingatlanok"><a href="ingatlanok">Ingatlanok</a></li>
+					<li class="item segitunk"><a href="segitunk">Segítünk</a></li>
 				</ul>
 			</div>

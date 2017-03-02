@@ -1,4 +1,7 @@
 <?php
+	// session_start();
+	$ping = 'pong';
+
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
 	date_default_timezone_set('Europe/Budapest');
@@ -21,40 +24,58 @@
 	// $valid_lang = array('hu');
 	$cookie_name = 'seratus_hu_lang';
 
-	if(isset($_GET['lang'])){
-		if(in_array($_GET['lang'], $valid_lang)){
-			$lang_code = $_GET['lang'];
-		    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
-		} else {
-			$base = dirname($base);
-
-			header('Location: '.$base.'/hu');
-		}
-	} else {
-		if(!isset($_COOKIE[$cookie_name])) {
-		    $lang_code = 'hu';
-		    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
-		} else {
-		    $lang_code = $_COOKIE[$cookie_name];
-		}
-
-		header('Location: '.$base.'/'.$lang_code);
-	}
-
-	// session_start();
-	$ping = 'pong';
 
 
 
-	ini_set('include_path', './bin/');
+	// if(isset($_GET['lang'])){
+	// 	if(in_array($_GET['lang'], $valid_lang)){
+	// 		$lang_code = $_GET['lang'];
+	// 	    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
+	// 	} else {
+	// 		$base = dirname($base);
+
+	// 		header('Location: '.$base.'/hu');
+	// 	}
+	// } else {
+	// 	if(!isset($_COOKIE[$cookie_name])) {
+	// 	    $lang_code = 'hu';
+	// 	    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
+	// 	} else {
+	// 	    $lang_code = $_COOKIE[$cookie_name];
+	// 	}
+
+	// 	header('Location: '.$base.'/'.$lang_code);
+	// }
+	$lang_code = 'hu';
+	$carousel = true;
+
+	ini_set('include_path', 'bin'.PATH_SEPARATOR.'bin/content_'.$lang_code);
 	include_once 'functions.php';
 
-	ini_set('include_path', './bin/content_'.$lang_code.'/');
+
+	if(isset($_GET['page'])){
+		$content = $_GET['page'];
+		$carousel = false;
+	} else {
+		switch ($lang_code) {
+			case 'en':
+				$content = 'main';
+				break;
+			default:
+				$content = 'fooldal';
+				break;
+		}
+	}
+
+	$page = 'content_'.$content.'.php';
+	if(!stream_resolve_include_path($page)) header('Location: '.$base);
+
+
 
 	$ip = (empty($_SERVER['HTTP_CLIENT_IP'])?(empty($_SERVER['HTTP_X_FORWARDED_FOR'])?$_SERVER['REMOTE_ADDR']:$_SERVER['HTTP_X_FORWARDED_FOR']):$_SERVER['HTTP_CLIENT_IP']);
-	$logfile = 'ip.log';
+	$logfile = 'visitor_log/ip.log';
 	if(file_exists($logfile)){
-		if(filesize($logfile) > 250000) rename($logfile,'ip_'.date('Ymd').'.log');
+		if(filesize($logfile) > 250000) rename($logfile,'visitor_log/ip_'.date('Ymd').'.log');
 	}
 
 	$iplog = fopen($logfile, 'a');
@@ -76,7 +97,7 @@
 <html lang="<?=$lang_code?>">
 	<head>
 		<?php
-			include ('html_head.php');
+			include 'html_head.php';
 		?>
 
 		<script type="text/javascript">
@@ -84,14 +105,14 @@
 		</script>
 	</head>
 	<!-- <?php echo $base ?> -->
-<body class="lang_<?=$lang_code?>">
+<body class="" data-content="<?=$content?>">
 	<div id="preloader">
-		<div id="status">
-		</div>
+		<!--div id="status">
+		</div-->
 	</div>
 	<nav>
 	<?php
-		include ('html_nav.php');
+		include 'html_nav.php';
 
 		if(count($valid_lang) > 1){
 	?>
@@ -104,7 +125,7 @@
 			// $base_new_lang = implode('/', $base_new_lang);
 			$base_new_lang = $base.'/'.$lng;
 
-			echo '<a '.($lng==$lang_code?'class="active" ':'').'href="'.($lng==$lang_code?'#':$base_new_lang).'">'.$lng.'</a>
+			echo '<a '.($lng==$lang_code?'class="active" ':'').'href="'.($lng==$lang_code?'/':$base_new_lang).'">'.$lng.'</a>
 ';
 			$i++;
 		}
@@ -116,22 +137,26 @@
 	</nav>
 	<div id="carousel_wrapper">
 		<?php
-			include ('html_carousel.php');
+			if($carousel) include 'html_carousel.php';
 		?>
 	</div>
 	<div id="content_wrapper">
 		<div id="column_wrapper">
-			<div class="column left"></div>
+			<div class="column left">
+			<?php
+				include $page;
+			?>
+			</div>
 			<div class="column right">
 			<?php
-				include ('html_right.php');
+				include 'html_right.php';
 			?>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 	<?php
-		include ('html_footer.php');
+		include 'html_footer.php';
 	?>
 	<div id="ajax">
 		<!--div class="square"></div>
@@ -145,31 +170,31 @@
 	<div id="overlay_close">&times;</div>
 
 	<script type="text/javascript">
-		function getHash(){
-			hash = window.location.hash;
-		}
+		// function getHash(){
+		// 	hash = window.location.hash;
+		// }
 
 		$(window).load(function() {
-			if (!window.location.hash){
-				window.location.hash = '_';
-			} else if(window.location.hash != '_'){
-				$('body').removeClass('main');
-			}
-			getHash();
+			// if (!window.location.hash){
+			// 	window.location.hash = '_';
+			// } else if(window.location.hash != '_'){
+			// 	$('body').removeClass('main');
+			// }
+			// getHash();
 
-			if(hash != '#_') $('body').removeClass('main');
+			// if(hash != '#_') $('body').removeClass('main');
 
-			loadContent(hash);
+			pageLoaded();
 
-			$("#status").fadeOut(250,function(){
-				$("#preloader").fadeOut(750,function(){
+			// $("#status").fadeOut(50,function(){
+				$("#preloader").fadeOut(500,function(){
 				});	
-			});
+			// });
 		})
 	</script>
 
 	<?php
-		include ('html_js.php');
+		include 'html_js.php';
 	?>
 </body>
 </html>

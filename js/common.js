@@ -121,6 +121,97 @@ function loadContent(id){
 
 }
 
+function pageLoaded(){
+	// TweenMax.to($('.column.left'), .25, {autoAlpha: .5});
+	// TweenMax.to($('#ajax'), .25, {autoAlpha: 1, onComplete: function(){
+
+				$('.send .button').unbind();
+				// TweenMax.to($('#ajax, .column.left'), .25, {autoAlpha: 0, onComplete: function(){
+					$('html, body').stop().animate({
+						'scrollTop': 0
+					});
+					TweenMax.to($('.column.left'), .25, {autoAlpha: 1, delay: .5, onComplete: function(){
+						// $('.column.left').empty().html(msg);
+						// if(hash == '#_'){
+						// 	$('body').addClass('fooldal');
+						// } else {
+						// 	// $('body').removeClass('fooldal');
+						// 	$('body').attr('class',id.substr(1));
+						// }
+						$('body').attr('class',$('body').attr('data-content'));
+						$('.send .button').bind('click', sendMsg);
+						$('.button[data-faq]').bind('click', prepareFAQ);
+
+						// munkatársak popup-ja
+						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
+
+						// ingatlanok popup-ja
+						$('.ingatlan_info').bind('click', popupRealest);
+
+						if($('select[name=szolgaltatas]').length){
+							setupForm($('select[name=szolgaltatas]').val());
+
+							$('select[name=szolgaltatas]').change(function(){
+								setupForm($(this).val());
+							});
+						}
+
+						$('.button.add_realty').click(function(){
+							var $this = $(this);
+							var realtyNum = $this.attr('data-realty_num');
+
+							if (realtyNum < 4){
+								var lastRealty = $this.siblings('.ingatlan_adatok').last();
+								var newRealty = lastRealty.clone();
+
+				                realtyNum++;
+
+								// console.log(lastRealty);
+								// console.log(newRealty);
+
+				                newRealty.insertAfter(lastRealty);
+
+								// newRealty = $this.siblings('ingatlan_adatok').last();
+
+				                newRealty.wrap('<form>').closest('form').get(0).reset();
+				                newRealty.unwrap();
+
+				                // var newRealtyTitle = realtyNum + newRealty.find('.realty_num span').html().slice(1);
+
+				                // newRealty.find('.realty_num span').html(newRealtyTitle);
+				                // newRealty.find('input[type=hidden]').html(realtyNum+'. ingatlan');
+
+								if(lang_code == 'en'){
+						                newRealty.find('.realty_num span').html('Property No. '+realtyNum);
+				                } else { // "hu"
+						                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
+				                }
+
+
+				                // var inputs = newRealty.find('input[type=text]');
+				                var inputs = newRealty.find('input');
+
+				                inputs.each(function(i){
+				                	var input = $(this);
+				                	var name = input.attr('name');
+
+				                	input.attr('name',name.replace(realtyNum-1,realtyNum));
+				                });
+
+
+								$this.attr('data-realty_num',realtyNum);
+							}
+						});
+
+					}});
+				// }});
+
+
+
+	// }});
+
+}
+
 function popupEmployee(){
 	TweenMax.set($('#overlay'), {autoAlpha: 0});
 
@@ -399,9 +490,9 @@ function scrollBg(){
 
 $(document).ready(function(){
 
-	$('a').click(function(e){
-		// e.preventDefault();
-	})
+	// $('a').click(function(e){
+	// 	e.preventDefault();
+	// })
 
 	var autoplay = setInterval(function(){
 		$('.pager_arrow.right').trigger('click');
@@ -669,10 +760,10 @@ $(document).ready(function(){
 
 });
 
-$(window).on('hashchange',function(){
+$(window)/*.on('hashchange',function(){
 	getHash();
 	hideFAQ();
 	loadContent(hash);
-}).scroll(function(){
+})*/.scroll(function(){
 	scrollBg();
 });

@@ -9,19 +9,19 @@
 					<h3 class="line_2">24 év tapasztalatával</h3>
 					<h3 class="line_3">állunk rendelkezésére!</h3>
 					<!--h4>Ismerje meg legnagyobb ügyfeleinket!</h4-->
-					<a href="#referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
+					<a href="referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_01_img.png" alt="" />
 				</li>
 				<li class="two" data-th="2">
 					<h3>Értékbecslés minden szinten.</h3>
 					<h4>Kérjen ajánlatot, 24 órán belül elküldjük!</h4>
-					<a href="#ertekbecsles"><div class="button w_arrow"><span>Érdekel</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
+					<a href="ertekbecsles"><div class="button w_arrow"><span>Érdekel</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_03_img.png" alt="" />
 				</li>
 				<!--li class="three" data-th="3">
 					<h3>22 év tapasztalatával az ingatlanpiacon.</h3>
 					<h4>Ismerje meg legnagyobb ügyfeleinket!</h4>
-					<a href="#referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
+					<a href="referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_02_img.png" alt="" />
 				</li-->
 			</ul>

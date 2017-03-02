@@ -2,7 +2,7 @@
 
 	if(!$ping) die();
 
-	$debug_mode = false;	// false: SERATUS-ra megy, true: gmail.com
+	$debug_mode = true;	// false: SERATUS-ra megy, true: gmail.com
 	$bcc_mode = true;		// kapok-e másolatot, vagy sem
 
     // Message design (headers and rows)
@@ -48,8 +48,8 @@
 
 	function recommend($array){
 		// echo 'works!';
-		global $lang;
-		// var_dump($lang);
+		global $lang_code;
+		// var_dump($lang_code);
 
 		$erdekelhetik = array(
 			'hu' => 'Alábbi szolgáltatásaink is érdekelhetik:',
@@ -61,10 +61,11 @@
 		if(is_array($array)){
 ?>
 <hr class="recommend_more" />
-<h3 class="recommend_head"><?=$erdekelhetik[$lang]?></h3>
+<h3 class="recommend_head"><?=$erdekelhetik[$lang_code]?></h3>
 <?php
 			foreach($array as $a){
-				$file = "content_".$lang."/recommend_".$a.".php";
+				$file = "bin/content_".$lang_code."/recommend_".$a.".php";
+				// $file = "recommend_".$a.".php";
 
 				if(is_file($file)){
 					$content = file_get_contents($file);
