@@ -1,4 +1,9 @@
-<h1>Online assignment</h1>
+<?php
+
+$title = 'Online assignment';
+
+$content_html = 
+'<h1>Online assignment</h1>
 <p>Conduct your real estate affairs quickly and simply!<br/>Please provide the data required for the administration,<br/>so that our colleague can be prepared when calling you back!</p>
 <form id="online_form" name="online_form" method="post" action="bin/func_sendOnline.php">
 	<fieldset class="fs_null fs_ertekbecsles fs_muszaki_szakertes fs_igazsagugyi_szakertes fs_energetikai_vizsgalat fs_ingatlan_ertekesites fs_ingatlannyilvantartasi_ugyintezes fs_projektellenorzes">
@@ -541,100 +546,6 @@
 
 
 
-	<!--fieldset>
-		<label>
-			<span>Az ingatlan címe</span>
-		</label>
-		<label>
-			<span>Ország:</span>
-			<select name="orszag">
-				<option value="Magyarország">Magyarország</option>
-			</select>
-		</label>
-		<label>
-			<span>Megye:</span>
-			<input type="text" name="megye"/>
-		</label>
-		<label>
-			<span>Település:</span>
-			<input type="text" name="telepules"/>
-		</label>
-		<label>
-			<span>Utca:</span>
-			<input type="text" name="utca"/>
-		</label>
-		<label>
-			<span>Házszám:</span>
-			<input type="text" name="hazszam"/>
-		</label>
-		<label>
-			<span>Topographical lot number:</span>
-			<input type="text" name="helyrajziszam"/>
-		</label>
-		<label>
-			<span>Külterület:</span>
-			<input type="radio" name="kulter_belter" value="0" class="radio" />
-		</label>
-		<label>
-			<span>Belterület:</span>
-			<input type="radio" name="kulter_belter" value="1" class="radio" />
-		</label>
-		<br/>
-		<label>
-			<span><strong>Az ingatlan típusa</strong></span>
-			<select name="tipus">
-				<option value="lakás">lakás</option>
-				<option value="társasház">társasház</option>
-				<option value="kertesház">kertesház</option>
-			</select>
-		</label>
-		<label>
-			<span>Szintek száma:</span>
-			<input type="text" name="szintek"/>
-		</label>
-		<label>
-			<span>Mérete (m<sup>2</sup>):</span>
-			<input type="text" name="meret"/>
-		</label>
-		<label>
-			<span>Telek mérete (m<sup>2</sup>):</span>
-			<input type="text" name="telekmeret"/>
-		</label>
-		<label>
-			<span>Építés éve:</span>
-			<input type="text" name="epites_eve"/>
-		</label>
-		<label>
-			<span>Építés módja:</span>
-			<select name="epites_modja">
-				<option value="tégla">tégla</option>
-				<option value="ytong">ytong</option>
-				<option value="gerenda/rönk">gerenda/rönk</option>
-				<option value="könnyűszerkezetes">könnyűszerkezetes</option>
-			</select>
-		</label>
-		<label>
-			<span>Osztatlan közös tulajdon:</span>
-			<input type="checkbox" name="osztatlan" class="checkbox" />
-		</label>
-		<label>
-			<span>Ingatlan állapota:</span>
-			<select name="ingatlan_allapota">
-				<option value="Új/újszerű">Új/újszerű</option>
-				<option value="Használt">Használt</option>
-				<option value="Lelakott">Lelakott</option>
-			</select>
-		</label>
-		<br/>
-		<label>
-			<span>Ingatlan rövid jellemzése:</span>
-			<textarea name="jellemzes"></textarea>
-		</label>
-	</fieldset-->
-
-
-
-
 	<fieldset class="fs_ertekbecsles fs_muszaki_szakertes fs_igazsagugyi_szakertes fs_energetikai_vizsgalat fs_ingatlan_ertekesites fs_ingatlannyilvantartasi_ugyintezes fs_projektellenorzes">
 		<label class="captcha">
 			<span><img class="vericode" src="./bin/captcha.php?size=160&index=online" /></span>
@@ -642,8 +553,9 @@
 		</label>
 		<label class="message"></label>
 		<label class="send">
-			<!-- <input class="form_send button w_arrow" type="submit" value="Elküld" /> -->
 			<div class="button w_arrow"><span>Submit</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 		</label>
 	</fieldset>
-</form>
+</form>';
+
+?>

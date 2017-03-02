@@ -1524,7 +1524,8 @@ div.pager_arrow.left:hover .arrow_lower, div.pager_arrow.right:hover .arrow_uppe
 	/*clear: both;*/
 }
 
-.fooldal #column_wrapper {
+.fooldal #column_wrapper,
+.main #column_wrapper {
 	margin-top: 0px;
 }
 
@@ -2518,9 +2519,9 @@ body.we_help .segitunk .col {
 
 .poszl-1 { left: 0;}
 .poszl-2 { left: 130px;}
-.poszl-2:hover { left: 0;}
+.poszl-2:hover { left: 130px;}
 .poszl-3 { left: 260px;}
-.poszl-3:hover { left: 130px;}
+.poszl-3:hover { left: 260px;}
 .poszl-4 { right: 130px;}
 .poszl-4:hover { right: 0;}
 .poszl-5 { right: 0;}
@@ -2661,29 +2662,33 @@ body.we_help .segitunk .col {
 
 #feedback {
 	display: block;
-    margin-left: -250px;
+    margin-left: -270px;
+    padding: 10px 20px;
     width: 500px;
-    height: 32px;
+    height: auto;
+    min-height: 20px;
     background: rgb(8,156,203);
     color: rgb(255,255,255);
 	font-family: 'ProxiGreen', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 32px;
+	line-height: 20px;
 	text-align: center;
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.1);
 	-moz-box-shadow: 0 2px 5px rgba(0,0,0,.1);
 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
     position: fixed;
 	left: 50%;
-	top: -50px;
+	top: -100px;
+	opacity: 0;
 	z-index: 99;
-	transition: top 2s ease-in;
+	transition: all .5s ease-in;
 }
 
 #feedback.visible {
 	top: 0;
-	transition: top .1s ease-out;
+	opacity: 1;
+	transition: all .25s ease-out;
 }
 
 .languages {

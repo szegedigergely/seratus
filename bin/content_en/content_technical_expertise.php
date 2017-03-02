@@ -1,4 +1,9 @@
-<h1>Technical expertise</h1>
+<?php
+
+$title = 'Technical expertise';
+
+$content_html = 
+'<h1>Technical expertise</h1>
 <p>As technical experts we explore the causes of technical phenomena, defects and damages related to built structures and we provide solution options for the elimination of defects.</p>
 <p>We recommend that a technical expert opinion be prepared in every case prior to the purchase of a real estate property. </p>
 <p>This expect opinion presents the technical properties of the real estate property that you wish to purchase and the expedient renovation options that could result in energy savings, together with their costs. Such an expert opinion may assist the prospective buyer in his decision-making and in a majority of cases it may also have a significant impact on the purchase price. </p>
@@ -25,9 +30,8 @@
 	<span class="name">István Mészáros</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('buyers_representation','energy_certification'));
+$recommend_array = array('buyers_representation','energy_certification');
 
 ?>

@@ -1,4 +1,9 @@
-<h1>Cégvezetők</h1>
+<?php
+
+$title = 'Munkatársak';
+
+$content_html = 
+'<h1>Cégvezetők</h1>
 <div>
 	<div class="v_card half_width ceo_card">
 		<img src="images/munkatarsak/_DSC5006_kicsi.jpg" alt="" />
@@ -303,4 +308,6 @@
 		</p>
 		<span class="contact"></span>
 	</div-->
-</div>
+</div>';
+
+?>

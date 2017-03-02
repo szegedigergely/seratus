@@ -1,4 +1,9 @@
-<h1>References</h1>
+<?php
+
+$title = 'References';
+
+$content_html = 
+'<h1>References</h1>
 <div class="partner-blokkok referenciak">
 	<div class="partner partner-neve psor-1 poszl-1">
 		<img src="images/partner_bb.jpg" alt="Budapest Bank" />
@@ -111,4 +116,6 @@
 	<span class="name">István Mészáros</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
+</div>';
+
+?>

@@ -54,7 +54,7 @@
 		$erdekelhetik = array(
 			'hu' => 'Alábbi szolgáltatásaink is érdekelhetik:',
 			'en' => 'Our following services may also be of interest to you:',
-			'de' => 'Alábbi szolgáltatásaink is érdekelhetik (DE):',
+			'de' => 'Alábbi szolgáltatásaink is érdekelhetik (GER):',
 		);
 
 

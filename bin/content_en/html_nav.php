@@ -2,14 +2,14 @@
 	if(!$ping) die;
 ?>
 			<div id="nav_wrapper">
-				<a id="logo" href="#_"><img src="images/logo.png" alt="Seratus" /></a>
+				<a id="logo" href="/"><img src="images/logo.png" alt="Seratus" /></a>
 				<ul>
-					<li class="item bemutatkozunk"><a href="#_">About</a>
+					<li class="item bemutatkozunk"><a href="/">About</a>
 						<div class="submenu">
 							<ul class="links">
-								<li><a href="#about_us">About us</a></li>
-								<li><a href="#staff">Staff</a></li>
-								<li><a href="#career">Career</a></li>
+								<li><a href="about_us">About us</a></li>
+								<li><a href="staff">Staff</a></li>
+								<li><a href="career">Career</a></li>
 							</ul>
 							<ul class="descriptions">
 								<li><p>Learn about the History of Seratus Ltd, its philosophy that has remained unchanged for 22 years, and its ever-expanding range of services.</p><img src="images/submenu_bemutatkozunk.jpg" alt="" /></li>
@@ -18,18 +18,18 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item szolgaltatasaink"><a href="#_">Services</a>
+					<li class="item szolgaltatasaink"><a href="/">Services</a>
 						<div class="submenu">
 							<ul class="links">
-								<li><a href="#appraisals">Appraisals</a></li>
-								<li><a href="#technical_expertise">Technical expertise</a></li>
-								<li><a href="#forensic_expertise">Forensic expertise</a></li>
-								<li><a href="#real_estate">Real estate</a></li>
-								<li><a href="#energy_certification">Energy certification</a></li>
-								<li><a href="#thermal_cam">Thermal camera investigations</a></li>
-								<li><a href="#surveying">Surveying</a></li>
-								<li><a href="#buyers_representation">Buyer's representation</a></li>
-								<li><a href="#project_control">Project control</a></li>
+								<li><a href="appraisals">Appraisals</a></li>
+								<li><a href="technical_expertise">Technical expertise</a></li>
+								<li><a href="forensic_expertise">Forensic expertise</a></li>
+								<li><a href="real_estate">Real estate</a></li>
+								<li><a href="energy_certification">Energy certification</a></li>
+								<li><a href="thermal_cam">Thermal camera investigations</a></li>
+								<li><a href="surveying">Surveying</a></li>
+								<li><a href="buyers_representation">Buyer's representation</a></li>
+								<li><a href="project_control">Project control</a></li>
 							</ul>
 							<ul class="descriptions">
 								<li><p>We perform appraisals for all types of real estate properties, tangible assets and intangible assets. We are at your service with the experience of nearly 25,000 appraisals.</p><img src="images/segit_ertekbecsles.jpg" alt="" /></li>
@@ -44,8 +44,8 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item referenciak"><a href="#references">References</a></li>
-					<li class="item ingatlanok"><a href="#real_estates">Real Estates</a></li>
-					<li class="item segitunk"><a href="#we_help">Need help?</a></li>
+					<li class="item referenciak"><a href="references">References</a></li>
+					<li class="item ingatlanok"><a href="real_estates">Real Estates</a></li>
+					<li class="item segitunk"><a href="we_help">Need help?</a></li>
 				</ul>
 			</div>

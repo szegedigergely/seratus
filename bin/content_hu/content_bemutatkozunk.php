@@ -1,4 +1,9 @@
-<h1>Bemutatkozunk</h1>
+<?php
+
+$title = 'Bemutatkozunk';
+
+$content_html = 
+'<h1>Bemutatkozunk</h1>
 <p>Tisztelt Érdeklődő!</p>
 <p>Köszönjünk látogatását megújult weblapunkon, reméljük, hogy hasznos információkkal tudunk szolgálni, majd üdvözölhetjük évi több ezer megbízónk között. Engedje meg, hogy mint a cég többségi tulajdonosa, alapítója néhány szót szóljak társaságunk történetéről.</p>
 <p>1991-ben alapítottam a <strong>SERATUS Vagyonértékelő Rt</strong>-t, mely az országban az elsők között foglalkozott ingatlan értékbecsléssel, vagyonértékeléssel, privatizációs majd csőd tanácsadással és felszámolással is.</p>
@@ -12,4 +17,6 @@
 	<img src="images/munkatarsak/thumb/_DSC5006_kicsi.jpg" alt="" />
 	<span class="name">Máté Miklós</span>
 	<span class="title">ügyvezető igazgató</span>
-</div>
+</div>';
+
+?>

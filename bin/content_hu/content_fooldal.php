@@ -1,11 +1,15 @@
-<div class="main_lead">
+<?php
+
+$title = '';
+
+$content_html = 
+'<div class="main_lead">
 	<a href="segitunk" class="erdekel">
 		<img src="images/fooldal_erdekel.jpg" alt="" />
 		<div class="button w_arrow"><span>Érdekel</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 	</a>
 	<h2>Segítünk mindenben, ami ingatlan</h2>
 	<p>Szakértelmünkkel pénzt és időt spórolhat lakáseladás, lakásvétel vagy lakásával kapcsolatos problémák esetén. Olvassa el, hogyan lehetséges ez!</p>
-	<!-- <div class="clearfix"></div> -->
 </div>
 <h2 class="underline">Miben segíthetünk?</h2>
 <br/>
@@ -24,4 +28,6 @@
 	<h3>Energetikai vizsgálat</h3>
 	<p>Tanúsítványát korszerű felszereléssel és rövid határidővel készítjük el.</p>
 	<span class="more">tovább</span>
-</a>
+</a>';
+
+?>

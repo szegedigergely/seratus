@@ -1,4 +1,9 @@
-<h1>Surveying</h1>
+<?php
+
+$title = 'Surveying';
+
+$content_html = 
+'<h1>Surveying</h1>
 <p>We offer comprehensive management of geodetics assignments in relation to real estate transactions and appraisals.</p>
 <p>Would you like to know the exact limits of your real estate plot and the exact location of your fence line? </p>
 <p>Within the construction industry we solve geodetics engineering assignments that require highly precise measurements.</p>
@@ -15,9 +20,8 @@
 	<span class="name">István Mészáros</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('thermal_cam','appraisals'));
+$recommend_array = array('thermal_cam','appraisals');
 
 ?>

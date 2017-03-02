@@ -19,58 +19,40 @@
 		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	// }
 
-	// $valid_lang = array('hu', 'en', 'de');
 	$valid_lang = array('hu', 'en');
-	// $valid_lang = array('hu');
 	$cookie_name = 'seratus_hu_lang';
 
 
-
-
-	// if(isset($_GET['lang'])){
-	// 	if(in_array($_GET['lang'], $valid_lang)){
-	// 		$lang_code = $_GET['lang'];
-	// 	    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
-	// 	} else {
-	// 		$base = dirname($base);
-
-	// 		header('Location: '.$base.'/hu');
-	// 	}
-	// } else {
-	// 	if(!isset($_COOKIE[$cookie_name])) {
-	// 	    $lang_code = 'hu';
-	// 	    setcookie($cookie_name, $lang_code, time() + (10 * 365 * 24 * 60 * 60), "/");
-	// 	} else {
-	// 	    $lang_code = $_COOKIE[$cookie_name];
-	// 	}
-
-	// 	header('Location: '.$base.'/'.$lang_code);
-	// }
 	$lang_code = 'hu';
+	// $lang_code = 'en';
+
 	$carousel = true;
+	$content_html = '';
 
 	ini_set('include_path', 'bin'.PATH_SEPARATOR.'bin/content_'.$lang_code);
 	include_once 'functions.php';
 
-
 	if(isset($_GET['page'])){
-		$content = $_GET['page'];
+		$content_name = $_GET['page'];
 		$carousel = false;
 	} else {
 		switch ($lang_code) {
 			case 'en':
-				$content = 'main';
+				$content_name = 'main';
 				break;
 			default:
-				$content = 'fooldal';
+				$content_name = 'fooldal';
 				break;
 		}
 	}
 
-	$page = 'content_'.$content.'.php';
-	if(!stream_resolve_include_path($page)) header('Location: '.$base);
-
-
+	$page = 'content_'.$content_name.'.php';
+	$page_path = stream_resolve_include_path($page);
+	if(!$page_path){
+		header('Location: '.$base);
+	} else {
+		include($page_path);
+	}
 
 	$ip = (empty($_SERVER['HTTP_CLIENT_IP'])?(empty($_SERVER['HTTP_X_FORWARDED_FOR'])?$_SERVER['REMOTE_ADDR']:$_SERVER['HTTP_X_FORWARDED_FOR']):$_SERVER['HTTP_CLIENT_IP']);
 	$logfile = 'visitor_log/ip.log';
@@ -82,14 +64,6 @@
 	fwrite($iplog, '"'.date('Y.m.d H:i:s').'";"'.$ip.'";"'.(isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:'N/A').'";"'.$_SERVER['REQUEST_URI'].'";"'.$_SERVER['HTTP_USER_AGENT'].'";'."\r\n");
 	fclose($iplog);
 
-	// $redirected = 0;
-
-	// $lang = isset($_GET['lang'])?$_GET['lang']:'';
-	// if (empty($lang) || !in_array($lang, array('hu','en'))) {
-	// 	$lang = strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2)) == 'hu' ? 'hu' : 'en';
-	// }
-	// require_once('bin/lang_'.$lang.'.php');
-	
 	header('X-UA-Compatible: IE=edge,chrome=1');
 
 ?>
@@ -104,8 +78,7 @@
 			var lang_code = '<?=$lang_code?>';
 		</script>
 	</head>
-	<!-- <?php echo $base ?> -->
-<body class="" data-content="<?=$content?>">
+<body class="" data-content="<?=$content_name?>">
 	<div id="preloader">
 		<!--div id="status">
 		</div-->
@@ -118,16 +91,16 @@
 	?>
 		<div class="languages">
 	<?php
-		$i = 0;
-		foreach ($valid_lang as $lng) {
-			// $base_new_lang = explode('/', $base);
-			// $base_new_lang[count($base_new_lang)-1] = $lng;
-			// $base_new_lang = implode('/', $base_new_lang);
-			$base_new_lang = $base.'/'.$lng;
-
-			echo '<a '.($lng==$lang_code?'class="active" ':'').'href="'.($lng==$lang_code?'/':$base_new_lang).'">'.$lng.'</a>
-';
-			$i++;
+		foreach ($valid_lang as $lang) {
+			if($lang == 'hu'){
+	?>
+			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="http://www.seratus.hu/"><?=$lang?></a>
+	<?php
+			} else {
+	?>
+			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="http://<?=$lang?>.seratus.hu/"><?=$lang?></a>
+	<?php
+			}
 		}
 	?>
 		</div>
@@ -144,7 +117,9 @@
 		<div id="column_wrapper">
 			<div class="column left">
 			<?php
-				include $page;
+				echo $content_html;
+
+				if(isset($recommend_array)) recommend($recommend_array);
 			?>
 			</div>
 			<div class="column right">
@@ -158,38 +133,16 @@
 	<?php
 		include 'html_footer.php';
 	?>
-	<div id="ajax">
-		<!--div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div-->
-	</div>
 	<div id="feedback" class=""></div>
 	<div id="overlay"></div>
 	<div id="overlay_close">&times;</div>
 
 	<script type="text/javascript">
-		// function getHash(){
-		// 	hash = window.location.hash;
-		// }
-
 		$(window).load(function() {
-			// if (!window.location.hash){
-			// 	window.location.hash = '_';
-			// } else if(window.location.hash != '_'){
-			// 	$('body').removeClass('main');
-			// }
-			// getHash();
-
-			// if(hash != '#_') $('body').removeClass('main');
-
 			pageLoaded();
 
-			// $("#status").fadeOut(50,function(){
-				$("#preloader").fadeOut(500,function(){
-				});	
-			// });
+			$("#preloader").fadeOut(500,function(){
+			});	
 		})
 	</script>
 

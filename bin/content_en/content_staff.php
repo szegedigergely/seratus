@@ -1,4 +1,9 @@
-<h1>Executive managers</h1>
+<?php
+
+$title = 'Staff';
+
+$content_html = 
+'<h1>Executive managers</h1>
 <div>
 	<div class="v_card half_width ceo_card">
 		<img src="images/munkatarsak/_DSC5006_kicsi.jpg" alt="Miklós Máté" />
@@ -256,4 +261,6 @@
 		</p>
 		<span class="contact">Extension: 124<br/>voros<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
-</div>
+</div>';
+
+?>

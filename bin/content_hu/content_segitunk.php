@@ -1,4 +1,9 @@
-<h1>Segítünk</h1>
+<?php
+
+$title = 'Segítünk mindenben, ami ingatlan';
+
+$content_html = 
+'<h1>Segítünk</h1>
 <h2>Spóroljon velünk időt, pénzt és energiát</h2>
 <p>Miben segíthetünk?</p>
 <div class="segitunk">
@@ -18,4 +23,6 @@
 		<p>Károk, konfliktusok, jogi kérdések. 22 év tapasztalattal állunk rendelkezésére!</p>
 		<a class="more" href="lakasproblemak"><div class="button w_arrow"><span>Érdekel</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 	</div>
-</div>
+</div>';
+
+?>

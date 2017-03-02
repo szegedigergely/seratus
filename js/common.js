@@ -2,7 +2,6 @@ var loaded = true;
 var menuTimer = null;
 
 function setupForm(formID){
-	// console.log(formID);
 	var allFields = $('#online_form fieldset');
 	var mandatoryFields = $('#online_form fieldset.'+formID);
 
@@ -10,206 +9,77 @@ function setupForm(formID){
 	mandatoryFields.show();
 }
 
-function loadContent(id){
-	var url = "bin/func_getContent.php?lang="+lang_code+"&id="+id.substr(1);
+function pageLoaded(){
+	$('.send .button').unbind();
+	$('html, body').stop().animate({
+		'scrollTop': 0
+	});
+	TweenMax.to($('.column.left'), .25, {autoAlpha: 1, delay: .5, onComplete: function(){
+		$('body').attr('class',$('body').attr('data-content'));
+		$('.send .button').bind('click', sendMsg);
+		$('.button[data-faq]').bind('click', prepareFAQ);
 
-	loaded = false;
-	// loader();
-	// console.log(url);
+		// munkatársak popup-ja
+		$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
 
-	TweenMax.to($('.column.left'), .25, {autoAlpha: .5});
-	TweenMax.to($('#ajax'), .25, {autoAlpha: 1, onComplete: function(){
-		var request = $.ajax({
-				url: url,
-				type: "GET",
-				dataType: "html"
-		});
-		request.done(function(msg) {
-			loaded = true;
-			// console.log(msg);
-			if(msg == 'redirect'){
-				window.location.hash = '_';
-			} else {
-				$('.send .button').unbind();
-				TweenMax.to($('#ajax, .column.left'), .25, {autoAlpha: 0, onComplete: function(){
-					$('html, body').stop().animate({
-						'scrollTop': 0
-					});
-					TweenMax.to($('.column.left'), .25, {autoAlpha: 1, delay: .5, onComplete: function(){
-						$('.column.left').empty().html(msg);
-						if(hash == '#_'){
-							$('body').addClass('fooldal');
-						} else {
-							// $('body').removeClass('fooldal');
-							$('body').attr('class',id.substr(1));
-						}
-						$('.send .button').bind('click', sendMsg);
-						$('.button[data-faq]').bind('click', prepareFAQ);
+		// ingatlanok popup-ja
+		$('.ingatlan_info').bind('click', popupRealest);
 
-						// munkatársak popup-ja
-						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
+		if($('select[name=szolgaltatas]').length){
+			setupForm($('select[name=szolgaltatas]').val());
 
-						// ingatlanok popup-ja
-						$('.ingatlan_info').bind('click', popupRealest);
+			$('select[name=szolgaltatas]').change(function(){
+				setupForm($(this).val());
+			});
+		}
 
-						if($('select[name=szolgaltatas]').length){
-							setupForm($('select[name=szolgaltatas]').val());
+		$('.button.add_realty').click(function(){
+			var $this = $(this);
+			var realtyNum = $this.attr('data-realty_num');
 
-							$('select[name=szolgaltatas]').change(function(){
-								setupForm($(this).val());
-							});
-						}
+			if (realtyNum < 4){
+				var lastRealty = $this.siblings('.ingatlan_adatok').last();
+				var newRealty = lastRealty.clone();
 
-						$('.button.add_realty').click(function(){
-							var $this = $(this);
-							var realtyNum = $this.attr('data-realty_num');
+                realtyNum++;
 
-							if (realtyNum < 4){
-								var lastRealty = $this.siblings('.ingatlan_adatok').last();
-								var newRealty = lastRealty.clone();
+				// console.log(lastRealty);
+				// console.log(newRealty);
 
-				                realtyNum++;
+                newRealty.insertAfter(lastRealty);
 
-								// console.log(lastRealty);
-								// console.log(newRealty);
+				// newRealty = $this.siblings('ingatlan_adatok').last();
 
-				                newRealty.insertAfter(lastRealty);
+                newRealty.wrap('<form>').closest('form').get(0).reset();
+                newRealty.unwrap();
 
-								// newRealty = $this.siblings('ingatlan_adatok').last();
+                // var newRealtyTitle = realtyNum + newRealty.find('.realty_num span').html().slice(1);
 
-				                newRealty.wrap('<form>').closest('form').get(0).reset();
-				                newRealty.unwrap();
+                // newRealty.find('.realty_num span').html(newRealtyTitle);
+                // newRealty.find('input[type=hidden]').html(realtyNum+'. ingatlan');
 
-				                // var newRealtyTitle = realtyNum + newRealty.find('.realty_num span').html().slice(1);
+				if(lang_code == 'en'){
+		                newRealty.find('.realty_num span').html('Property No. '+realtyNum);
+                } else { // "hu"
+		                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
+                }
 
-				                // newRealty.find('.realty_num span').html(newRealtyTitle);
-				                // newRealty.find('input[type=hidden]').html(realtyNum+'. ingatlan');
+                // var inputs = newRealty.find('input[type=text]');
+                var inputs = newRealty.find('input');
 
-								if(lang_code == 'en'){
-						                newRealty.find('.realty_num span').html('Property No. '+realtyNum);
-				                } else { // "hu"
-						                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
-				                }
+                inputs.each(function(i){
+                	var input = $(this);
+                	var name = input.attr('name');
+
+                	input.attr('name',name.replace(realtyNum-1,realtyNum));
+                });
 
 
-				                // var inputs = newRealty.find('input[type=text]');
-				                var inputs = newRealty.find('input');
-
-				                inputs.each(function(i){
-				                	var input = $(this);
-				                	var name = input.attr('name');
-
-				                	input.attr('name',name.replace(realtyNum-1,realtyNum));
-				                });
-
-
-								$this.attr('data-realty_num',realtyNum);
-							}
-						});
-
-					}});
-				}});
-
-
-
+				$this.attr('data-realty_num',realtyNum);
 			}
 		});
-		request.fail(function(jqXHR, textStatus) {
-			// console.log(jqXHR+'; '+textStatus);
-		});
+
 	}});
-
-}
-
-function pageLoaded(){
-	// TweenMax.to($('.column.left'), .25, {autoAlpha: .5});
-	// TweenMax.to($('#ajax'), .25, {autoAlpha: 1, onComplete: function(){
-
-				$('.send .button').unbind();
-				// TweenMax.to($('#ajax, .column.left'), .25, {autoAlpha: 0, onComplete: function(){
-					$('html, body').stop().animate({
-						'scrollTop': 0
-					});
-					TweenMax.to($('.column.left'), .25, {autoAlpha: 1, delay: .5, onComplete: function(){
-						// $('.column.left').empty().html(msg);
-						// if(hash == '#_'){
-						// 	$('body').addClass('fooldal');
-						// } else {
-						// 	// $('body').removeClass('fooldal');
-						// 	$('body').attr('class',id.substr(1));
-						// }
-						$('body').attr('class',$('body').attr('data-content'));
-						$('.send .button').bind('click', sendMsg);
-						$('.button[data-faq]').bind('click', prepareFAQ);
-
-						// munkatársak popup-ja
-						$('.munkatarsak .v_card.half_width, .staff .v_card.half_width').bind('click', popupEmployee);
-
-						// ingatlanok popup-ja
-						$('.ingatlan_info').bind('click', popupRealest);
-
-						if($('select[name=szolgaltatas]').length){
-							setupForm($('select[name=szolgaltatas]').val());
-
-							$('select[name=szolgaltatas]').change(function(){
-								setupForm($(this).val());
-							});
-						}
-
-						$('.button.add_realty').click(function(){
-							var $this = $(this);
-							var realtyNum = $this.attr('data-realty_num');
-
-							if (realtyNum < 4){
-								var lastRealty = $this.siblings('.ingatlan_adatok').last();
-								var newRealty = lastRealty.clone();
-
-				                realtyNum++;
-
-								// console.log(lastRealty);
-								// console.log(newRealty);
-
-				                newRealty.insertAfter(lastRealty);
-
-								// newRealty = $this.siblings('ingatlan_adatok').last();
-
-				                newRealty.wrap('<form>').closest('form').get(0).reset();
-				                newRealty.unwrap();
-
-				                // var newRealtyTitle = realtyNum + newRealty.find('.realty_num span').html().slice(1);
-
-				                // newRealty.find('.realty_num span').html(newRealtyTitle);
-				                // newRealty.find('input[type=hidden]').html(realtyNum+'. ingatlan');
-
-								if(lang_code == 'en'){
-						                newRealty.find('.realty_num span').html('Property No. '+realtyNum);
-				                } else { // "hu"
-						                newRealty.find('.realty_num span').html(realtyNum+'. ingatlan');
-				                }
-
-
-				                // var inputs = newRealty.find('input[type=text]');
-				                var inputs = newRealty.find('input');
-
-				                inputs.each(function(i){
-				                	var input = $(this);
-				                	var name = input.attr('name');
-
-				                	input.attr('name',name.replace(realtyNum-1,realtyNum));
-				                });
-
-
-								$this.attr('data-realty_num',realtyNum);
-							}
-						});
-
-					}});
-				// }});
-
-
-
-	// }});
-
 }
 
 function popupEmployee(){
@@ -267,8 +137,6 @@ function popupRealest(){
 	.css('left', (pos.left-$(window).scrollLeft())+'px')
 	.css('top', (pos.top-$(window).scrollTop())+'px');
 
-	// carousel.append('<div class="pager_button pager_left"></div>');
-	// carousel.append('<div class="pager_button pager_right"></div>');
 	carousel.append('<div class="pager_arrow left"><div class="arrow_upper"><img src="images/pager_arrow.png" alt="" /></div><div class="arrow_lower"><img src="images/pager_arrow.png" alt="" /></div></div>');
 	carousel.append('<div class="pager_arrow right"><div class="arrow_upper"><img src="images/pager_arrow.png" alt="" /></div><div class="arrow_lower"><img src="images/pager_arrow.png" alt="" /></div></div>');
 	carousel.append('<div class="main_carousel_pagination"></div>');
@@ -306,8 +174,6 @@ function popupRealest(){
 		prevButton: '.pager_arrow.left'
 	});
 
-	console.log(realestSwiper);
-
 	TweenMax.to($('#overlay'), .25, {display: 'block', autoAlpha: 1, onComplete: function(){
 		$('body').addClass('noscroll');
 		// TweenMax.to(realest, .25, {delay: .5, width: target.width+'px', height: target.height+'px', left: Math.round(($(window).innerWidth()-target.width)/2)+'px', top: Math.round(($(window).innerHeight()-target.height)/2)+'px'});
@@ -328,18 +194,9 @@ function popupRealest(){
 	}});
 }
 
-function loader(){
-	TweenMax.staggerTo($('#ajax .square'), 2, {left: "105%", ease:BezierCurve.loader}, .15, function(){
-		TweenMax.set($('#ajax .square'), {left: "-5%"});
-		if(!loaded) setTimeout(loader, 500);
-	});
-}
-
 function prepareFAQ(){
 		var name = $(this).siblings('.name').html();
 		var email = $(this).attr('data-faq').replace('-NAKNEK-', '@').replace('-NALNEL-', '.');
-
-		// console.log(name+': '+email);
 
 		$('#recipient').val(email);
 		$('#recipient_name').val(name);
@@ -382,9 +239,6 @@ function hideFAQ(keepContent){
 }
 
 function sendMsg(){
-	// console.log($(this));
-
-	// var $this = $(this);
 	var $this = $(this).closest('form');
 	var thisID = $this.attr('id');
 	var postData = [];
@@ -394,20 +248,15 @@ function sendMsg(){
 		var selectedService = $('select[name=szolgaltatas]').val();
 		var fields = $('#online_form fieldset.'+selectedService);
 
-		// var tempData = [];
-
 		fields.each(function(){
 			var fieldArray = $(this).serializeArray();
 
 			for(var i = 0;i < fieldArray.length; i++){
 				postData.push(fieldArray[i]);
-				console.log('name:',fieldArray[i].name,'value:',fieldArray[i].value)
+				// console.log('name:',fieldArray[i].name,'value:',fieldArray[i].value)
 			}
 		});
 
-		console.log(postData);
-
-		// postData = $this.serializeArray();
 	} else {
 		postData = $this.serializeArray();
 	}
@@ -420,19 +269,9 @@ function sendMsg(){
 			data : postData,
 			success:function(data, textStatus, jqXHR) 
 			{
-				// alert(data);
-				// var response;
-				// window.console && console.log(data);
-
-				// for (var property in data) {
-				//     if (data.hasOwnProperty(property)) {
-				//         response = property;
-				//     }
-				// }
-
 				data = data.replace(/(?:\r\n|\r|\n)/g, '');
 
-				window.console && console.log(data);
+				// window.console && console.log(data);
 
 				if(data == 'mail_sent'){
 					hideFAQ(thisID != 'faq_form');
@@ -440,9 +279,7 @@ function sendMsg(){
 						$this[0].reset();
 						setupForm('fs_null');
 					}
-				}/* else {
-				}*/
-				window.console && console.log('\''+data+'\'');
+				}
 
 				switch(data){
 					case 'mail_sent':
@@ -490,10 +327,6 @@ function scrollBg(){
 
 $(document).ready(function(){
 
-	// $('a').click(function(e){
-	// 	e.preventDefault();
-	// })
-
 	var autoplay = setInterval(function(){
 		$('.pager_arrow.right').trigger('click');
 	}, 10000);
@@ -531,13 +364,6 @@ $(document).ready(function(){
 				}, 150);
 			});
 
-			// $parent.animate({
-			// 	textIndent: '+='+$offset
-			// 	}, 250, function() {
-			// 		$parent.removeClass('animating').css('text-indent','0px');
-			// 		$pager.find('li').removeClass('active');
-			// 		$pager.find('[data-th='+$parent.find('li:first').attr('data-th')+']').addClass('active');
-			// });
 		}
 	});
 
@@ -572,20 +398,6 @@ $(document).ready(function(){
 				}, 150);
 			});
 
-
-
-
-			// $parent.animate({
-			// 	textIndent: '-='+$offset
-			// 	}, 250, function() {
-			// 		for(i=1;i<=$num_per_page;i++){
-			// 			$first.appendTo($parent);
-			// 			$first = $parent.find('li:first');
-			// 		}
-			// 		$parent.removeClass('animating').css('text-indent','0px');
-			// 		$pager.find('li').removeClass('active');
-			// 		$pager.find('[data-th='+$parent.find('li:first').attr('data-th')+']').addClass('active');
-			// });
 		}
 	});
 
@@ -596,7 +408,6 @@ $(document).ready(function(){
 			$first = $parent.find('li:first'),
 			$second = $first.next(),
 			$clicked = $(this).attr('data-th'),
-			// $offset = $parent.width(),
 			$offset = $items.width(),
 			$num_per_page = Math.round($offset / $items.outerWidth()),
 			$item_qty = $items.length;
@@ -606,24 +417,17 @@ $(document).ready(function(){
 			var $qty = $parent.find('[data-th='+$clicked+']').index(),
 				$to_skip = $items.slice(0,$qty);
 
-			console.log($qty+' '+$to_skip);
-
 			$pager.find('li').removeClass('active');
 			$(this).addClass('active');
 
-			// $to_skip.appendTo($parent);
 			$parent.addClass('animating').css('text-indent','0px');
 			$parent.animate({
 				textIndent: '-='+$qty*$offset
 				}, $qty*250, function() {
 					$to_skip.appendTo($parent);
 					$parent.removeClass('animating').css('text-indent','0px');
-					console.log('clicked: '+$clicked+'; shown: '+$parent.find('li:first').attr('data-th'));
 			});
 		}
-
-
-
 
 		if(!$parent.hasClass('animating')){
 
@@ -644,33 +448,6 @@ $(document).ready(function(){
 	});
 
 
-/*	$('nav ul li.item').on('mouseenter',function(){
-
-		var classStr = $(this).find('a').attr('href').substr(1);
-		var submenu = $('.submenu.'+classStr);
-
-
-		if(submenu.length){
-			console.log(classStr+' '+submenu.length);
-			clearTimeout(menuTimer);
-			$('.submenu').removeClass('active');
-			submenu.addClass('active');
-		}
-
-	}).on('mouseleave',function(){
-		menuTimer = setTimeout(function(){
-			$('.submenu').removeClass('active');
-		}, 500);
-	});
-
-	$('.submenu').on('mouseenter',function(){
-		clearTimeout(menuTimer);
-	}).on('mouseleave',function(){
-		menuTimer = setTimeout(function(){
-			$('.submenu').removeClass('active');
-		}, 500);
-	});*/
-
 	$('.links li').on('mouseenter',function(){
 		var $this = $(this);
 		var descriptions = $this.closest('.submenu').find('.descriptions');
@@ -679,19 +456,6 @@ $(document).ready(function(){
 		descriptions.attr('class','descriptions '+$this.find('a').attr('href').substr(1));
 	});
 
-	// $('a.faq_to').on('click','.column',function(e){
-	// 	e.preventDefault();
-
-	// 	var name = $(this).closest('.contact').siblings('.name').html();
-	// 	var email = $(this).attr('data-faq').replace('-NAKNEK-', '@').replace('-NALNEL-', '.');
-
-	// 	console.log(name+': '+email);
-
-	// 	// $('#recipient').val(email);
-	// 	// $('#recipient_name').val(name);
-
-	// });
-
 	$('.right_button.faq').on('click',function(){
 		if($(this).hasClass('active')){
 			hideFAQ();
@@ -699,48 +463,6 @@ $(document).ready(function(){
 			showFAQ();
 		}
 	});
-
-	// $('body').on('submit','form',(function(e){
-	// $('.send .button').on('click','column',(function(e){
-	// 	// e.preventDefault(); //STOP default action
-	// 	console.log($(this));
-
-	// 	// var $this = $(this);
-	// 	var $this = $(this).closest('form');
-	// 	var postData = $this.serializeArray();
-	// 	var formURL = $this.attr('action');
-
-	// 	$.ajax({
-	// 		url : formURL,
-	// 		type: "POST",
-	// 		data : postData,
-	// 		success:function(data, textStatus, jqXHR) 
-	// 		{
-	// 			// alert(data);
-	// 			// var response;
-	// 			// window.console && console.log(data);
-
-	// 			// for (var property in data) {
-	// 			//     if (data.hasOwnProperty(property)) {
-	// 			//         response = property;
-	// 			//     }
-	// 			// }
-
-
-	// 			if(data == 'mail_sent'){
-	// 				hideFAQ($this.attr('id') != 'faq_form');
-	// 			} else {
-	// 				window.console && console.log(data);
-	// 			}
-	// 			// clearFAQ();
-	// 		},
-	// 		error: function(jqXHR, textStatus, errorThrown) 
-	// 		{
-	// 			alert('Hiba történt! Kérjük próbálkozzon ismét később! ('+errorThrown+')');
-	// 		}
-	// 	});
-	// 	// e.unbind(); //unbind. to stop multiple form submit.
-	// }));
 
 
 	$('#overlay_close').on('click',function(){
@@ -760,10 +482,6 @@ $(document).ready(function(){
 
 });
 
-$(window)/*.on('hashchange',function(){
-	getHash();
-	hideFAQ();
-	loadContent(hash);
-})*/.scroll(function(){
+$(window).scroll(function(){
 	scrollBg();
 });

@@ -7,10 +7,25 @@
 		<meta property="og:image"       content="<?=$base?>/images/fb_logo.png" /> 
 		<meta property="og:description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." /> 	
 
-		<title>Seratus - Minden, ami ingatlan</title>
+		<title><?=$title?><?=$title?' - ':''?>Seratus - Minden, ami ingatlan</title>
 
+<?php
+		foreach ($valid_lang as $lang) {
+			if($lang != $lang_code){
+				if($lang != 'hu'){
+?>
+		<link rel="alternate" hreflang="<?=$lang?>" href="http://<?=$lang?>.seratus.hu/" />
+<?php
+				} else {
+?>
+		<link rel="alternate" hreflang="<?=$lang?>" href="http://www.seratus.hu/" />
+<?php
+				}
+			}
+		}
+?>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="author" content="Kolorart.hu - 2016 - Minden jog fenntartva" />
+		<meta name="author" content="Kolorart.hu - 2017 - Minden jog fenntartva" />
 		<meta name="description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." />
 
 		<meta name="viewport" content="user-scalable=no">
@@ -20,24 +35,6 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css?v=<?php echo microtime() ?>" />
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<!--link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'-->
-
-		<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script-->
-
-		<!--script>
-			(function(doc) {
-				// var viewport = document.getElementById('viewport');
-				var pixelRatio = window.devicePixelRatio;
-
-				if ( pixelRatio > 1 ) {
-					var viewportmeta = document.querySelector('meta[name="viewport"]');
-					if (viewportmeta) {
-				 	   viewportmeta.setAttribute("content", "initial-scale="+(1/pixelRatio)+", maximum-scale=1.0, user-scalable=no");
-				 	   document.body.addEventListener('gesturestart', function() { viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6, user-scalable=no'; }, false);
-					}
-				}
-			}(document));
-		</script-->
 
 		<style>
 			html {

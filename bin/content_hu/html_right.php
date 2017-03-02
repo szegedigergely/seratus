@@ -14,15 +14,6 @@
 				</label>
 				<input id="recipient" type="hidden" name="recipient" value="ajanlat@seratus.hu" data-default="ajanlat@seratus.hu" />
 				<input id="recipient_name" type="hidden" name="recipient_name" value="SERATUS" data-default="SERATUS" />
-				<!--label class="faq_form_element form_subject">
-					<span>Témakör:</span>
-					<select name="subject">
-						<option value="1">Témakör 1</option>
-						<option value="2">Témakör 2</option>
-						<option value="3">Témakör 3</option>
-						<option value="4">Témakör 4</option>
-	  				</select>
-				</label-->
 				<label class="faq_form_element form_message">
 					<span>Kérdés:</span>
 					<textarea name="message"></textarea>
@@ -37,7 +28,6 @@
 					<input type="text" name="captcha" class="required_" maxlength="4" />
 				</label>
 				<label class="faq_form_element send">
-					<!-- <input class="form_send button w_arrow" type="submit" value="Elküld" /> -->
 					<div class="button w_arrow"><span>Elküld</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 				</label>
 			</form>

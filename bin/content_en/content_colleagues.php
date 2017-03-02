@@ -118,11 +118,7 @@
 </div>
 <h1>Colleagues</h1>
 <div>
-	<!--div class="v_card half_width">
-		<img src="images/contact_darabos.jpg" alt="" />
-		<span class="name">Darabos Andrea</span>
-		<span class="contact">mellék: 118<br/>darabos<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div-->
+
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
@@ -293,14 +289,4 @@
 		</p>
 		<span class="contact">mellék: 124<br/>voros<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
-	<!--div class="v_card half_width">
-		<img src="images/munkatarsak/no_pic.jpg" alt="Szeri József" />
-		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Szeri József" />
-		<span class="name">Szeri József</span>
-		<span class="title">ingatlan- és vagyonértékelő</span>
-		<p><strong>Végzettségek:</strong><br/>
-			okl. mezőgazdasági gépészmérnök, ingatlanvagyon-értékelő és közvetítő, termőföld értékelő
-		</p>
-		<span class="contact"></span>
-	</div-->
 </div>

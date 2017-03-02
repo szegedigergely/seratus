@@ -1,4 +1,9 @@
-<h1>About us</h1>
+<?php
+
+$title = 'About us';
+
+$content_html = 
+'<h1>About us</h1>
 <p>Dear Visitor,</p>
 <p>We appreciate your visit to our renewed website and hope to provide some useful information, and eventually welcome you among our several thousand clients every year. As the majority owner of the firm allow me to say a few words about the history of our company.</p>
 <p>I founded <strong>SERATUS Appraiser Ltd</strong> in 1991, which was one of the first in the country performing real estate appraisals, asset appraisals, privatisation and bankruptcy consulting and even liquidations.</p>
@@ -12,4 +17,6 @@
 	<img src="images/munkatarsak/thumb/_DSC5006_kicsi.jpg" alt="" />
 	<span class="name">Miklós Máté</span>
 	<span class="title">Managing Director</span>
-</div>
+</div>'
+
+?>

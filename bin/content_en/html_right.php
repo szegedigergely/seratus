@@ -4,7 +4,7 @@
 		<div class="right_box box_top_edge">
 		</div>
 		<div class="right_box box_utils">
-			<a href="#online_assignment" class="right_button online"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Online assignment</span></a>
+			<a href="online_assignment" class="right_button online"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Online assignment</span></a>
 			<div class="right_button faq"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Question-answer</span></div>
 			<form id="faq_form" name="send" method="post" action="bin/func_sendFAQ.php">
 				<p class="faq_form_element">Don’t hesitate to ask about any real estate-related topic. Our colleague will respond to you by Email <span>within 24 hours</span>!</p>

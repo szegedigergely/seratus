@@ -1,4 +1,9 @@
-<h1>Értékbecslés</h1>
+<?php
+
+$title = 'Értékbecslés';
+
+$content_html = 
+'<h1>Értékbecslés</h1>
 <p>A Seratus KFT minden típusú <strong>ingatlan, tárgyi eszköz és immateriális vagyontárgy</strong> vagyonértékelésével foglakozik.</p>
 <p><strong>Lakossági üzletágunk</strong> szakértői lakóingatlanok értékének becslésével foglalkoznak az ország minden régiójában.</p>
 <p><strong>Vállalati részlegünk</strong> kollégái, jövedelemtermelő egységek, úgy, mint ipari-termelő, raktár ingatlanok, üzletek, irodaházak es egyéb változatos létesítmények értékének meghatározását végzik Magyarországon és a környező országokban. Cégünk gyakorlott gépértékelő szakértői végzik a tárgyi eszközök és komplett gépsorok értékének számítását. Referenciáink között szerepel teljes cégek-cégcsoportok értékének becslése, amely tartalmazza a tulajdonolt immateriális javak, pl.: sportolói-játékjogok, know-how, védjegyek értékének számítását.</p>
@@ -27,9 +32,8 @@
 	<span class="name">Homoki Beatrix</span>
 	<span class="contact">mellék: 146<br/>homoki<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="homoki-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('vevokepviselet','energetikai_tanusitas'));
+$recommend_array = array('vevokepviselet','energetikai_tanusitas');
 
 ?>

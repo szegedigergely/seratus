@@ -1,4 +1,9 @@
-<h1>Igazságügyi szakértés</h1>
+<?php
+
+$title = 'Igazságügyi szakértés';
+
+$content_html = 
+'<h1>Igazságügyi szakértés</h1>
 <p>Építőipari igazságügyi műszaki szakértő kollegáink vállalják beruházások garanciális, szavatossági kérdések és kivitelezési hibák véleményezését.</p>
 <p>Ingatlanforgalmi igazságügyi szakértő kollegáink közreműködnek vagyonjogi viták előzetes, peren kívüli eldöntésében.</p>
 <p>Szakterületeink:</p>
@@ -34,9 +39,8 @@
 	<span class="name">Simon Erzsébet</span>
 	<span class="contact">+3630-989-6028<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="simon.erzsebet-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('vevokepviselet','energetikai_tanusitas'));
+$recommend_array = array('vevokepviselet','energetikai_tanusitas');
 
 ?>

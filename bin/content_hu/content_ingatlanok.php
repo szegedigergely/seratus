@@ -1,4 +1,9 @@
-<h1>Ingatlanok</h1>
+<?php
+
+$title = 'Ingatlanok';
+
+$content_html = 
+'<h1>Ingatlanok</h1>
 <div>
 	<div class="v_card half_width ingatlan_info">
 		<img class="thumb" src="images/ingatlanok/szolnoki_irodahaz/szolnoki_irodahaz_thumb.jpg" alt="Szolnoki Irodaház" />
@@ -188,9 +193,8 @@
 	<span class="name">Godó Katalin</span>
 	<span class="contact">+3630-951-2620<br/>godoka<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="godoka-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('vevokepviselet'));
+$recommend_array = array('vevokepviselet');
 
 ?>

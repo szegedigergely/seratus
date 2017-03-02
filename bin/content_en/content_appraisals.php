@@ -1,4 +1,9 @@
-<h1>Appraisal</h1>
+<?php
+
+$title = 'Appraisal';
+
+$content_html = 
+'<h1>Appraisal</h1>
 <p>Seratus Ltd performs appraisals for all types of <strong>real estate properties, tangible assets and intangible assets</strong>.</p>
 <p>Our <strong>retail business unit</strong> experts perform appraisals of residential real estate properties in every region of the country.</p>
 <p>Our colleagues in our <strong>corporate business unit</strong> perform appraisals of income producing units, such as industrial production and storage properties, shops, office buildings and other diverse facilities in Hungary and in the neighbouring countries. Our experienced machine appraisal experts calculate the values of tangible assets and entire machine lines. Our references include appraisals for entire groups of companies, including the calculation of values of intangible assets owned, such as sports gaming rights, know-how and trademarks.</p>
@@ -21,9 +26,8 @@
 	<span class="name">István Mészáros</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('buyers_representation','energy_certification'));
+$recommend_array = array('buyers_representation','energy_certification');
 
 ?>

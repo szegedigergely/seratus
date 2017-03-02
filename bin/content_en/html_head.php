@@ -7,10 +7,25 @@
 		<meta property="og:image"       content="<?=$base?>/images/fb_logo.png" /> 
 		<meta property="og:description" content="Seratus - All about real estates" /> 	
 
-		<title>Seratus - All about real estates</title>
+		<title><?=$title?><?=$title?' - ':''?>Seratus - All about real estates</title>
 
+<?php
+		foreach ($valid_lang as $lang) {
+			if($lang != $lang_code){
+				if($lang != 'hu'){
+?>
+		<link rel="alternate" hreflang="<?=$lang?>" href="http://<?=$lang?>.seratus.hu/" />
+<?php
+				} else {
+?>
+		<link rel="alternate" hreflang="<?=$lang?>" href="http://www.seratus.hu/" />
+<?php
+				}
+			}
+		}
+?>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="author" content="Kolorart.hu - 2016 - All rights reserved" />
+		<meta name="author" content="Kolorart.hu - 2017 - All rights reserved" />
 		<meta name="description" content="Seratus - All about real estates" />
 
 		<meta name="viewport" content="user-scalable=no">

@@ -1,4 +1,9 @@
-<h1>Földmérés</h1>
+<?php
+
+$title = 'Földmérés';
+
+$content_html = 
+'<h1>Földmérés</h1>
 <p>Ingatlanforgalmazással és értékbecsléssel kapcsolatos geodéziai feladatok teljes körű ügyintézése.</p>
 <p>Szeretné tudni telekingatlanának pontos határait, kerítésvonalának pontos helyét? </p>
 <p>Az építőipar területén nagy pontosságú méréseket igénylő mérnökgeodéziai feladatok megoldása.</p>
@@ -15,9 +20,8 @@
 	<span class="name">Mészáros István</span>
 	<span class="contact">+3630-586-6600<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="meszi-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
-</div>
-<?php
+</div>';
 
-	recommend(array('hokameras','ertekbecsles'));
+$recommend_array = array('hokameras','ertekbecsles');
 
 ?>
