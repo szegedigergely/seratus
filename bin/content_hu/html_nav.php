@@ -22,11 +22,11 @@
 						<div class="submenu">
 							<ul class="links">
 								<li><a href="ertekbecsles">Értékbecslés</a></li>
-								<li><a href="muszaki_szakertes">Műszaki szakértés</a></li>
-								<li><a href="igazsagugyi_szakertes">Igazságügyi szakértés</a></li>
+								<li><a href="muszaki-szakertes">Műszaki szakértés</a></li>
+								<li><a href="igazsagugyi-szakertes">Igazságügyi szakértés</a></li>
 								<li><a href="ingatlankozvetites">Ingatlanközvetítés</a></li>
-								<li><a href="energetikai_tanusitas">Energetikai tanúsítás</a></li>
-								<li><a href="hokameras_vizsgalat">Hőkamerás vizsgálat</a></li>
+								<li><a href="energetikai-tanusitas">Energetikai tanúsítás</a></li>
+								<li><a href="hokameras-vizsgalat">Hőkamerás vizsgálat</a></li>
 								<li><a href="foldmeres">Földmérés</a></li>
 								<li><a href="vevokepviselet">Vevőképviselet</a></li>
 								<li><a href="projektellenorzes">Projektellenőrzés</a></li>

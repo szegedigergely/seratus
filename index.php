@@ -24,7 +24,7 @@
 
 
 	$lang_code = 'hu';
-	// $lang_code = 'en';
+	$lang_code = 'en';
 
 	$carousel = true;
 	$content_html = '';
@@ -113,7 +113,7 @@
 			if($carousel) include 'html_carousel.php';
 		?>
 	</div>
-	<div id="content_wrapper">
+	<div id="content_wrapper" class="lang_<?=$lang_code?>">
 		<div id="column_wrapper">
 			<div class="column left">
 			<?php

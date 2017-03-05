@@ -8,7 +8,7 @@ $content_html =
 <p>In setting the right price for the sale it is necessary for all legal circumstances of the property to be clean: the owner should hold actual title or easement rights to any storage areas, garden portions, or parking spaces, the floor area of the apartment should be indicated precisely in the official records, etc. In this case it is not enough for the owner to be a regular user of a parking space if that is not legally part of the property. The prospective buyer will therefore pay only for whatever becomes his property. Properties with legal problems can also be sold, but not for the same value.</p>
 <p>In order to avoid surprises it is worthwhile to have an expert examination made, which could highlight any physical defects of the apartment in addition to any legal shortcomings, which could also be an examination combined with an appraisal, so that the potential buyer can also be sure to buy a reliable property at a good price, and the property, including all of its accessories, that he has chosen.</p>
 <div class="v_card half_width">
-	<img src="images/contact_zoli.jpg" alt="Zoltán Máté" />
+	<img src="images/munkatarsak/thumb/_DSC5498_kicsi.jpg" alt="Zoltán Máté" />
 	<span class="name">Zoltán Máté</span>
 	<span class="contact">+3630-231-5022<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="zoli-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>

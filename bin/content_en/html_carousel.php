@@ -5,7 +5,7 @@
 			<ul class="carousel">
 				<li class="one" data-th="1">
 					<h3 class="line_1">With 125 000 expert opinions</h3>
-					<h3 class="line_2">With 24 years of experience</h3>
+					<h3 class="line_2">With 25 years of experience</h3>
 					<h3 class="line_3">We are at your disposal!</h3>
 					<a href="references"><div class="button w_arrow"><span>Our references</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_01_img.png" alt="" />

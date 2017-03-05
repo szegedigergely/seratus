@@ -8,7 +8,7 @@ $content_html =
 <p>Sajnos az ingatlan – bár ezzel sokan nincsenek tisztában – nem pusztán egy bejárható fizikai tér, hanem egy jogilag meghatározott egység. Nagyon fontos a vásárláskor tisztázni, hogy a kiválasztott lakás ténylegesen, a hiteles nyilvántartások alapján is megegyezik-e azzal, amit a helyszínen láttunk. Előfordulhat, hogy a használt kertrész, tároló, parkhely jogilag nem is az ingatlanhoz tartozik, így ezeket nem is vásároljuk meg; nem beszélve arról, ha a lakás lakóterülete sem pontos a nyilvántartásokban, esetleg nem is azt vesszük meg, amit kinéztünk. Szakértőink segíthetnek elkerülni egy komoly műszaki hibával rendelkező lakás vásárlását is, amely javítása sok milliós tétel is lehet. A legtöbb hiba természetesen javítható, csak a vásárlónak tisztában kell lennie ezen költségekkel is, hogy figyelembe vehesse őket az ár megállapításakor.</p>
 <p>Érdemes szakértői segítséget igénybe venni, hogy azt, úgy és annyiért vásároljuk meg, ahogyan szeretnénk!</p>
 <div class="v_card half_width">
-	<img src="images/contact_zoli.jpg" alt="Máté Zoltán" />
+	<img src="images/munkatarsak/thumb/_DSC5498_kicsi.jpg" alt="Máté Zoltán" />
 	<span class="name">Máté Zoltán</span>
 	<span class="contact">+3630-231-5022<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="zoli-NAKNEK-seratus-NALNEL-hu"><span>Kérdeznék</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>

@@ -182,7 +182,7 @@ $content_html =
 			</select>
 		</label>
 		<label>
-			<span>Other bank's name:</span>
+			<span>Other bank\'s name:</span>
 			<input type="text" name="bank_other_name" />
 		</label>
 		<label>
@@ -526,7 +526,7 @@ $content_html =
 			</select>
 		</label>
 		<label>
-			<span>Other bank's name:</span>
+			<span>Other bank\'s name:</span>
 			<input type="text" name="bank_other_name" />
 		</label>
 		<label>

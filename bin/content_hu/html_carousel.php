@@ -4,11 +4,9 @@
 		<div id="carousel">
 			<ul class="carousel">
 				<li class="one" data-th="1">
-					<!--h3>22 év tapasztalatával az ingatlanpiacon.</h3-->
 					<h3 class="line_1">125.000 szakvéleménnyel</h3>
-					<h3 class="line_2">24 év tapasztalatával</h3>
+					<h3 class="line_2">25 év tapasztalatával</h3>
 					<h3 class="line_3">állunk rendelkezésére!</h3>
-					<!--h4>Ismerje meg legnagyobb ügyfeleinket!</h4-->
 					<a href="referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_01_img.png" alt="" />
 				</li>
@@ -18,20 +16,12 @@
 					<a href="ertekbecsles"><div class="button w_arrow"><span>Érdekel</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
 					<img src="images/slider_03_img.png" alt="" />
 				</li>
-				<!--li class="three" data-th="3">
-					<h3>22 év tapasztalatával az ingatlanpiacon.</h3>
-					<h4>Ismerje meg legnagyobb ügyfeleinket!</h4>
-					<a href="referenciak"><div class="button w_arrow"><span>Referenciánk</span><img class="arrow" src="images/button_arrow.png" alt="" /></div></a>
-					<img src="images/slider_02_img.png" alt="" />
-				</li-->
 			</ul>
 			<ul class="pager_dots">
 				<li class="one active" data-th="1">
 				</li>
 				<li class="two" data-th="2">
 				</li>
-				<!--li class="three" data-th="3">
-				</li-->
 			</ul>
 			<div class="pager_arrow left">
 				<div class="arrow_upper"><img src="images/pager_arrow.png" alt="" /></div>

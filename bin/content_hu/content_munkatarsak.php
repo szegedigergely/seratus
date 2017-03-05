@@ -38,18 +38,6 @@ $content_html =
 </div>
 <h1>Csoportvezetők</h1>
 <div>
-	<!--div class="v_card half_width">
-		<img src="images/contact_boda.jpg" alt="" />
-		<span class="name">Boda Gabriella</span>
-		<span class="title">nem lakossági üzletág vezető</span>
-		<span class="contact">mellék: 145<br/>boda<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div>
-	<div class="v_card half_width">
-		<img src="images/contact_varga.jpg" alt="" />
-		<span class="name">Varga Rózsa</span>
-		<span class="title">projektellenőrzési üzletág vezető</span>
-		<span class="contact">mellék: 127<br/>varga<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div-->
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC2003_kicsi.jpg" alt="Homoki Beatrix" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC2003_kicsi.jpg" alt="Homoki Beatrix" />
@@ -110,24 +98,9 @@ $content_html =
 		</p>
 		<span class="contact">mellék: 130<br/>varga<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
-	<!--div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5557_kicsi.jpg" alt="Patonai Nikolett" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5557_kicsi.jpg" alt="Patonai Nikolett" />
-		<span class="name">Patonai Nikolett</span>
-		<span class="title">titkárságvezető</span>
-		<p><strong>Végzettségek:</strong><br/>
-			közgazdász
-		</p>
-		<span class="contact">mellék: 111<br/>patonai<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div-->
 </div>
 <h1>Munkatársak</h1>
 <div>
-	<!--div class="v_card half_width">
-		<img src="images/contact_darabos.jpg" alt="" />
-		<span class="name">Darabos Andrea</span>
-		<span class="contact">mellék: 118<br/>darabos<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div-->
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
@@ -238,16 +211,6 @@ $content_html =
 		</p>
 		<span class="contact">mellék: 144<br/>magdi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
-	<!--div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5397_kicsi.jpg" alt="Őri-Fejes Dóra" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5397_kicsi.jpg" alt="Őri-Fejes Dóra" />
-		<span class="name">Őri-Fejes Dóra</span>
-		<span class="title">ingatlan- és vagyonértékelő</span>
-		<p><strong>Végzettségek:</strong><br/>
-			építészmérnök, energetikai tanúsító, ingatlanvagyon-értékelő és közvetítő, 
-		</p>
-		<span class="contact">fejes<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div-->
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5430_kicsi.jpg" alt="Pozderka-Sivák Viktória" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC5430_kicsi.jpg" alt="Pozderka-Sivák Viktória" />
@@ -298,16 +261,6 @@ $content_html =
 		</p>
 		<span class="contact">mellék: 124<br/>voros<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
-	<!--div class="v_card half_width">
-		<img src="images/munkatarsak/no_pic.jpg" alt="Szeri József" />
-		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Szeri József" />
-		<span class="name">Szeri József</span>
-		<span class="title">ingatlan- és vagyonértékelő</span>
-		<p><strong>Végzettségek:</strong><br/>
-			okl. mezőgazdasági gépészmérnök, ingatlanvagyon-értékelő és közvetítő, termőföld értékelő
-		</p>
-		<span class="contact"></span>
-	</div-->
 </div>';
 
 ?>

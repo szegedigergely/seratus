@@ -35,24 +35,6 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css?v=<?php echo microtime() ?>" />
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<!--link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'-->
-
-		<!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script-->
-
-		<!--script>
-			(function(doc) {
-				// var viewport = document.getElementById('viewport');
-				var pixelRatio = window.devicePixelRatio;
-
-				if ( pixelRatio > 1 ) {
-					var viewportmeta = document.querySelector('meta[name="viewport"]');
-					if (viewportmeta) {
-				 	   viewportmeta.setAttribute("content", "initial-scale="+(1/pixelRatio)+", maximum-scale=1.0, user-scalable=no");
-				 	   document.body.addEventListener('gesturestart', function() { viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6, user-scalable=no'; }, false);
-					}
-				}
-			}(document));
-		</script-->
 
 		<style>
 			html {
@@ -67,8 +49,6 @@
 				display: block;
 				margin: 0;
 				padding: 0;
-/*				width: 100%;
-				height: 100%;*/
 			}
 
 			body.preload {

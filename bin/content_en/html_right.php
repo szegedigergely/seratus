@@ -4,7 +4,7 @@
 		<div class="right_box box_top_edge">
 		</div>
 		<div class="right_box box_utils">
-			<a href="online_assignment" class="right_button online"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Online assignment</span></a>
+			<a href="online-assignment" class="right_button online"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Online assignment</span></a>
 			<div class="right_button faq"><span class="icon"><img src="images/button_icons.png" alt="" /></span><span class="text">Question-answer</span></div>
 			<form id="faq_form" name="send" method="post" action="bin/func_sendFAQ.php">
 				<p class="faq_form_element">Don’t hesitate to ask about any real estate-related topic. Our colleague will respond to you by Email <span>within 24 hours</span>!</p>
@@ -14,15 +14,6 @@
 				</label>
 				<input id="recipient" type="hidden" name="recipient" value="info@seratus.hu" data-default="ajanlat@seratus.hu" />
 				<input id="recipient_name" type="hidden" name="recipient_name" value="SERATUS" data-default="SERATUS" />
-				<!--label class="faq_form_element form_subject">
-					<span>Témakör:</span>
-					<select name="subject">
-						<option value="1">Témakör 1</option>
-						<option value="2">Témakör 2</option>
-						<option value="3">Témakör 3</option>
-						<option value="4">Témakör 4</option>
-	  				</select>
-				</label-->
 				<label class="faq_form_element form_message">
 					<span>Question:</span>
 					<textarea name="message"></textarea>
@@ -37,7 +28,6 @@
 					<input type="text" name="captcha" class="required_" maxlength="4" />
 				</label>
 				<label class="faq_form_element send">
-					<!-- <input class="form_send button w_arrow" type="submit" value="Elküld" /> -->
 					<div class="button w_arrow"><span>Send</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>
 				</label>
 			</form>

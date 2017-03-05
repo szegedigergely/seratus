@@ -8,7 +8,7 @@ $content_html =
 <p>Unfortunately - even though many are not clear about this - a real estate property is not merely a physical space that can be inspected, but a legally defined unit. It is very important to clarify at the time of purchase whether or not the selected apartment is indeed identical, pursuant to the authentic records, to what you have seen on site. There may be cases where the portion of the garden, or the storage area, or the parking space that is being used, are not legally part of the property, and thus you are not buying them; not mentioning the cases when even the residential area of the apartment is inaccurate in the records, or cases when you are buying something else than what you have chosen. Our experts can help you avoid buying an apartment with a serious technical defect that may represent a line item of several millions to repair. Most defects can be repaired of course, but the buyer has to be aware of their costs also, to be able to consider them when setting the price.</p>
 <p>It is worthwhile to use expert help to buy what, how, and for as much as you would like!</p>
 <div class="v_card half_width">
-	<img src="images/contact_zoli.jpg" alt="Zoltán Máté" />
+	<img src="images/munkatarsak/thumb/_DSC5498_kicsi.jpg" alt="Zoltán Máté" />
 	<span class="name">Zoltán Máté</span>
 	<span class="contact">+3630-231-5022<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	<div class="button w_arrow" data-faq="zoli-NAKNEK-seratus-NALNEL-hu"><span>I have a question</span><img class="arrow" src="images/button_arrow.png" alt="" /></div>

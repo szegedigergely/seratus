@@ -453,7 +453,8 @@ $(document).ready(function(){
 		var descriptions = $this.closest('.submenu').find('.descriptions');
 
 		// console.log(descriptions);
-		descriptions.attr('class','descriptions '+$this.find('a').attr('href').substr(1));
+		// descriptions.attr('class','descriptions '+$this.find('a').attr('href').substr(1));
+		descriptions.attr('class','descriptions '+$this.find('a').attr('href')); // nincs többé hashtags, nem kell substr
 	});
 
 	$('.right_button.faq').on('click',function(){
