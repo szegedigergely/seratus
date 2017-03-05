@@ -2,9 +2,6 @@
 
 	if(!$ping) die();
 
-	$debug_mode = true;	// false: SERATUS-ra megy, true: gmail.com
-	$bcc_mode = true;		// kapok-e másolatot, vagy sem
-
     // Message design (headers and rows)
     $msg_header_1 = "align=\"left\" valign=\"top\" style=\"padding:10px 15px;background-color:#eeeeee;color:#777777;font-weight:bold;\"";
     $msg_header_2 = "align=\"left\" valign=\"top\" style=\"padding:10px 15px;border-bottom:1px solid #eeeeee;font-style:italic;color:#333;\"";

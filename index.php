@@ -2,9 +2,7 @@
 	// session_start();
 	$ping = 'pong';
 
-	error_reporting(E_ALL);
-	ini_set('display_errors', '1');
-	date_default_timezone_set('Europe/Budapest');
+	include_once 'bin/config.php';
 
 	$whitelist = array(
 	    '127.0.0.1',
@@ -14,23 +12,17 @@
 	// if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
 	    // $base = "http://seratus.hu";
 	    // $base = "http://seratus.hu/teszt";
-	    $base = "http://local.seratus.hu";
 	// } else {
 		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 	// }
 
-	$valid_lang = array('hu', 'en');
-	$cookie_name = 'seratus_hu_lang';
+	// $lang_code = 'hu';
+	// $lang_code = 'en';
 
-
-	$lang_code = 'hu';
-	$lang_code = 'en';
+	include_once 'functions.php';
 
 	$carousel = true;
 	$content_html = '';
-
-	ini_set('include_path', 'bin'.PATH_SEPARATOR.'bin/content_'.$lang_code);
-	include_once 'functions.php';
 
 	if(isset($_GET['page'])){
 		$content_name = $_GET['page'];
@@ -49,7 +41,7 @@
 	$page = 'content_'.$content_name.'.php';
 	$page_path = stream_resolve_include_path($page);
 	if(!$page_path){
-		header('Location: '.$base);
+		header('Location: '.$languages[$lang_code]);
 	} else {
 		include($page_path);
 	}
@@ -81,26 +73,27 @@
 <body class="" data-content="<?=$content_name?>">
 	<div id="preloader">
 		<!--div id="status">
+		<?=$lang_code_lesz?>
 		</div-->
 	</div>
 	<nav>
 	<?php
 		include 'html_nav.php';
 
-		if(count($valid_lang) > 1){
+		if(count($languages) > 1){
 	?>
 		<div class="languages">
 	<?php
-		foreach ($valid_lang as $lang) {
-			if($lang == 'hu'){
+		foreach ($languages as $lang => $lang_url) {
+			// if($lang == 'hu'){
 	?>
-			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="http://www.seratus.hu/"><?=$lang?></a>
+			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="<?=$lang_url?>"><?=$lang?></a>
 	<?php
-			} else {
+	/*		} else {
 	?>
 			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="http://<?=$lang?>.seratus.hu/"><?=$lang?></a>
 	<?php
-			}
+			}*/
 		}
 	?>
 		</div>

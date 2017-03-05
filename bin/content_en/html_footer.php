@@ -37,7 +37,7 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<span>Copyright 2016 - All rights reserved</span>
+				<span>Copyright 2017 - All rights reserved</span>
 				<a id="footer_logo" href="/"><img src="images/logo.png" alt="Seratus" /></a>
 			</div>
 		</div>

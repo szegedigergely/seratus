@@ -10,20 +10,17 @@
 		<title><?=$title?><?=$title?' - ':''?>Seratus - Minden, ami ingatlan</title>
 
 <?php
-		foreach ($valid_lang as $lang) {
-			if($lang != $lang_code){
-				if($lang != 'hu'){
+		if(count($languages) > 1){
+			foreach ($languages as $lang => $lang_url) {
+				if($lang != $lang_code){
 ?>
-		<link rel="alternate" hreflang="<?=$lang?>" href="http://<?=$lang?>.seratus.hu/" />
-<?php
-				} else {
-?>
-		<link rel="alternate" hreflang="<?=$lang?>" href="http://www.seratus.hu/" />
+		<link rel="alternate" hreflang="<?=$lang?>" href="<?=$lang_url?>" />
 <?php
 				}
 			}
 		}
 ?>
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="author" content="Kolorart.hu - 2017 - Minden jog fenntartva" />
 		<meta name="description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." />

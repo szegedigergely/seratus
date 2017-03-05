@@ -39,7 +39,7 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<span>Copyright 2016 - Minden jog fenntartva</span>
+				<span>Copyright 2017 - Minden jog fenntartva</span>
 				<a id="footer_logo" href="/"><img src="images/logo.png" alt="Seratus" /></a>
 			</div>
 		</div>
