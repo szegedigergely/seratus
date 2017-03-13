@@ -807,6 +807,11 @@ h1 {
 	position: relative;
 }
 
+.fooldal h1,
+.main h1 {
+	color: rgb(27,91,133);
+}
+
 h2 {
 	margin: 10px 20px 0;
 	color: rgb(27,91,133);
@@ -822,6 +827,7 @@ h2.underline {
 	display: inline-block;
 	margin: 30px 20px 0;
 	color: rgb(8,156,203);
+	color: rgb(27,91,133);
 	font-size: 23px;
 	line-height: 28px;
 	text-transform: uppercase;

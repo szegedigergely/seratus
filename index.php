@@ -39,9 +39,10 @@
 	}
 
 	$page = 'content_'.$content_name.'.php';
+	// var_dump($page);
 	$page_path = stream_resolve_include_path($page);
 	if(!$page_path){
-		header('Location: '.$languages[$lang_code]);
+		header('Location: '.$languages[$lang_code].'/error-404');
 	} else {
 		include($page_path);
 	}

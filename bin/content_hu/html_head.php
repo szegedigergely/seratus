@@ -1,6 +1,8 @@
 <?php
 	if(!$ping) die;
 ?>
+		<base href="<?=$languages[$lang_code]?>" />
+
 		<meta property="og:title"       content="Seratus" /> 
 		<meta property="og:type"        content="website" /> 
 		<meta property="og:url"         content="<?=$base?>" /> 
