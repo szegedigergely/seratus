@@ -35,6 +35,16 @@ $content_html =
 		</p>
 		<span class="contact">mellék: 122<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
+	<div class="v_card half_width ceo_card">
+		<img src="images/munkatarsak/_DSC5103_kicsi.jpg" alt="Máté Viktor" />
+		<img class="thumb" src="images/munkatarsak/thumb/_DSC5103_kicsi.jpg" alt="Máté Viktor" />
+		<span class="name">Máté Viktor</span>
+		<span class="title">pénzügyi vezető</span>
+		<p><strong>Végzettségek:</strong><br/>
+			Idegenforgalmi szakmenedzser, ingatlanvagyon-értékelő és közvetítő, ingatlankezelő, társasházkezelő, termőföld értékbecslő
+		</p>
+		<span class="contact">mellék: 115<br/>viktor<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
 </div>
 <h1>Csoportvezetők</h1>
 <div>
@@ -180,16 +190,6 @@ $content_html =
 			okl. agrármérnök, jogász, termőföldforgalmi-, termőföld-értékbecslési és mezőgazdasági kárbecslési igazságügyi szakértő
 		</p>
 		<span class="contact">lugossy<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div>
-	<div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5103_kicsi.jpg" alt="Máté Viktor" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5103_kicsi.jpg" alt="Máté Viktor" />
-		<span class="name">Máté Viktor</span>
-		<span class="title">ingatlan- és vagyonértékelő</span>
-		<p><strong>Végzettségek:</strong><br/>
-			Idegenforgalmi szakmenedzser, ingatlanvagyon-értékelő és közvetítő, ingatlankezelő, társasházkezelő, termőföld értékbecslő
-		</p>
-		<span class="contact">mellék: 115<br/>viktor<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5498_kicsi.jpg" alt="Máté Zoltán" />

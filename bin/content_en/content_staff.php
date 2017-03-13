@@ -35,6 +35,16 @@ $content_html =
 		</p>
 		<span class="contact">Extension: 122<br/>meszi<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
+	<div class="v_card half_width ceo_card">
+		<img src="images/munkatarsak/_DSC5103_kicsi.jpg" alt="Viktor Máté" />
+		<img class="thumb" src="images/munkatarsak/thumb/_DSC5103_kicsi.jpg" alt="Viktor Máté" />
+		<span class="name">Viktor Máté</span>
+		<span class="title">Financial manager</span>
+		<p><strong>Qualifications:</strong><br/>
+			Tourism specialist manager, real estate assets appraiser and broker, real estate manager, condominium manager, arable land appraiser 
+		</p>
+		<span class="contact">Extension: 115<br/>viktor<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
 </div>
 <h1>Group leaders</h1>
 <div>
@@ -180,16 +190,6 @@ $content_html =
 			Chartered agricultural engineer, lawyer, forensic expert in the trading of arable land, in the appraisal of arable land, and in the assessment of agricultural damages 
 		</p>
 		<span class="contact">lugossy<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
-	</div>
-	<div class="v_card half_width">
-		<img src="images/munkatarsak/_DSC5103_kicsi.jpg" alt="Viktor Máté" />
-		<img class="thumb" src="images/munkatarsak/thumb/_DSC5103_kicsi.jpg" alt="Viktor Máté" />
-		<span class="name">Viktor Máté</span>
-		<span class="title">Real estate and assets appraiser</span>
-		<p><strong>Qualifications:</strong><br/>
-			Tourism specialist manager, real estate assets appraiser and broker, real estate manager, condominium manager, arable land appraiser 
-		</p>
-		<span class="contact">Extension: 115<br/>viktor<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5498_kicsi.jpg" alt="Zoltán Máté" />
