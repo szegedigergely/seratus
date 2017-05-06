@@ -13,7 +13,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Chartered civil engineer, forensic specialist engineer, forensic expert, chartered real estate manager, technical construction supervisor, real estate assets appraiser and broker, arable land appraiser
 		</p>
-		<span class="contact">Extension: 112<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 116<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5150_kicsi.jpg" alt="Erzsébet Simon" />
@@ -23,7 +23,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Chartered architect, chartered geologist; forensic expert, real estate assets appraiser and broker; chartered real estate management expert; energy certifier, arable land appraiser
 		</p>
-		<span class="contact">Extension: 116<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 112<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5585_kicsi.jpg" alt="István Mészáros" />
@@ -66,7 +66,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			
 		</p>
-		<span class="contact">Extension: 111<br/>maja<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 110<br/>deli.maja<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5313_kicsi.jpg" alt="Katalin Godó" />
@@ -112,6 +112,16 @@ $content_html =
 <h1>Staff</h1>
 <div>
 	<div class="v_card half_width">
+		<img src="images/munkatarsak/no_pic.jpg" alt="Koral Berei" />
+		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Koral Berei" />
+		<span class="name">Koral Berei</span>
+		<span class="title">Secretarial assistant</span>
+		<p><strong></strong><br/>
+			
+		</p>
+		<span class="contact">Extension: 111<br/>berei.koral<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
+	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5528_kicsi.jpg" alt="Szilvia Bódai" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC5528_kicsi.jpg" alt="Szilvia Bódai" />
 		<span class="name">Szilvia Bódai</span>
@@ -130,6 +140,16 @@ $content_html =
 			Vocation secondary school of economics, special administrator for social insurance and payroll 
 		</p>
 		<span class="contact">Extension: 118<br/>darabos<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
+	<div class="v_card half_width">
+		<img src="images/munkatarsak/no_pic.jpg" alt="László Farkas" />
+		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="László Farkas" />
+		<span class="name">László Farkas</span>
+		<span class="title">Secretarial assistant</span>
+		<p><strong></strong><br/>
+			
+		</p>
+		<span class="contact">Extension: 114<br/>farkas.laszlo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5358_kicsi.jpg" alt="Réka Horony" />
@@ -169,7 +189,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Technical manager; real estate assets appraiser and broker
 		</p>
-		<span class="contact">Extension: 114<br/>laczo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">laczo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5164_kicsi.jpg" alt="László Leleszi" />
@@ -199,7 +219,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Real estate assets appraiser and broker, real estate manager, condominium manager, arable land appraiser 
 		</p>
-		<span class="contact">Extension: 142<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">Extension: 138<br/>zoltan<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5036_kicsi.jpg" alt="Magdolna Dudás" />
@@ -219,7 +239,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Chartered technical manager; real estate assets appraiser and broker 
 		</p>
-		<span class="contact">Extension: 146<br/>sivak<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">sivak<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5342_kicsi.jpg" alt="Andrea Rába" />
@@ -249,7 +269,7 @@ $content_html =
 		<p><strong>Qualifications:</strong><br/>
 			Real estate assets appraiser and broker 
 		</p>
-		<span class="contact">Extension: 138<br/>vargai<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">vargai<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5482_kicsi.jpg" alt="Ádám Vörös" />

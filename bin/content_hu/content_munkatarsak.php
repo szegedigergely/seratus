@@ -13,7 +13,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			okl. építőmérnök, igazságügyi szakmérnök,  igazságügyi szakértő, okl. Ingatlangazdálkodó, magasépítési műszaki ellenőr, ingatlanvagyon-értékelő és közvetítő, termőföld értékbecslő
 		</p>
-		<span class="contact">mellék: 112<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 116<br/>mate<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5150_kicsi.jpg" alt="" />
@@ -23,7 +23,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			okl. építészmérnök, okl. geológus; igazságügyi szakértő,  ingatlanvagyon-értékelő és közvetítő; okl. ingatlangazdálkodási szakértő; energetikai tanúsító, termőföld értékelő
 		</p>
-		<span class="contact">mellék: 116<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 112<br/>simon.erzsebet<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5585_kicsi.jpg" alt="" />
@@ -66,7 +66,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			
 		</p>
-		<span class="contact">mellék: 111<br/>maja<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 110<br/>deli.maja<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5313_kicsi.jpg" alt="Godó Katalin" />
@@ -112,6 +112,16 @@ $content_html =
 <h1>Munkatársak</h1>
 <div>
 	<div class="v_card half_width">
+		<img src="images/munkatarsak/no_pic.jpg" alt="Berei Koral" />
+		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Berei Koral" />
+		<span class="name">Berei Koral</span>
+		<span class="title">titkársági asszisztens</span>
+		<p><strong></strong><br/>
+			
+		</p>
+		<span class="contact">mellék: 111<br/>berei.koral<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
+	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
 		<img class="thumb" src="images/munkatarsak/thumb/_DSC5528_kicsi.jpg" alt="Bódai Szilvia" />
 		<span class="name">Bódai Szilvia</span>
@@ -130,6 +140,16 @@ $content_html =
 			közgazdasági szakközépiskola, társadalombiztosítási és bérügyi szakelőadó
 		</p>
 		<span class="contact">mellék: 118<br/>darabos<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+	</div>
+	<div class="v_card half_width">
+		<img src="images/munkatarsak/no_pic.jpg" alt="Farkas László" />
+		<img class="thumb" src="images/munkatarsak/thumb/no_pic.jpg" alt="Farkas László" />
+		<span class="name">Farkas László</span>
+		<span class="title">titkársági asszisztens</span>
+		<p><strong></strong><br/>
+			
+		</p>
+		<span class="contact">mellék: 114<br/>farkas.laszlo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5358_kicsi.jpg" alt="Horony Réka" />
@@ -169,7 +189,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			műszaki menedzser; ingatlanvagyon-értékelő és közvetítő
 		</p>
-		<span class="contact">mellék: 114<br/>laczo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">laczo<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5164_kicsi.jpg" alt="Leleszi László" />
@@ -199,7 +219,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			ingatlanvagyon-értékelő és közvetítő, ingatlankezelő, társasházkezelő, termőföld értékbecslő
 		</p>
-		<span class="contact">mellék: 142<br/>zoli<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">mellék: 138<br/>zoltan<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5036_kicsi.jpg" alt="Dudás Magdolna" />
@@ -219,7 +239,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			okl. műszaki menedzser;  ingatlanvagyon-értékelő és közvetítő
 		</p>
-		<span class="contact">mellék: 146<br/>sivak<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">sivak<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5342_kicsi.jpg" alt="Rába Andrea" />
@@ -249,7 +269,7 @@ $content_html =
 		<p><strong>Végzettségek:</strong><br/>
 			ingatlanvagyon-értékelő és közvetítő
 		</p>
-		<span class="contact">mellék: 138<br/>vargai<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
+		<span class="contact">vargai<i class="si si-naknek"></i>seratus<i class="si si-nalnel"></i>hu</span>
 	</div>
 	<div class="v_card half_width">
 		<img src="images/munkatarsak/_DSC5482_kicsi.jpg" alt="Vörös Ádám" />
