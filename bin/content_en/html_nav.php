@@ -4,7 +4,7 @@
 			<div id="nav_wrapper">
 				<a id="logo" href="/"><img src="images/logo.png" alt="Seratus" /></a>
 				<ul>
-					<li class="item bemutatkozunk"><a href="/">About</a>
+					<li class="item bemutatkozunk"><a href="about-us">About</a>
 						<div class="submenu">
 							<ul class="links">
 								<li><a href="about-us">About us</a></li>
@@ -18,7 +18,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item szolgaltatasaink"><a href="/">Services</a>
+					<li class="item szolgaltatasaink"><a>Services</a>
 						<div class="submenu">
 							<ul class="links">
 								<li><a href="appraisals">Appraisals</a></li>

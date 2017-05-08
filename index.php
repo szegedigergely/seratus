@@ -4,21 +4,6 @@
 
 	include_once 'bin/config.php';
 
-	$whitelist = array(
-	    '127.0.0.1',
-	    '::1'
-	);
-
-	// if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
-	    // $base = "http://seratus.hu";
-	    // $base = "http://seratus.hu/teszt";
-	// } else {
-		// $base = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-	// }
-
-	// $lang_code = 'hu';
-	// $lang_code = 'en';
-
 	include_once 'functions.php';
 
 	$carousel = true;
@@ -39,7 +24,6 @@
 	}
 
 	$page = 'content_'.$content_name.'.php';
-	// var_dump($page);
 	$page_path = stream_resolve_include_path($page);
 	if(!$page_path){
 		header('Location: '.$languages[$lang_code].'/error-404');
@@ -86,15 +70,9 @@
 		<div class="languages">
 	<?php
 		foreach ($languages as $lang => $lang_url) {
-			// if($lang == 'hu'){
 	?>
 			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="<?=$lang_url?>"><?=$lang?></a>
 	<?php
-	/*		} else {
-	?>
-			<a <?php echo ($lang==$lang_code)?'class="active" ':''?>href="http://<?=$lang?>.seratus.hu/"><?=$lang?></a>
-	<?php
-			}*/
 		}
 	?>
 		</div>

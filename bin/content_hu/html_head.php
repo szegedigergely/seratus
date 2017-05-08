@@ -1,12 +1,12 @@
 <?php
 	if(!$ping) die;
 ?>
-		<base href="<?=$languages[$lang_code]?>" />
+		<base href="<?=BASE_URL?>" />
 
 		<meta property="og:title"       content="Seratus" /> 
 		<meta property="og:type"        content="website" /> 
-		<meta property="og:url"         content="<?=$base?>" /> 
-		<meta property="og:image"       content="<?=$base?>/images/fb_logo.png" /> 
+		<meta property="og:url"         content="<?=BASE_URL?>" /> 
+		<meta property="og:image"       content="<?=BASE_URL?>images/fb_logo.png" /> 
 		<meta property="og:description" content="Seratus Ingatlan Tanácsadó Igazságügyi Szakértő Kft." /> 	
 
 		<title><?=$title?><?=$title?' - ':''?>Seratus - Minden, ami ingatlan</title>
@@ -30,10 +30,10 @@
 		<meta name="viewport" content="user-scalable=no">
 
 		<link href="favicon.png" rel="shortcut icon" type="image/png" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v=<?php echo microtime(); ?>" />
-		<link rel="stylesheet" type="text/css" href="css/common.css?v=<?php echo microtime() ?>" />
+		<link rel="stylesheet" type="text/css" href="./css/swiper.min.css?v=<?php echo microtime(true); ?>" />
+		<link rel="stylesheet" type="text/css" href="./css/common.css?v=<?php echo microtime(true) ?>" />
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
 
 		<style>
 			html {

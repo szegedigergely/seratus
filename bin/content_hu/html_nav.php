@@ -18,7 +18,7 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item szolgaltatasaink"><a href="/">Szolgáltatásaink</a>
+					<li class="item szolgaltatasaink"><a>Szolgáltatásaink</a>
 						<div class="submenu">
 							<ul class="links">
 								<li><a href="ertekbecsles">Értékbecslés</a></li>
